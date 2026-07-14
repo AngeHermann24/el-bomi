@@ -23,7 +23,7 @@ export default function ProjectCard({ project, index, featured = false }: Projec
       className={`${featured ? 'md:col-span-2 md:row-span-2' : ''}`}
     >
       <Tilt3D intensity={6} className="group relative overflow-hidden rounded-2xl h-full">
-        <Link href={`/realisations/${project.slug}`} className="block relative h-full">
+        <Link href={`/projets/${project.slug}`} className="block relative h-full">
           {/* Image */}
           <div className={`relative overflow-hidden ${featured ? 'h-[500px]' : 'h-[300px]'}`}>
             <Image

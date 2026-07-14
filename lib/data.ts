@@ -1,4 +1,22 @@
-import { Project, Service, Testimonial, StatItem, TeamMember } from '@/types';
+import { Project, Service, Intervention, Testimonial, StatItem, TeamMember, HeroSlide } from '@/types';
+
+export const heroSlides: HeroSlide[] = [
+  {
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=90',
+    title: 'Bâtir L\'Excellence',
+    subtitle: 'Des fondations solides pour des projets d\'envergure. EL-BOMI construit l\'avenir depuis 2009.',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=90',
+    title: 'Infrastructures & Génie Civil',
+    subtitle: 'Routes, ouvrages d\'art, réseaux — nous maîtrisons les défis techniques les plus complexes.',
+  },
+  {
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=90',
+    title: 'Innovation & Performance',
+    subtitle: 'Une approche moderne et rigoureuse pour chaque chantier, du début à la livraison.',
+  },
+];
 
 export const stats: StatItem[] = [
   { value: 15, suffix: '+', label: "Années d'expérience" },
@@ -224,25 +242,67 @@ export const team: TeamMember[] = [
   {
     name: 'Marc Ebomi',
     role: 'Président-Directeur Général',
+    department: 'Direction Générale',
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
     bio: 'Ingénieur ESTP, 25 ans d\'expérience dans les grands projets de construction. Visionnaire passionné par l\'innovation dans le BTP.',
   },
   {
     name: 'Claire Fontaine',
     role: 'Directrice des Opérations',
+    department: 'Direction des Opérations',
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
     bio: 'Polytechnicienne, spécialiste en gestion de projets complexes. 18 ans d\'expérience en direction de travaux.',
   },
   {
     name: 'Karim Benali',
     role: 'Directeur Technique',
+    department: 'Direction Technique',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
     bio: 'Ingénieur structures, expert en béton précontraint et construction parasismique. Référent technique sur nos projets les plus ambitieux.',
   },
   {
     name: 'Isabelle Roux',
     role: 'Responsable Développement Durable',
+    department: 'Bureau d\'Études',
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
     bio: 'Ingénieure environnement, pilote notre stratégie RSE et nos certifications HQE/BREEAM. Engagée pour une construction responsable.',
+  },
+  {
+    name: 'Antoine Duval',
+    role: 'Chef de Projets Senior',
+    department: 'Direction des Opérations',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    bio: 'Ingénieur Centrale Lyon, 15 ans d\'expérience en conduite de travaux de génie civil et bâtiment.',
+  },
+  {
+    name: 'Nadia Khelifi',
+    role: 'Ingénieure Structures',
+    department: 'Bureau d\'Études',
+    image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80',
+    bio: 'Spécialiste béton armé et charpente métallique. Responsable du dimensionnement sur nos projets d\'envergure.',
+  },
+];
+
+export const interventions: Intervention[] = [
+  {
+    id: 'etudes',
+    title: 'Études & Conception',
+    description: 'Études de faisabilité, conception technique, plans d\'exécution et dimensionnement structurel. Notre bureau d\'études accompagne chaque projet dès sa genèse.',
+    icon: 'FileSearch',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
+  },
+  {
+    id: 'realisation',
+    title: 'Réalisation des Travaux',
+    description: 'Exécution complète des travaux avec nos équipes qualifiées, dans le respect des normes, des délais et du budget. Suivi qualité permanent sur chantier.',
+    icon: 'HardHat',
+    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+  },
+  {
+    id: 'pilotage',
+    title: 'Encadrement & Pilotage',
+    description: 'Direction de travaux, coordination des corps d\'état, pilotage OPC et management de projet. Un interlocuteur unique pour garantir la réussite.',
+    icon: 'Users',
+    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
   },
 ];

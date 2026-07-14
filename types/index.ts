@@ -11,6 +11,7 @@ export interface Project {
   duration: string;
   surface: string;
   client: string;
+  lots?: number;
 }
 
 export interface Service {
@@ -19,6 +20,14 @@ export interface Service {
   description: string;
   icon: string;
   features: string[];
+  image: string;
+}
+
+export interface Intervention {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
   image: string;
 }
 
@@ -35,6 +44,7 @@ export interface Testimonial {
 export interface TeamMember {
   name: string;
   role: string;
+  department: string;
   image: string;
   bio: string;
 }
@@ -43,4 +53,10 @@ export interface StatItem {
   value: number;
   suffix: string;
   label: string;
+}
+
+export interface HeroSlide {
+  image: string;
+  title: string;
+  subtitle: string;
 }

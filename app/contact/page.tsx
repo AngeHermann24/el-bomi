@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import Hero from '@/components/Hero';
+import PageHeader from '@/components/PageHeader';
 import ContactForm from '@/components/ContactForm';
 import IconRenderer from '@/components/IconRenderer';
 
@@ -54,14 +54,10 @@ const faqs = [
 export default function ContactPage() {
   return (
     <>
-      <Hero
-        title="Parlons De Votre Projet"
-        subtitle=""
-        description="Notre équipe est à votre écoute. Décrivez-nous votre projet et recevez une estimation personnalisée sous 48h ouvrées."
-        backgroundImage="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=90"
-        compact
-        ctaText=""
-        ctaHref="#contact-form"
+      <PageHeader
+        label="Parlons de votre projet"
+        title="Contactez-nous"
+        image="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=90"
       />
 
       <section className="section-padding" id="contact-form">
@@ -110,7 +106,25 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* FAQ Section — unique à la page contact */}
+      {/* Carte */}
+      <section className="px-4 sm:px-6 lg:px-8 pb-12">
+        <div className="container-max">
+          <div className="rounded-2xl overflow-hidden h-[350px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4!2d2.3488!3d48.8566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDUxJzIzLjgiTiAywrAyMCc1NS43IkU!5e0!3m2!1sfr!2sfr!4v1"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localisation EL-BOMI"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
       <section className="section-padding bg-anthracite-900/30">
         <div className="container-max max-w-4xl">
           <div className="text-center mb-12">

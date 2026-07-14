@@ -6,11 +6,15 @@ import { motion } from 'framer-motion';
 
 export default function Footer() {
   return (
-    <footer className="relative bg-anthracite-950 border-t border-white/5">
+    <footer className="relative bg-anthracite-950 border-t border-white/5 overflow-hidden">
       {/* Decorative gradient */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-px bg-gradient-to-r from-transparent via-accent-500/50 to-transparent" />
 
-      <div className="container-max section-padding">
+      {/* Ambient background effects */}
+      <div className="absolute bottom-0 left-0 w-72 h-72 bg-accent-500/[0.02] rounded-full blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/3 right-0 w-56 h-56 bg-accent-600/[0.03] rounded-full blur-[80px] pointer-events-none" />
+
+      <div className="container-max section-padding relative">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
@@ -48,9 +52,10 @@ export default function Footer() {
             <ul className="space-y-3">
               {[
                 { label: 'Accueil', href: '/' },
-                { label: 'Nos Services', href: '/services' },
-                { label: 'Réalisations', href: '/realisations' },
                 { label: 'À Propos', href: '/a-propos' },
+                { label: 'Services', href: '/services' },
+                { label: 'Projets', href: '/projets' },
+                { label: 'Équipe', href: '/equipe' },
                 { label: 'Contact', href: '/contact' },
               ].map((link) => (
                 <li key={link.href}>

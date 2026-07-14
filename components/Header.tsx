@@ -8,9 +8,10 @@ import { Menu, X, Phone } from 'lucide-react';
 
 const navLinks = [
   { href: '/', label: 'Accueil' },
-  { href: '/services', label: 'Services' },
-  { href: '/realisations', label: 'Réalisations' },
   { href: '/a-propos', label: 'À Propos' },
+  { href: '/services', label: 'Services' },
+  { href: '/projets', label: 'Projets' },
+  { href: '/equipe', label: 'Équipe' },
   { href: '/contact', label: 'Contact' },
 ];
 
@@ -32,7 +33,10 @@ export default function Header() {
   }, [pathname]);
 
   return (
-    <header
+    <motion.header
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
           ? 'bg-anthracite-950/95 backdrop-blur-xl shadow-2xl shadow-black/20 py-3'
@@ -74,13 +78,19 @@ export default function Header() {
           ))}
         </div>
 
-        {/* CTA + Mobile Toggle */}
+        {/* Phone + CTA + Mobile Toggle */}
         <div className="flex items-center gap-4">
+          <a
+            href="tel:+33123456789"
+            className="hidden lg:flex items-center gap-2 text-white/80 hover:text-accent-400 text-sm font-semibold transition-colors"
+          >
+            <Phone className="w-4 h-4 text-accent-400" />
+            +33 1 23 45 67 89
+          </a>
           <Link
             href="/contact"
             className="hidden md:flex items-center gap-2 bg-accent-500 hover:bg-accent-600 text-white px-5 py-2.5 rounded-xl text-sm font-semibold transition-all duration-300 hover:shadow-lg hover:shadow-accent-500/25 hover:-translate-y-0.5"
           >
-            <Phone className="w-4 h-4" />
             Devis Gratuit
           </Link>
 
@@ -164,6 +174,6 @@ export default function Header() {
           </motion.div>
         )}
       </AnimatePresence>
-    </header>
+    </motion.header>
   );
 }
