@@ -4,31 +4,31 @@ import ContactForm from '@/components/ContactForm';
 import IconRenderer from '@/components/IconRenderer';
 
 export const metadata: Metadata = {
-  title: 'Contact & Devis',
+  title: 'Contact & Devis | EL-BOMI GROUP',
   description:
-    'Contactez EL-BOMI BTP pour votre projet de construction. Devis gratuit sous 48h. Gros œuvre, génie civil, rénovation, aménagement.',
+    'Contactez EL-BOMI GROUP pour votre projet immobilier ou de construction à Abidjan. Devis gratuit.',
 };
 
 const contactInfo = [
   {
     icon: 'MapPin',
     title: 'Adresse',
-    lines: ['123 Avenue de la Construction', '75001 Paris, France'],
+    lines: ['27 Bp 399 Abj 27', 'Abidjan, Cocody - Angré 8ème Tranche'],
   },
   {
     icon: 'Phone',
     title: 'Téléphone',
-    lines: ['+33 1 23 45 67 89', '+33 6 98 76 54 32'],
+    lines: ['(225) 27 22 20 11 15'],
   },
   {
     icon: 'Mail',
     title: 'Email',
-    lines: ['contact@ebomi-btp.com', 'devis@ebomi-btp.com'],
+    lines: ['contact@elbomigroup.com'],
   },
   {
     icon: 'Clock',
     title: 'Horaires',
-    lines: ['Lundi - Vendredi : 7h - 18h', 'Samedi : 8h - 12h'],
+    lines: ['Lundi - Vendredi : 08h00 - 18h30', 'Samedi & Dimanche : Fermé'],
   },
 ];
 
@@ -92,9 +92,9 @@ export default function ContactPage() {
 
               {/* Urgence */}
               <div className="glass-card p-5 border-accent-500/20 bg-accent-500/[0.03]">
-                <div className="text-accent-400 text-sm font-semibold mb-1">Urgence chantier ?</div>
-                <p className="text-white/50 text-xs">Appelez directement notre ligne dédiée disponible 7j/7 pour les interventions urgentes.</p>
-                <div className="mt-3 text-white font-bold text-lg">+33 6 00 00 00 00</div>
+                <div className="text-accent-400 text-sm font-semibold mb-1">Besoin d&apos;un devis ?</div>
+                <p className="text-white/50 text-xs">Appelez-nous directement pour discuter de votre projet.</p>
+                <div className="mt-3 text-white font-bold text-lg">(225) 27 22 20 11 15</div>
               </div>
             </div>
 
@@ -111,7 +111,7 @@ export default function ContactPage() {
         <div className="container-max">
           <div className="rounded-2xl overflow-hidden h-[350px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.4!2d2.3488!3d48.8566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDUxJzIzLjgiTiAywrAyMCc1NS43IkU!5e0!3m2!1sfr!2sfr!4v1"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.5!2d-3.9627!3d5.3599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNcKwMjEnMzUuNiJOIDPCsDU3JzQ1LjciVw!5e0!3m2!1sfr!2sci!4v1"
               width="100%"
               height="100%"
               style={{ border: 0 }}

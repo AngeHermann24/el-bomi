@@ -50,7 +50,7 @@ export default function Header() {
             EL-BOMI
           </span>
           <span className="block text-[10px] font-semibold tracking-[0.3em] text-accent-400 uppercase -mt-1">
-            Construction
+            GROUP
           </span>
         </Link>
 
@@ -81,11 +81,11 @@ export default function Header() {
         {/* Phone + CTA + Mobile Toggle */}
         <div className="flex items-center gap-4">
           <a
-            href="tel:+33123456789"
+            href="tel:+2252722201115"
             className="hidden lg:flex items-center gap-2 text-white/80 hover:text-accent-400 text-sm font-semibold transition-colors"
           >
             <Phone className="w-4 h-4 text-accent-400" />
-            +33 1 23 45 67 89
+            (225) 27 22 20 11 15
           </a>
           <Link
             href="/contact"

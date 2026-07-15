@@ -3,26 +3,26 @@ import { Project, Service, Intervention, Testimonial, StatItem, TeamMember, Hero
 export const heroSlides: HeroSlide[] = [
   {
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=90',
-    title: 'Bâtir L\'Excellence',
-    subtitle: 'Des fondations solides pour des projets d\'envergure. EL-BOMI construit l\'avenir depuis 2009.',
+    title: 'Vision • Expertise • Réalisation',
+    subtitle: 'EL-BOMI GROUP accompagne vos projets immobiliers et de construction avec professionnalisme, qualité et fiabilité.',
   },
   {
     image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=90',
-    title: 'Infrastructures & Génie Civil',
-    subtitle: 'Routes, ouvrages d\'art, réseaux — nous maîtrisons les défis techniques les plus complexes.',
+    title: 'Construction & Travaux Publics',
+    subtitle: 'De l\'immobilier aux infrastructures, nous réalisons des projets durables qui transforment le paysage urbain.',
   },
   {
     image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=90',
-    title: 'Innovation & Performance',
-    subtitle: 'Une approche moderne et rigoureuse pour chaque chantier, du début à la livraison.',
+    title: 'L\'Excellence Au Service De Vos Projets',
+    subtitle: 'Une équipe engagée, des solutions sur mesure et un savoir-faire reconnu en Côte d\'Ivoire.',
   },
 ];
 
 export const stats: StatItem[] = [
-  { value: 15, suffix: '+', label: "Années d'expérience" },
-  { value: 250, suffix: '+', label: 'Projets réalisés' },
-  { value: 98, suffix: '%', label: 'Clients satisfaits' },
-  { value: 45, suffix: '', label: 'Collaborateurs experts' },
+  { value: 10, suffix: '+', label: "Années d'expérience" },
+  { value: 150, suffix: '+', label: 'Projets réalisés' },
+  { value: 100, suffix: '%', label: 'Clients satisfaits' },
+  { value: 30, suffix: '+', label: 'Collaborateurs experts' },
 ];
 
 export const services: Service[] = [

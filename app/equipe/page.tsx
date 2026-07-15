@@ -4,8 +4,8 @@ import { team } from '@/lib/data';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Notre Équipe | EL-BOMI BTP',
-  description: 'Découvrez l\'équipe dirigeante d\'EL-BOMI BTP. Des professionnels passionnés au service de vos projets de construction.',
+  title: 'Notre Équipe | EL-BOMI GROUP',
+  description: 'Découvrez l\'équipe dirigeante d\'EL-BOMI GROUP. Des professionnels passionnés au service de vos projets.',
 };
 
 export default function EquipePage() {

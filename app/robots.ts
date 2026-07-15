@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://el-bomi-btp.com/sitemap.xml',
+    sitemap: 'https://elbomigroup.com/sitemap.xml',
   };
 }

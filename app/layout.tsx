@@ -13,18 +13,18 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: 'EL-BOMI BTP | Construction & Travaux Publics d\'Excellence',
-    template: '%s | EL-BOMI BTP',
+    default: 'EL-BOMI GROUP | Immobilier, Construction & Travaux Publics',
+    template: '%s | EL-BOMI GROUP',
   },
   description:
-    'EL-BOMI BTP - Entreprise de construction et travaux publics. Plus de 15 ans d\'expertise en gros œuvre, rénovation, génie civil et aménagement. Qualité, sécurité, innovation.',
-  keywords: ['BTP', 'construction', 'travaux publics', 'rénovation', 'génie civil', 'bâtiment', 'EL-BOMI'],
+    'EL-BOMI GROUP - Entreprise spécialisée dans l\'immobilier, la construction et les travaux publics à Abidjan, Côte d\'Ivoire. Vision, expertise et réalisation de projets durables.',
+  keywords: ['BTP', 'construction', 'travaux publics', 'immobilier', 'Abidjan', 'Côte d\'Ivoire', 'EL-BOMI GROUP'],
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'EL-BOMI BTP',
-    title: 'EL-BOMI BTP | Construction & Travaux Publics d\'Excellence',
-    description: 'Entreprise de construction et travaux publics. Qualité, sécurité, innovation depuis plus de 15 ans.',
+    siteName: 'EL-BOMI GROUP',
+    title: 'EL-BOMI GROUP | Immobilier, Construction & Travaux Publics',
+    description: 'Entreprise spécialisée dans l\'immobilier, la construction et les travaux publics à Abidjan. Vision • Expertise • Réalisation.',
   },
   robots: {
     index: true,
@@ -46,23 +46,23 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'LocalBusiness',
-              name: 'EL-BOMI BTP',
-              description: 'Entreprise de construction et travaux publics',
-              url: 'https://el-bomi-btp.com',
-              telephone: '+33 1 23 45 67 89',
+              name: 'EL-BOMI GROUP',
+              description: 'Entreprise spécialisée dans l\'immobilier, la construction et les travaux publics',
+              url: 'https://elbomigroup.com',
+              telephone: '+225 27 22 20 11 15',
               address: {
                 '@type': 'PostalAddress',
-                streetAddress: '123 Avenue de la Construction',
-                addressLocality: 'Paris',
-                postalCode: '75001',
-                addressCountry: 'FR',
+                streetAddress: '27 Bp 399 Abj 27, Cocody - Angré 8ème Tranche',
+                addressLocality: 'Abidjan',
+                postalCode: '27',
+                addressCountry: 'CI',
               },
               geo: {
                 '@type': 'GeoCoordinates',
-                latitude: 48.8566,
-                longitude: 2.3522,
+                latitude: 5.3599,
+                longitude: -3.9627,
               },
-              openingHours: 'Mo-Fr 07:00-18:00',
+              openingHours: 'Mo-Fr 08:00-18:30',
               priceRange: '€€€',
             }),
           }}

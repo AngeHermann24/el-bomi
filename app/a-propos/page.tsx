@@ -6,9 +6,9 @@ import { stats } from '@/lib/data';
 import { Play } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'À Propos | EL-BOMI BTP',
+  title: 'À Propos | EL-BOMI GROUP',
   description:
-    'Découvrez l\'histoire d\'EL-BOMI BTP, nos valeurs, notre équipe et notre engagement envers l\'excellence dans la construction depuis plus de 15 ans.',
+    'Découvrez l\'histoire d\'EL-BOMI GROUP, notre vision, notre expertise et notre engagement dans la réalisation de projets durables en Côte d\'Ivoire.',
 };
 
 export default function AProposPage() {
@@ -24,18 +24,18 @@ export default function AProposPage() {
       <section className="section-padding">
         <div className="container-max">
           <h2 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 max-w-3xl">
-            Une entreprise de référence dans la construction depuis 2009
+            Une entreprise orientée vers l&apos;excellence
           </h2>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             <div className="space-y-5 text-white/60 leading-relaxed">
               <p>
-                Fondée en 2009, EL-BOMI est une entreprise spécialisée dans les travaux de bâtiment, génie civil, voiries et réseaux divers. Implantée en France, nous intervenons sur des chantiers d&apos;envergure régionale et nationale.
+                EL-BOMI GROUP est une entreprise spécialisée dans l&apos;immobilier, la construction et les travaux publics, basée à Abidjan, Cocody - Angré 8ème Tranche. Nous intervenons sur des projets d&apos;envergure en Côte d&apos;Ivoire.
               </p>
               <p>
-                Avec plus de 250 projets livrés et une équipe de 45 collaborateurs qualifiés, nous nous positionnons comme un acteur incontournable du secteur. Notre force : une approche rigoureuse, des équipes compétentes et un engagement total envers la satisfaction du client.
+                Avec une vision orientée vers l&apos;excellence, une expertise solide et un engagement dans la réalisation de projets durables, le groupe accompagne ses clients dans la concrétisation de leurs projets avec professionnalisme, qualité et fiabilité.
               </p>
               <p>
-                Nous développons en permanence nos capacités d&apos;intervention et investissons dans la formation de nos équipes et la modernisation de nos équipements pour rester à la pointe du métier.
+                Notre force réside dans notre capacité à allier savoir-faire technique, gestion rigoureuse et innovation pour livrer des ouvrages qui répondent aux plus hauts standards.
               </p>
             </div>
             <div className="relative h-[400px] rounded-2xl overflow-hidden">
@@ -58,13 +58,13 @@ export default function AProposPage() {
             <div className="glass-card p-8">
               <h3 className="text-xl font-heading font-bold text-accent-400 mb-4">Notre Mission</h3>
               <p className="text-white/60 leading-relaxed">
-                Réaliser des ouvrages de qualité supérieure en respectant les délais, les budgets et les normes les plus exigeantes. Nous accompagnons chaque client de la phase d&apos;études jusqu&apos;à la livraison, avec un suivi rigoureux à chaque étape.
+                Accompagner nos clients dans la réalisation de projets immobiliers et de construction durables, en alliant vision stratégique, expertise technique et exécution irréprochable.
               </p>
             </div>
             <div className="glass-card p-8">
               <h3 className="text-xl font-heading font-bold text-accent-400 mb-4">Notre Engagement</h3>
               <p className="text-white/60 leading-relaxed">
-                Garantir la sécurité de nos équipes et la protection de l&apos;environnement sur chaque chantier. Nous nous engageons dans une démarche d&apos;amélioration continue, avec des certifications Qualibat et ISO 9001 qui attestent de notre sérieux.
+                Professionnalisme, qualité et fiabilité à chaque étape. Nous nous engageons à respecter les délais, les budgets et les normes les plus exigeantes pour garantir la satisfaction totale de nos clients.
               </p>
             </div>
           </div>
@@ -91,10 +91,10 @@ export default function AProposPage() {
               <h3 className="text-3xl font-heading font-black text-white mb-2">Marc Ebomi</h3>
               <p className="text-accent-400 font-medium mb-6">Président-Directeur Général</p>
               <p className="text-white/60 leading-relaxed mb-4">
-                Ingénieur ESTP diplômé en 1999, Marc Ebomi a fondé EL-BOMI après 10 années passées dans de grands groupes du BTP français. Sa vision : créer une entreprise à taille humaine mais capable d&apos;affronter les projets les plus ambitieux.
+                Fondateur d&apos;EL-BOMI GROUP, Marc Ebomi porte une vision claire : bâtir une entreprise d&apos;excellence capable de répondre aux défis de la construction moderne en Côte d&apos;Ivoire et dans la sous-région.
               </p>
               <p className="text-white/60 leading-relaxed">
-                Son leadership, son exigence technique et sa proximité avec les équipes terrain font d&apos;EL-BOMI une entreprise reconnue pour la qualité de ses réalisations et le sérieux de sa gestion.
+                Son leadership, son exigence technique et son engagement envers la qualité font d&apos;EL-BOMI GROUP un acteur de confiance pour les projets immobiliers et d&apos;infrastructure.
               </p>
             </div>
           </div>
@@ -111,7 +111,7 @@ export default function AProposPage() {
             Innovation, rigueur et esprit d&apos;équipe
           </h2>
           <p className="text-white/60 leading-relaxed text-lg">
-            Chez EL-BOMI, nous croyons que l&apos;excellence naît de la combinaison entre innovation technique, amélioration continue et travail d&apos;équipe. Nous partageons les connaissances entre nos collaborateurs, investissons dans la formation et adoptons les méthodes les plus modernes pour garantir des résultats optimaux sur chaque projet.
+            Chez EL-BOMI GROUP, nous croyons que l&apos;excellence naît de la combinaison entre vision stratégique, expertise technique et engagement humain. Nous investissons dans nos équipes, adoptons les méthodes les plus modernes et placons la satisfaction client au cœur de chaque décision.
           </p>
         </div>
       </section>

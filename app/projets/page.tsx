@@ -4,8 +4,8 @@ import { projects } from '@/lib/data';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Nos Projets | EL-BOMI BTP',
-  description: 'Découvrez nos réalisations en construction, génie civil et rénovation. Plus de 250 projets livrés avec succès.',
+  title: 'Nos Projets | EL-BOMI GROUP',
+  description: 'Découvrez les réalisations d\'EL-BOMI GROUP en immobilier, construction et travaux publics en Côte d\'Ivoire.',
 };
 
 export default function ProjetsPage() {

@@ -9,9 +9,9 @@ import { services, interventions } from '@/lib/data';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Nos Services | EL-BOMI BTP',
+  title: 'Nos Services | EL-BOMI GROUP',
   description:
-    'EL-BOMI BTP propose une gamme complète de services : gros œuvre, génie civil, rénovation, aménagement, démolition et construction durable.',
+    'EL-BOMI GROUP propose une gamme complète de services : immobilier, construction, génie civil, rénovation, aménagement et travaux publics à Abidjan.',
 };
 
 export default function ServicesPage() {

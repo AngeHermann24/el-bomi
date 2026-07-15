@@ -32,13 +32,13 @@ export default function HomePage() {
                 Qui sommes-nous
               </span>
               <h2 className="text-3xl md:text-4xl font-heading font-black text-white mb-6 leading-tight">
-                Plus de 15 ans à bâtir l&apos;excellence
+                Vision • Expertise • Réalisation
               </h2>
               <p className="text-white/60 leading-relaxed mb-6">
-                EL-BOMI est une entreprise de construction et travaux publics fondée en 2009. Notre équipe de 45 collaborateurs experts intervient sur des projets de bâtiment, génie civil, routes et infrastructures sur tout le territoire national.
+                EL-BOMI GROUP est une entreprise spécialisée dans l&apos;immobilier, la construction et les travaux publics. Avec une vision orientée vers l&apos;excellence et une expertise solide, nous accompagnons nos clients dans la concrétisation de leurs projets.
               </p>
               <p className="text-white/60 leading-relaxed mb-8">
-                Notre engagement : livrer des ouvrages de qualité, dans les délais, en respectant les budgets et l&apos;environnement.
+                Notre engagement : professionnalisme, qualité et fiabilité dans la réalisation de projets durables en Côte d&apos;Ivoire.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Link

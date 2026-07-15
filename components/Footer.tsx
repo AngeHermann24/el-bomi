@@ -21,11 +21,11 @@ export default function Footer() {
             <Link href="/" className="inline-block mb-6">
               <span className="text-xl font-heading font-black text-white">EL-BOMI</span>
               <span className="block text-[9px] font-semibold tracking-[0.3em] text-accent-400 uppercase -mt-0.5">
-                Construction
+                GROUP
               </span>
             </Link>
             <p className="text-white/50 text-sm leading-relaxed mb-6">
-              Entreprise de construction et travaux publics d&apos;excellence. Nous bâtissons l&apos;avenir avec passion, expertise et innovation depuis plus de 15 ans.
+              Entreprise spécialisée dans l&apos;immobilier, la construction et les travaux publics. Vision • Expertise • Réalisation.
             </p>
             <div className="flex gap-3">
               {[
@@ -96,24 +96,24 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 text-accent-500 mt-0.5 shrink-0" />
                 <span className="text-white/50 text-sm">
-                  123 Avenue de la Construction<br />75001 Paris, France
+                  27 Bp 399 Abj 27<br />Abidjan, Cocody - Angré 8ème Tranche
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-accent-500 shrink-0" />
-                <a href="tel:+33123456789" className="text-white/50 hover:text-accent-400 text-sm transition-colors">
-                  +33 1 23 45 67 89
+                <a href="tel:+2252722201115" className="text-white/50 hover:text-accent-400 text-sm transition-colors">
+                  (225) 27 22 20 11 15
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-accent-500 shrink-0" />
-                <a href="mailto:contact@ebomi-btp.com" className="text-white/50 hover:text-accent-400 text-sm transition-colors">
-                  contact@ebomi-btp.com
+                <a href="mailto:contact@elbomigroup.com" className="text-white/50 hover:text-accent-400 text-sm transition-colors">
+                  contact@elbomigroup.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-4 h-4 text-accent-500 shrink-0" />
-                <span className="text-white/50 text-sm">Lun-Ven : 7h - 18h</span>
+                <span className="text-white/50 text-sm">Lun-Ven : 08h00 - 18h30</span>
               </li>
             </ul>
           </div>
@@ -122,7 +122,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-sm">
-            © {new Date().getFullYear()} EL-BOMI BTP. Tous droits réservés.
+            © {new Date().getFullYear()} EL-BOMI GROUP. Tous droits réservés.
           </p>
           <div className="flex gap-6">
             <Link href="#" className="text-white/30 hover:text-white/60 text-sm transition-colors">
