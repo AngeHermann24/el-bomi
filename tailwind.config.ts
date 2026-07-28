@@ -8,6 +8,58 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        navy: {
+          50: '#f2f5fa',
+          100: '#e3eaf4',
+          200: '#c2d1e6',
+          300: '#93aed2',
+          400: '#5d84b8',
+          500: '#3a639e',
+          600: '#2a4c80',
+          700: '#1f3a63',
+          800: '#152a4a',
+          900: '#0B1E3D',
+          950: '#061229',
+        },
+        gold: {
+          50: '#fdf9ed',
+          100: '#faf0cf',
+          200: '#f4df9c',
+          300: '#E8C766',
+          400: '#dcb349',
+          500: '#C9A227',
+          600: '#a8831d',
+          700: '#84651a',
+          800: '#6d531c',
+          900: '#5c451c',
+          950: '#35250c',
+        },
+        cream: '#F7F7F5',
+        brand: {
+          50: 'rgb(var(--brand-50) / <alpha-value>)',
+          100: 'rgb(var(--brand-100) / <alpha-value>)',
+          200: 'rgb(var(--brand-200) / <alpha-value>)',
+          300: 'rgb(var(--brand-300) / <alpha-value>)',
+          400: 'rgb(var(--brand-400) / <alpha-value>)',
+          500: 'rgb(var(--brand-500) / <alpha-value>)',
+          600: 'rgb(var(--brand-600) / <alpha-value>)',
+          700: 'rgb(var(--brand-700) / <alpha-value>)',
+          800: 'rgb(var(--brand-800) / <alpha-value>)',
+          900: 'rgb(var(--brand-900) / <alpha-value>)',
+          950: 'rgb(var(--brand-950) / <alpha-value>)',
+          contrast: 'rgb(var(--brand-contrast) / <alpha-value>)',
+        },
+        surface: {
+          DEFAULT: 'rgb(var(--surface) / <alpha-value>)',
+          alt: 'rgb(var(--surface-alt) / <alpha-value>)',
+          card: 'rgb(var(--surface-card) / <alpha-value>)',
+          line: 'rgb(var(--surface-line) / <alpha-value>)',
+        },
+        ink: {
+          DEFAULT: 'rgb(var(--ink) / <alpha-value>)',
+          muted: 'rgb(var(--ink-muted) / <alpha-value>)',
+          faint: 'rgb(var(--ink-faint) / <alpha-value>)',
+        },
         anthracite: {
           50: '#f6f6f6',
           100: '#e7e7e7',
@@ -36,13 +88,23 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ['var(--font-heading)', 'sans-serif'],
-        body: ['var(--font-body)', 'sans-serif'],
+        heading: ['var(--font-heading)', 'Georgia', 'serif'],
+        body: ['var(--font-body)', 'system-ui', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gold-gradient': 'linear-gradient(135deg, #C9A227 0%, #E8C766 50%, #C9A227 100%)',
+        'brand-gradient':
+          'linear-gradient(135deg, rgb(var(--brand-600)) 0%, rgb(var(--brand-400)) 50%, rgb(var(--brand-600)) 100%)',
       },
       animation: {
         'fade-in': 'fadeIn 0.6s ease-out forwards',
         'slide-up': 'slideUp 0.6s ease-out forwards',
         'counter': 'counter 2s ease-out forwards',
+        'draw-ribbon': 'drawRibbon 2.4s ease-out forwards',
+        'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+        'electric-flow': 'electricFlow 2s ease-out forwards',
+        'current-pulse': 'currentPulse 1.8s ease-out forwards',
+        'glow-ping': 'glowPing 2s ease-in-out infinite',
       },
       keyframes: {
         fadeIn: {
@@ -52,6 +114,27 @@ const config: Config = {
         slideUp: {
           '0%': { opacity: '0', transform: 'translateY(30px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        drawRibbon: {
+          '0%': { strokeDashoffset: '2000' },
+          '100%': { strokeDashoffset: '0' },
+        },
+        pulseGlow: {
+          '0%, 100%': { opacity: '0.4', transform: 'scale(1)' },
+          '50%': { opacity: '1', transform: 'scale(1.08)' },
+        },
+        electricFlow: {
+          '0%': { strokeDashoffset: '1000' },
+          '100%': { strokeDashoffset: '0' },
+        },
+        currentPulse: {
+          '0%': { strokeDashoffset: '500', opacity: '0' },
+          '20%': { opacity: '1' },
+          '100%': { strokeDashoffset: '0', opacity: '0.6' },
+        },
+        glowPing: {
+          '0%, 100%': { boxShadow: '0 0 0 0 rgba(201,162,39,0)' },
+          '50%': { boxShadow: '0 0 0 8px rgba(201,162,39,0.15)' },
         },
       },
     },

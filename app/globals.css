@@ -3,9 +3,202 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --font-heading: 'Inter', sans-serif;
-    --font-body: 'Inter', sans-serif;
+  /* ---------------------------------------------------------------
+     Thème par défaut : EL-BOMI GROUP (holding) — bleu marine & or
+     --------------------------------------------------------------- */
+  :root,
+  [data-theme='group'] {
+    --font-heading: var(--font-playfair), Georgia, serif;
+
+    --brand-50: 253 249 237;
+    --brand-100: 250 240 207;
+    --brand-200: 244 223 156;
+    --brand-300: 232 199 102;
+    --brand-400: 220 179 73;
+    --brand-500: 201 162 39;
+    --brand-600: 168 131 29;
+    --brand-700: 132 101 26;
+    --brand-800: 109 83 28;
+    --brand-900: 92 69 28;
+    --brand-950: 53 37 12;
+    --brand-contrast: 11 30 61;
+
+    --surface: 11 30 61;
+    --surface-alt: 6 18 41;
+    --surface-card: 255 255 255;
+    --surface-line: 255 255 255;
+
+    --ink: 255 255 255;
+    --ink-muted: 148 163 184;
+    --ink-faint: 100 116 139;
+  }
+
+  /* --- Construction & Infrastructures : bleu marine/or groupe + accent gris béton --- */
+  [data-theme='construction'] {
+    --font-heading: var(--font-playfair), Georgia, serif;
+
+    /* or du groupe — identique au holding pour fil rouge */
+    --brand-50: 253 249 237;
+    --brand-100: 250 240 207;
+    --brand-200: 244 223 156;
+    --brand-300: 232 199 102;
+    --brand-400: 220 179 73;
+    --brand-500: 201 162 39;
+    --brand-600: 168 131 29;
+    --brand-700: 132 101 26;
+    --brand-800: 109 83 28;
+    --brand-900: 92 69 28;
+    --brand-950: 53 37 12;
+    --brand-contrast: 11 30 61;
+
+    /* bleu marine profond — même base que le groupe */
+    --surface: 11 30 61;
+    --surface-alt: 6 18 41;
+    --surface-card: 255 255 255;
+    --surface-line: 255 255 255;
+
+    /* accent béton (#8A8D91) */
+    --concrete: 138 141 145;
+    --concrete-light: 200 202 205;
+
+    --ink: 255 255 255;
+    --ink-muted: 148 163 184;
+    --ink-faint: 100 116 139;
+  }
+
+  /* --- Énergie & Électricité : nuit bleue & jaune solaire --- */
+  [data-theme='energie'] {
+    --font-heading: var(--font-sora), system-ui, sans-serif;
+
+    --brand-50: 254 252 232;
+    --brand-100: 254 249 195;
+    --brand-200: 254 240 138;
+    --brand-300: 253 224 71;
+    --brand-400: 250 204 21;
+    --brand-500: 234 179 8;
+    --brand-600: 202 138 4;
+    --brand-700: 161 98 7;
+    --brand-800: 133 77 14;
+    --brand-900: 113 63 18;
+    --brand-950: 66 32 6;
+    --brand-contrast: 11 17 32;
+
+    --surface: 11 17 32;
+    --surface-alt: 5 9 20;
+    --surface-card: 255 255 255;
+    --surface-line: 255 255 255;
+
+    --ink: 255 255 255;
+    --ink-muted: 148 163 184;
+    --ink-faint: 100 116 139;
+  }
+
+  /* --- Informatique & Télécoms : noir profond & cyan --- */
+  [data-theme='informatique-telecoms'] {
+    --font-heading: var(--font-space), system-ui, sans-serif;
+
+    --brand-50: 236 254 255;
+    --brand-100: 207 250 254;
+    --brand-200: 165 243 252;
+    --brand-300: 103 232 249;
+    --brand-400: 34 211 238;
+    --brand-500: 6 182 212;
+    --brand-600: 8 145 178;
+    --brand-700: 14 116 144;
+    --brand-800: 21 94 117;
+    --brand-900: 22 78 99;
+    --brand-950: 8 51 68;
+    --brand-contrast: 7 11 20;
+
+    --surface: 7 11 20;
+    --surface-alt: 3 6 12;
+    --surface-card: 255 255 255;
+    --surface-line: 255 255 255;
+
+    --ink: 255 255 255;
+    --ink-muted: 148 163 184;
+    --ink-faint: 100 116 139;
+  }
+
+  /* --- Transit & Logistique : clair & bleu --- */
+  [data-theme='transit-logistics'] {
+    --font-heading: var(--font-sora), system-ui, sans-serif;
+
+    --brand-50: 239 246 255;
+    --brand-100: 219 234 254;
+    --brand-200: 191 219 254;
+    --brand-300: 147 197 253;
+    --brand-400: 96 165 250;
+    --brand-500: 59 130 246;
+    --brand-600: 37 99 235;
+    --brand-700: 29 78 216;
+    --brand-800: 30 64 175;
+    --brand-900: 30 58 138;
+    --brand-950: 23 37 84;
+    --brand-contrast: 255 255 255;
+
+    --surface: 255 255 255;
+    --surface-alt: 244 246 248;
+    --surface-card: 255 255 255;
+    --surface-line: 15 23 42;
+
+    --ink: 15 23 42;
+    --ink-muted: 71 85 105;
+    --ink-faint: 100 116 139;
+  }
+
+  /* --- Distribution Médicale : blanc clinique & teal --- */
+  [data-theme='medical'] {
+    --font-heading: var(--font-inter), system-ui, sans-serif;
+
+    --brand-50: 240 253 250;
+    --brand-100: 204 251 241;
+    --brand-200: 153 246 228;
+    --brand-300: 94 234 212;
+    --brand-400: 45 212 191;
+    --brand-500: 20 184 166;
+    --brand-600: 13 148 136;
+    --brand-700: 15 118 110;
+    --brand-800: 17 94 89;
+    --brand-900: 19 78 74;
+    --brand-950: 4 47 46;
+    --brand-contrast: 255 255 255;
+
+    --surface: 255 255 255;
+    --surface-alt: 240 253 250;
+    --surface-card: 255 255 255;
+    --surface-line: 15 23 42;
+
+    --ink: 15 23 42;
+    --ink-muted: 71 85 105;
+    --ink-faint: 100 116 139;
+  }
+
+  /* --- Agriculture & Ressources : crème & vert --- */
+  [data-theme='agriculture'] {
+    --font-heading: var(--font-playfair), Georgia, serif;
+
+    --brand-50: 240 253 244;
+    --brand-100: 220 252 231;
+    --brand-200: 187 247 208;
+    --brand-300: 134 239 172;
+    --brand-400: 74 222 128;
+    --brand-500: 34 197 94;
+    --brand-600: 22 163 74;
+    --brand-700: 21 128 61;
+    --brand-800: 22 101 52;
+    --brand-900: 20 83 45;
+    --brand-950: 5 46 22;
+    --brand-contrast: 255 255 255;
+
+    --surface: 250 247 239;
+    --surface-alt: 244 238 224;
+    --surface-card: 255 255 255;
+    --surface-line: 20 83 45;
+
+    --ink: 26 38 30;
+    --ink-muted: 82 96 85;
+    --ink-faint: 122 134 124;
   }
 
   html {
@@ -13,11 +206,11 @@
   }
 
   body {
-    @apply bg-anthracite-950 text-white antialiased;
+    @apply bg-navy-950 text-white antialiased;
   }
 
   ::selection {
-    @apply bg-accent-500/30 text-white;
+    @apply bg-brand-500/30;
   }
 }
 
@@ -31,19 +224,76 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-400 to-accent-600;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-gold-500 via-gold-300 to-gold-500;
+  }
+
+  .section-light {
+    @apply bg-cream text-navy-900;
   }
 
   .glass-card {
-    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] rounded-2xl shadow-xl shadow-black/10;
+    @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] rounded-2xl shadow-xl shadow-navy-950/20;
+  }
+
+  .card-light {
+    @apply bg-white border border-navy-900/10 rounded-2xl shadow-lg shadow-navy-900/5;
   }
 
   .hover-lift {
-    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-accent-500/10;
+    @apply transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-gold-500/10;
   }
 
   .glow-accent {
-    box-shadow: 0 0 60px -12px rgba(249, 115, 22, 0.15);
+    box-shadow: 0 0 60px -12px rgba(201, 162, 39, 0.2);
+  }
+
+  .gold-rule {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-gold-500/50 to-transparent;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center gap-2 rounded-xl bg-gold-gradient px-7 py-3.5 font-semibold text-navy-900 transition-all duration-300 hover:shadow-xl hover:shadow-gold-500/30 hover:-translate-y-0.5;
+  }
+
+  .btn-outline-gold {
+    @apply inline-flex items-center gap-2 rounded-xl border border-gold-500/40 px-7 py-3.5 font-semibold text-gold-300 transition-all duration-300 hover:bg-gold-500/10 hover:border-gold-500;
+  }
+
+  /* ---------- Utilitaires thémisés (pilotés par data-theme) ---------- */
+  .theme-root {
+    @apply bg-surface text-ink;
+  }
+
+  .btn-brand {
+    @apply inline-flex items-center gap-2 rounded-xl bg-brand-500 px-7 py-3.5 font-semibold text-brand-contrast transition-all duration-300 hover:-translate-y-0.5 hover:bg-brand-400 hover:shadow-xl hover:shadow-brand-500/25;
+  }
+
+  .btn-brand-outline {
+    @apply inline-flex items-center gap-2 rounded-xl border border-brand-500/40 px-7 py-3.5 font-semibold text-brand-500 transition-all duration-300 hover:border-brand-500 hover:bg-brand-500/10;
+  }
+
+  .btn-brand-ghost {
+    @apply inline-flex items-center gap-2 rounded-xl border border-surface-line/15 px-7 py-3.5 font-semibold text-ink transition-all duration-300 hover:border-brand-500/50 hover:bg-surface-line/[0.04];
+  }
+
+  .text-brand-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-brand-600 via-brand-400 to-brand-600;
+  }
+
+  .eyebrow {
+    @apply inline-block text-xs font-semibold uppercase tracking-[0.25em] text-brand-500;
+  }
+
+  .surface-card {
+    @apply rounded-2xl border border-surface-line/10 bg-surface-line/[0.03];
+  }
+
+  .brand-rule {
+    @apply h-px w-full bg-gradient-to-r from-transparent via-brand-500/50 to-transparent;
+  }
+
+  .brand-chip {
+    @apply inline-flex items-center gap-2 rounded-full border border-brand-500/25 bg-brand-500/10 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-brand-500;
   }
 
   .animate-float {
@@ -52,6 +302,11 @@
 
   .noise-bg {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.02'/%3E%3C/svg%3E");
+  }
+
+  /* ---------- Bouton orange pour site Construction (ancien modèle) ---------- */
+  .btn-orange {
+    @apply inline-flex items-center gap-2 rounded-xl bg-orange-500 px-7 py-3.5 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-orange-400 hover:shadow-xl hover:shadow-orange-500/25;
   }
 }
 
@@ -73,8 +328,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px rgba(249, 115, 22, 0.1); }
-  50% { box-shadow: 0 0 40px rgba(249, 115, 22, 0.2); }
+  0%, 100% { box-shadow: 0 0 20px rgba(201, 162, 39, 0.12); }
+  50% { box-shadow: 0 0 40px rgba(201, 162, 39, 0.24); }
 }
 
 @keyframes shimmer {
