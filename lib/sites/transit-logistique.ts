@@ -1,7 +1,7 @@
 import type { SubsidiarySite } from '@/types';
 
 export const logisticsSite: SubsidiarySite = {
-  slug: 'transit-logistics',
+  slug: 'transit-logistique',
   heroKicker: 'EL-BOMI Transit, Logistics & Transport',
   heroTitle: 'Vos flux,',
   heroHighlight: 'maîtrisés de bout en bout',

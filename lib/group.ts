@@ -94,7 +94,7 @@ export const subsidiaries: Subsidiary[] = [
     phone: '(225) 27 22 20 11 15',
   },
   {
-    slug: 'transit-logistics',
+    slug: 'transit-logistique',
     name: 'EL-BOMI Transit, Logistics & Transport',
     shortName: 'Transit & Logistique',
     tagline: 'Faire circuler vos marchandises',

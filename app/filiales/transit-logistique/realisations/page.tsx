@@ -1,29 +1,10 @@
-import { logisticsSite } from '@/lib/sites';
-import SubPageHero from '@/components/subsidiary/SubPageHero';
-import RealisationGrid from '@/components/subsidiary/RealisationGrid';
+import TransitRealisationsClient from '@/components/transit/TransitRealisationsClient';
 
 export const metadata = {
-  title: 'Réalisations | Transit & Logistique | EL-BOMI GROUP',
-  description: 'Projets de transit, transport, entreposage et logistique internationale.',
+  title: 'Réalisations | EL-BOMI Transit, Logistics & Transport',
+  description: 'Projets clés en transit, transport, entreposage et chaîne logistique en Afrique de l\'Ouest.',
 };
 
 export default function TransitRealisationsPage() {
-  const site = logisticsSite;
-
-  return (
-    <>
-      <SubPageHero
-        kicker={site.heroKicker}
-        title="Nos réalisations"
-        description="Projets clés en transit, transport, entreposage et chaîne logistique."
-        image={site.heroImage}
-      />
-
-      <section className="section-padding bg-surface">
-        <div className="container-max">
-          <RealisationGrid realisations={site.realisations} variant="list" />
-        </div>
-      </section>
-    </>
-  );
+  return <TransitRealisationsClient />;
 }

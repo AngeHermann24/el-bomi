@@ -1,14 +1,14 @@
 import type { SubsidiarySite } from '@/types';
 import { energieSite } from './energie';
 import { itSite } from './informatique-telecoms';
-import { logisticsSite } from './transit-logistics';
+import { logisticsSite } from './transit-logistique';
 import { medicalSite } from './medical';
 import { agricultureSite } from './agriculture';
 
 export const subsidiarySites: Record<string, SubsidiarySite> = {
   energie: energieSite,
   'informatique-telecoms': itSite,
-  'transit-logistics': logisticsSite,
+  'transit-logistique': logisticsSite,
   medical: medicalSite,
   agriculture: agricultureSite,
 };

@@ -121,7 +121,7 @@
   }
 
   /* --- Transit & Logistique : clair & bleu --- */
-  [data-theme='transit-logistics'] {
+  [data-theme='transit-logistique'] {
     --font-heading: var(--font-sora), system-ui, sans-serif;
 
     --brand-50: 239 246 255;
