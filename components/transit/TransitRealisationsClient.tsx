@@ -92,7 +92,7 @@ export default function TransitRealisationsClient() {
           </motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}
             className="mt-5 max-w-lg text-lg text-white/50"
-          >Projets clés en transit, transport, entreposage et chaîne logistique à travers l'Afrique de l'Ouest.</motion.p>
+          >Projets clés en transit, transport, entreposage et chaîne logistique à travers l&apos;Afrique de l&apos;Ouest.</motion.p>
         </div>
       </section>
 
@@ -158,7 +158,7 @@ export default function TransitRealisationsClient() {
       <section className="bg-[#060f1f] py-16 text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
-            <h2 className="font-heading text-3xl font-bold">Un projet logistique en Afrique de l'Ouest ?</h2>
+            <h2 className="font-heading text-3xl font-bold">Un projet logistique en Afrique de l&apos;Ouest ?</h2>
             <p className="mx-auto mt-4 max-w-lg text-white/45">Notre équipe vous propose une solution adaptée et un devis sous 24h.</p>
             <Link href="/filiales/transit-logistique/contact"
               className="mt-8 inline-flex items-center gap-2 rounded-xl bg-[#C9A227] px-8 py-4 text-sm font-bold text-[#0B1E3D] transition-all hover:bg-[#C9A227]/90 hover:shadow-[0_8px_30px_rgba(201,162,39,0.18)]"
