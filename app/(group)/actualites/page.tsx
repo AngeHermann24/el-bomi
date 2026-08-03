@@ -6,7 +6,7 @@ import { news } from '@/lib/group';
 export const metadata: Metadata = {
   title: 'Actualités',
   description:
-    'Actualités et projets réalisés par les filiales d\'EL-BOMI GROUP : construction, énergie, télécoms, logistique, médical et agriculture.',
+    'Actualités et projets réalisés par les filiales d\'EL-BOMI GROUP : construction, énergie, télécoms, logistique, médical, agriculture, immobilier et investissement & assurance.',
 };
 
 function formatDate(iso: string) {

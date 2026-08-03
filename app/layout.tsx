@@ -29,18 +29,18 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL('https://elbomigroup.com'),
   title: {
-    default: 'EL-BOMI GROUP | Six métiers, une seule ambition',
+    default: 'EL-BOMI GROUP | Huit métiers, une seule ambition',
     template: '%s | EL-BOMI GROUP',
   },
   description:
-    'EL-BOMI GROUP est un holding ivoirien structuré en six filiales : construction, énergie, informatique & télécoms, transit & logistique, distribution médicale et agriculture.',
-  keywords: ['EL-BOMI GROUP', 'holding', 'Côte d\'Ivoire', 'Abidjan', 'construction', 'énergie', 'télécoms', 'logistique', 'médical', 'agriculture'],
+    'EL-BOMI GROUP est un holding ivoirien structuré en huit filiales : construction, énergie, informatique & télécoms, transit & logistique, distribution médicale, agriculture, immobilier et investissement & assurance.',
+  keywords: ['EL-BOMI GROUP', 'holding', 'Côte d\'Ivoire', 'Abidjan', 'construction', 'énergie', 'télécoms', 'logistique', 'médical', 'agriculture', 'immobilier', 'investissement', 'assurance'],
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
     siteName: 'EL-BOMI GROUP',
-    title: 'EL-BOMI GROUP | Six métiers, une seule ambition',
-    description: 'Holding ivoirien structuré en six filiales sectorielles. Vision • Expertise • Réalisation.',
+    title: 'EL-BOMI GROUP | Huit métiers, une seule ambition',
+    description: 'Holding ivoirien structuré en huit filiales sectorielles. Vision • Expertise • Réalisation.',
   },
   robots: {
     index: true,
@@ -66,7 +66,7 @@ export default function RootLayout({
               '@context': 'https://schema.org',
               '@type': 'Organization',
               name: 'EL-BOMI GROUP',
-              description: 'Holding structuré en six filiales : construction, énergie, informatique & télécoms, transit & logistique, distribution médicale, agriculture',
+              description: 'Holding structuré en huit filiales : construction, énergie, informatique & télécoms, transit & logistique, distribution médicale, agriculture, immobilier, investissement & assurance',
               url: 'https://elbomigroup.com',
               telephone: '+225 27 22 20 11 15',
               address: {

@@ -11,7 +11,7 @@ export default function GroupHero() {
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-navy-900">
       <Image
         src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
-        alt="Skyline"
+        alt="EL-BOMI GROUP — Abidjan, Côte d'Ivoire"
         fill
         priority
         className="object-cover opacity-25"
@@ -45,7 +45,7 @@ export default function GroupHero() {
             transition={{ duration: 0.7, delay: 0.1 }}
             className="mb-8 font-heading text-5xl font-black uppercase leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
           >
-            Six métiers,
+            Huit métiers,
             <br />
             <span className="text-gradient">une seule ambition</span>
           </motion.h1>
@@ -56,9 +56,10 @@ export default function GroupHero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="mb-12 max-w-2xl text-lg leading-relaxed text-white/65"
           >
-            EL-BOMI GROUP réunit six filiales sectorielles — construction, énergie,
-            informatique &amp; télécoms, transit &amp; logistique, distribution médicale et
-            agriculture — pour porter des projets structurants de bout en bout.
+            EL-BOMI GROUP réunit huit filiales sectorielles — construction, énergie,
+            informatique &amp; télécoms, transit &amp; logistique, distribution médicale,
+            agriculture, immobilier et investissement &amp; assurance — pour porter des
+            projets structurants de bout en bout, en Côte d&apos;Ivoire et dans la sous-région.
           </motion.p>
 
           <motion.div

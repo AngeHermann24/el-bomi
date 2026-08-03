@@ -8,7 +8,7 @@ import { subsidiaries, groupInfo } from '@/lib/group';
 export const metadata: Metadata = {
   title: 'Contact',
   description:
-    'Contactez EL-BOMI GROUP à Abidjan. Un interlocuteur par filiale : construction, énergie, télécoms, logistique, médical et agriculture.',
+    'Contactez EL-BOMI GROUP à Abidjan. Un interlocuteur par filiale : construction, énergie, télécoms, logistique, médical, agriculture, immobilier et investissement & assurance.',
 };
 
 const contactInfo = [

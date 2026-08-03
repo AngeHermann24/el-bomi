@@ -31,7 +31,7 @@ export default function Footer() {
               </div>
             </Link>
             <p className="mb-6 text-sm leading-relaxed text-white/50">
-              Holding structuré en six filiales sectorielles. {groupInfo.baseline}
+              Holding structuré en huit filiales sectorielles. {groupInfo.baseline}
             </p>
             <div className="flex gap-3">
               {[

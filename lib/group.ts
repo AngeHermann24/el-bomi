@@ -1,8 +1,8 @@
 import { Subsidiary, Pillar, TimelineEntry, StatItem, NewsItem, JobOffer } from '@/types';
 
 export const groupInfo = {
-  name: 'EL-BOM GROUP',
-  baseline: 'Six métiers, une seule ambition.',
+  name: 'EL-BOMI GROUP',
+  baseline: 'Huit métiers, une seule ambition.',
   address: '27 Bp 399 Abj 27',
   addressDetail: 'Abidjan, Cocody - Angré 8ème Tranche',
   phone: '(225) 27 22 20 11 15',
@@ -13,10 +13,10 @@ export const groupInfo = {
 };
 
 export const groupStats: StatItem[] = [
-  { value: 6, suffix: '', label: 'Filiales sectorielles' },
-  { value: 10, suffix: '+', label: "Années d'expérience" },
-  { value: 150, suffix: '+', label: 'Projets réalisés' },
-  { value: 200, suffix: '+', label: 'Collaborateurs' },
+  { value: 8, suffix: '', label: 'Filiales sectorielles' },
+  { value: 12, suffix: '+', label: "Années d'expérience" },
+  { value: 250, suffix: '+', label: 'Projets réalisés' },
+  { value: 300, suffix: '+', label: 'Collaborateurs' },
 ];
 
 export const subsidiaries: Subsidiary[] = [
@@ -164,6 +164,53 @@ export const subsidiaries: Subsidiary[] = [
     phone: '(225) 27 22 20 11 15',
     hasSubSite: true,
   },
+  {
+    slug: 'immobilier',
+    name: 'EL-BOMI Immobilier & Patrimoine',
+    shortName: 'Immobilier & Patrimoine',
+    tagline: 'Valoriser et sécuriser le patrimoine',
+    summary:
+      'Promotion immobilière, gestion locative, valorisation foncière et solutions patrimoniales pour particuliers et entreprises.',
+    intro:
+      'Cette filiale développe et gère un portefeuille immobilier résidentiel, commercial et tertiaire. De l’acquisition foncière à la commercialisation, elle accompagne les projets de promotion, de gestion locative et de structuration patrimoniale.',
+    icon: 'Home',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80',
+    activities: [
+      'Promotion immobilière (résidentiel & tertiaire)',
+      'Gestion locative & syndic de copropriété',
+      'Acquisition et valorisation foncière',
+      'Expertise et estimation immobilière',
+      'Structuration et gestion patrimoniale',
+      'Aménagement de parcelles & lotissements',
+      'Conseil en investissement immobilier',
+    ],
+    email: 'immobilier@elbomigroup.com',
+    phone: '(225) 27 22 20 11 15',
+  },
+  {
+    slug: 'investissement-assurance',
+    name: 'EL-BOMI Investissement & Assurance',
+    shortName: 'Investissement & Assurance',
+    tagline: 'Protéger et faire fructifier le capital',
+    summary:
+      'Conseil en investissement, gestion d’actifs, produits d’assurance et ingénierie patrimoniale pour particuliers et entreprises.',
+    intro:
+      'Cette filiale conçoit des solutions sur mesure pour la protection et la croissance du capital : assurance vie, prévoyance, épargne, placement et conseil en investissement. Elle accompagne les particuliers comme les entreprises dans leur stratégie patrimoniale et financière.',
+    icon: 'Landmark',
+    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80',
+    activities: [
+      'Conseil en investissement & gestion d’actifs',
+      'Assurance vie & prévoyance',
+      'Épargne & produits financiers',
+      'Ingénierie patrimoniale & fiscale',
+      'Assurance dommages & responsabilité civile',
+      'Placements structurés & diversification',
+      'Conseil en transmission d’entreprise',
+    ],
+    email: 'investissement@elbomigroup.com',
+    phone: '(225) 27 22 20 11 15',
+    hasSubSite: true,
+  },
 ];
 
 export const pillars: Pillar[] = [
@@ -171,7 +218,7 @@ export const pillars: Pillar[] = [
     icon: 'Layers',
     title: 'Intégration',
     description:
-      'Six filiales complémentaires qui travaillent ensemble. Un projet peut mobiliser la construction, l’énergie et les télécoms sous un pilotage unique.',
+      'Huit filiales complémentaires qui travaillent ensemble. Un projet peut mobiliser la construction, l’énergie et les télécoms sous un pilotage unique.',
   },
   {
     icon: 'MapPin',
@@ -216,13 +263,13 @@ export const timeline: TimelineEntry[] = [
     year: '2023',
     title: 'Santé & agriculture',
     description:
-      'Ouverture des filiales de distribution médicale et d’agriculture, élargissant le groupe à six métiers.',
+      'Ouverture des filiales de distribution médicale, d’agriculture, d’immobilier et d’investissement & assurance, élargissant le groupe à huit métiers.',
   },
   {
     year: 'Aujourd’hui',
     title: 'Un holding intégré',
     description:
-      'Six filiales, une gouvernance commune et une ambition partagée : porter des projets structurants en Côte d’Ivoire et dans la sous-région.',
+      'Huit filiales, une gouvernance commune et une ambition partagée : porter des projets structurants en Côte d’Ivoire et dans la sous-région.',
   },
 ];
 

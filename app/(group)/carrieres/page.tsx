@@ -8,13 +8,13 @@ import { jobs, groupInfo } from '@/lib/group';
 export const metadata: Metadata = {
   title: 'Carrières',
   description:
-    'Rejoignez EL-BOMI GROUP : offres d\'emploi dans la construction, l\'énergie, les télécoms, la logistique, le médical et l\'agriculture.',
+    'Rejoignez EL-BOMI GROUP : offres d\'emploi dans la construction, l\'énergie, les télécoms, la logistique, le médical, l\'agriculture, l\'immobilier et l\'investissement & assurance.',
 };
 
 const advantages = [
   {
     icon: 'Layers',
-    title: 'Six métiers, une carrière',
+    title: 'Huit métiers, une carrière',
     description:
       'Évoluer entre filiales est possible : un profil technique peut passer de la construction à l\'énergie ou aux télécoms.',
   },

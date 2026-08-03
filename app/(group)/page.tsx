@@ -17,7 +17,7 @@ export default function HomePage() {
       {/* Chiffres clés */}
       <StatCounter stats={groupStats} />
 
-      {/* Les 6 filiales */}
+      {/* Les 8 filiales */}
       <section id="filiales" className="section-light relative overflow-hidden py-20 lg:py-32">
         <div className="absolute inset-x-0 top-0 h-60">
           <GoldRibbon variant="divider" opacity={0.4} className="h-60" />
@@ -29,7 +29,7 @@ export default function HomePage() {
               Nos filiales
             </span>
             <h2 className="mb-6 font-heading text-4xl font-black uppercase leading-tight text-navy-900 md:text-5xl">
-              Six pôles d&apos;expertise
+              Huit pôles d&apos;expertise
             </h2>
             <p className="leading-relaxed text-navy-900/60">
               Chaque filiale est autonome sur son métier et mobilisable avec les autres.

@@ -6,9 +6,12 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'images.unsplash.com',
       },
+      {
+        protocol: 'https',
+        hostname: 'images.pexels.com',
+      },
     ],
   },
-  allowedDevOrigins: ['http://127.0.0.1'],
 };
 
 module.exports = nextConfig;

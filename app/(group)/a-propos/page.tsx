@@ -11,7 +11,7 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'À Propos',
   description:
-    'Découvrez EL-BOMI GROUP : histoire, mission, vision, gouvernance et organisation en six filiales sectorielles.',
+    'Découvrez EL-BOMI GROUP : histoire, mission, vision, gouvernance et organisation en huit filiales sectorielles.',
 };
 
 export default function AProposPage() {
@@ -32,14 +32,14 @@ export default function AProposPage() {
                 Le groupe
               </span>
               <h2 className="mb-8 font-heading text-3xl font-black uppercase leading-tight text-navy-900 md:text-4xl">
-                Un holding structuré autour de six métiers
+                Un holding structuré autour de huit métiers
               </h2>
               <div className="space-y-5 leading-relaxed text-navy-900/70">
                 <p>
-                  EL-BOMI GROUP réunit six sociétés spécialisées dans la construction, l&apos;énergie,
+                  EL-BOMI GROUP réunit huit sociétés spécialisées dans la construction, l&apos;énergie,
                   l&apos;informatique et les télécoms, le transit et la logistique, la distribution
-                  médicale et l&apos;agriculture. Le siège est établi à Abidjan, Cocody - Angré
-                  8ème Tranche.
+                  médicale, l&apos;agriculture, l&apos;immobilier et l&apos;investissement &amp; assurance. Le
+                  siège est établi à Abidjan, Cocody - Angré 8ème Tranche.
                 </p>
                 <p>
                   Cette organisation nous permet d&apos;adresser des besoins très différents tout en
@@ -147,7 +147,7 @@ export default function AProposPage() {
               <p className="mb-6 font-medium text-gold-400">Présidence du groupe</p>
               <p className="mb-4 leading-relaxed text-white/60">
                 La direction générale fixe le cap stratégique du groupe et veille à la cohérence
-                entre les six filiales : arbitrages d&apos;investissement, standards qualité,
+                entre les huit filiales : arbitrages d&apos;investissement, standards qualité,
                 politique de sécurité et développement des compétences.
               </p>
               <p className="leading-relaxed text-white/60">
@@ -182,7 +182,7 @@ export default function AProposPage() {
               Organisation
             </span>
             <h2 className="font-heading text-3xl font-black uppercase leading-tight text-navy-900 md:text-4xl">
-              Nos six filiales
+              Nos huit filiales
             </h2>
           </div>
 
