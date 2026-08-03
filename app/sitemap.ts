@@ -72,15 +72,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const otherSubsidiaries = ['agriculture'];
-  const otherSubsidiaryUrls = otherSubsidiaries.flatMap((slug) =>
-    ['activites', 'realisations', 'contact'].map((segment) => ({
-      url: `${baseUrl}/filiales/${slug}/${segment}`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    }))
-  );
+  const agricultureUrls = [
+    'activites',
+    'exploitations',
+    'contact',
+  ].map((segment) => ({
+    url: `${baseUrl}/filiales/agriculture/${segment}`,
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
+  }));
 
   return [
     {
@@ -119,6 +120,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...itUrls,
     ...transitUrls,
     ...medicalUrls,
-    ...otherSubsidiaryUrls,
+    ...agricultureUrls,
   ];
 }

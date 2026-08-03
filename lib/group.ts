@@ -162,6 +162,7 @@ export const subsidiaries: Subsidiary[] = [
     ],
     email: 'agriculture@elbomigroup.com',
     phone: '(225) 27 22 20 11 15',
+    hasSubSite: true,
   },
 ];
 
