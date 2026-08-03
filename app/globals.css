@@ -201,6 +201,33 @@
     --ink-faint: 122 134 124;
   }
 
+  /* --- Investissement & Assurance : premium banking, navy quasi-noir & or de précision --- */
+  [data-theme='investissement'] {
+    --font-heading: var(--font-playfair), Georgia, serif;
+
+    --brand-50: 253 249 237;
+    --brand-100: 250 240 207;
+    --brand-200: 244 223 156;
+    --brand-300: 232 199 102;
+    --brand-400: 220 179 73;
+    --brand-500: 201 162 39;
+    --brand-600: 168 131 29;
+    --brand-700: 132 101 26;
+    --brand-800: 109 83 28;
+    --brand-900: 92 69 28;
+    --brand-950: 53 37 12;
+    --brand-contrast: 10 22 40;
+
+    --surface: 10 22 40;
+    --surface-alt: 7 15 28;
+    --surface-card: 255 255 255;
+    --surface-line: 255 255 255;
+
+    --ink: 255 255 255;
+    --ink-muted: 148 163 184;
+    --ink-faint: 100 116 139;
+  }
+
   html {
     scroll-behavior: smooth;
   }

@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowUpRight, MapPin, Calendar } from 'lucide-react';
 import { Project } from '@/types';
-import Tilt3D from './Tilt3D';
 
 interface ProjectCardProps {
   project: Project;
@@ -22,7 +21,7 @@ export default function ProjectCard({ project, index, featured = false }: Projec
       transition={{ duration: 0.6, delay: index * 0.1 }}
       className={`${featured ? 'md:col-span-2 md:row-span-2' : ''}`}
     >
-      <Tilt3D intensity={6} className="group relative overflow-hidden rounded-2xl h-full">
+      <div className="group relative overflow-hidden rounded-2xl h-full">
         <Link href={`/projets/${project.slug}`} className="block relative h-full">
           {/* Image */}
           <div className={`relative overflow-hidden ${featured ? 'h-[500px]' : 'h-[300px]'}`}>
@@ -69,7 +68,7 @@ export default function ProjectCard({ project, index, featured = false }: Projec
             </div>
           </div>
         </Link>
-      </Tilt3D>
+      </div>
     </motion.div>
   );
 }
