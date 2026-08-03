@@ -49,7 +49,7 @@ export default function InvestissementHomeClient() {
           >
             <span className="h-1 w-1 rounded-full bg-[#E8C766]" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#C9A227]/80">
-              Filiale EL-BOMI GROUP · Finance & Assurance
+              Filiale EL-BOMI HOLDING · Finance & Assurance
             </span>
           </motion.div>
 

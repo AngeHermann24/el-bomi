@@ -52,7 +52,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="group flex items-center gap-3">
           <div className="relative h-10 w-10 overflow-hidden rounded-lg transition-opacity group-hover:opacity-85">
-            <Image src="/EL.png" alt="EL-BOMI GROUP" fill className="object-contain" sizes="40px" />
+            <Image src="/EL.png" alt="EL-BOMI HOLDING" fill className="object-contain" sizes="40px" />
           </div>
           <div>
             <span className="block font-heading text-[13px] font-black uppercase tracking-[0.2em] text-white transition-colors group-hover:text-gold-300">

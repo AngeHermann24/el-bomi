@@ -11,7 +11,7 @@ export default function GroupHero() {
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-navy-900">
       <Image
         src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
-        alt="EL-BOMI GROUP — Abidjan, Côte d'Ivoire"
+        alt="EL-BOMI HOLDING — Abidjan, Côte d'Ivoire"
         fill
         priority
         className="object-cover opacity-25"
@@ -56,10 +56,11 @@ export default function GroupHero() {
             transition={{ duration: 0.7, delay: 0.25 }}
             className="mb-12 max-w-2xl text-lg leading-relaxed text-white/65"
           >
-            EL-BOMI GROUP réunit huit filiales sectorielles — construction, énergie,
-            informatique &amp; télécoms, transit &amp; logistique, distribution médicale,
-            agriculture, immobilier et investissement &amp; assurance — pour porter des
-            projets structurants de bout en bout, en Côte d&apos;Ivoire et dans la sous-région.
+            EL-BOMI HOLDING est la société mère d&apos;EL-BOMI GROUP, un groupe intégré composé
+            de six filiales sectorielles. Elle assure la gouvernance, définit les orientations
+            stratégiques, pilote les investissements et coordonne les activités des filiales
+            afin de garantir une croissance durable, une performance opérationnelle et la
+            création de valeur pour l&apos;ensemble du Groupe.
           </motion.p>
 
           <motion.div

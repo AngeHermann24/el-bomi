@@ -25,7 +25,7 @@ export default function InvestissementFooter() {
               </div>
               <div>
                 <span className="block font-heading text-sm font-bold uppercase tracking-[0.15em] text-white">
-                  EL-BOMI GROUP
+                  EL-BOMI HOLDING
                 </span>
                 <span className="block text-[10px] uppercase tracking-[0.25em] text-[#C9A227]/60">
                   Investissement &amp; Assurance
@@ -39,7 +39,7 @@ export default function InvestissementFooter() {
             {/* Mentions légales */}
             <div className="mt-6 rounded-xl border border-white/[0.05] bg-white/[0.01] p-4">
               <p className="text-[11px] leading-relaxed text-white/25">
-                EL-BOMI Investissement &amp; Assurance est une filiale du groupe EL-BOMI GROUP,
+                EL-BOMI Investissement &amp; Assurance est une filiale du groupe EL-BOMI HOLDING,
                 holding ivoirien. Les simulations présentées sont à titre indicatif et non contractuel.
               </p>
             </div>
@@ -105,7 +105,7 @@ export default function InvestissementFooter() {
 
         <div className="mt-10 border-t border-white/[0.04] pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-[11px] text-white/20">
-            © {new Date().getFullYear()} EL-BOMI GROUP. Tous droits réservés.
+            © {new Date().getFullYear()} EL-BOMI HOLDING. Tous droits réservés.
           </p>
           <Link href="/" className="text-[11px] text-white/20 hover:text-[#E8C766]/60 transition-colors">
             ← Retour au site du Groupe

@@ -3,7 +3,7 @@ import SubPageHero from '@/components/subsidiary/SubPageHero';
 import RealisationGrid from '@/components/subsidiary/RealisationGrid';
 
 export const metadata = {
-  title: 'Réalisations | Distribution Médicale | EL-BOMI GROUP',
+  title: 'Réalisations | Distribution Médicale | EL-BOMI HOLDING',
   description: 'Projets d\'équipements médicaux, laboratoires et installations hospitalières.',
 };
 

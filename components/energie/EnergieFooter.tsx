@@ -103,7 +103,7 @@ export default function EnergieFooter() {
           {/* Groupe */}
           <div>
             <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-white/50">
-              EL-BOMI GROUP
+              EL-BOMI HOLDING
             </h4>
             <p className="mb-4 text-xs leading-relaxed text-white/30">
               Groupe multisectoriel ivoirien présent dans l&apos;énergie, la construction, le transit et l&apos;agriculture.
@@ -125,7 +125,7 @@ export default function EnergieFooter() {
           <div className="flex items-center gap-1">
             <span className="text-[11px] text-white/15">Membre de</span>
             <span className="ml-1 font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-gold-500/40">
-              EL-BOMI GROUP
+              EL-BOMI HOLDING
             </span>
           </div>
         </div>

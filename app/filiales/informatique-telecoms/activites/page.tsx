@@ -3,7 +3,7 @@ import SubPageHero from '@/components/subsidiary/SubPageHero';
 import ServiceGrid from '@/components/subsidiary/ServiceGrid';
 
 export const metadata = {
-  title: 'Activités | Informatique & Télécoms | EL-BOMI GROUP',
+  title: 'Activités | Informatique & Télécoms | EL-BOMI HOLDING',
   description: 'Réseaux, fibre optique, data centers, cloud, cybersécurité et sécurité électronique.',
 };
 

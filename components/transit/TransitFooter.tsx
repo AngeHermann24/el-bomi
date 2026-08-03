@@ -90,7 +90,7 @@ export default function TransitFooter() {
 
           {/* Groupe */}
           <div>
-            <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-white/35">EL-BOMI GROUP</h4>
+            <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-white/35">EL-BOMI HOLDING</h4>
             <p className="mb-4 text-xs leading-relaxed text-white/22">
               Groupe multisectoriel ivoirien combinant logistique, énergie, IT et construction pour des solutions intégrées.
             </p>
@@ -102,7 +102,7 @@ export default function TransitFooter() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/[0.04] pt-6 sm:flex-row">
           <p className="text-[11px] text-white/14">© {new Date().getFullYear()} EL-BOMI Transit, Logistics & Transport — Tous droits réservés</p>
-          <span className="font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-gold-500/25">EL-BOMI GROUP</span>
+          <span className="font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-gold-500/25">EL-BOMI HOLDING</span>
         </div>
       </div>
     </footer>

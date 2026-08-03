@@ -29,18 +29,18 @@ const spaceGrotesk = Space_Grotesk({
 export const metadata: Metadata = {
   metadataBase: new URL('https://elbomigroup.com'),
   title: {
-    default: 'EL-BOMI GROUP | Huit métiers, une seule ambition',
-    template: '%s | EL-BOMI GROUP',
+    default: 'EL-BOMI HOLDING | Huit métiers, une seule ambition',
+    template: '%s | EL-BOMI HOLDING',
   },
   description:
-    'EL-BOMI GROUP est un holding ivoirien structuré en huit filiales : construction, énergie, informatique & télécoms, transit & logistique, distribution médicale, agriculture, immobilier et investissement & assurance.',
-  keywords: ['EL-BOMI GROUP', 'holding', 'Côte d\'Ivoire', 'Abidjan', 'construction', 'énergie', 'télécoms', 'logistique', 'médical', 'agriculture', 'immobilier', 'investissement', 'assurance'],
+    "EL-BOMI HOLDING est la société mère d'EL-BOMI GROUP, un groupe intégré composé de six filiales sectorielles. Elle assure la gouvernance, définit les orientations stratégiques, pilote les investissements et coordonne les activités des filiales.",
+  keywords: ['EL-BOMI HOLDING', 'holding', 'Côte d\'Ivoire', 'Abidjan', 'construction', 'énergie', 'télécoms', 'logistique', 'médical', 'agriculture', 'immobilier', 'investissement', 'assurance'],
   openGraph: {
     type: 'website',
     locale: 'fr_FR',
-    siteName: 'EL-BOMI GROUP',
-    title: 'EL-BOMI GROUP | Huit métiers, une seule ambition',
-    description: 'Holding ivoirien structuré en huit filiales sectorielles. Vision • Expertise • Réalisation.',
+    siteName: 'EL-BOMI HOLDING',
+    title: 'EL-BOMI HOLDING | Huit métiers, une seule ambition',
+    description: "EL-BOMI HOLDING, société mère d'EL-BOMI GROUP. Gouvernance, stratégie et pilotage des investissements d'un groupe intégré de six filiales sectorielles.",
   },
   robots: {
     index: true,
@@ -65,8 +65,9 @@ export default function RootLayout({
             __html: JSON.stringify({
               '@context': 'https://schema.org',
               '@type': 'Organization',
-              name: 'EL-BOMI GROUP',
-              description: 'Holding structuré en huit filiales : construction, énergie, informatique & télécoms, transit & logistique, distribution médicale, agriculture, immobilier, investissement & assurance',
+              name: 'EL-BOMI HOLDING',
+              description: "EL-BOMI HOLDING est la société mère d'EL-BOMI GROUP, un groupe intégré composé de six filiales sectorielles. Elle assure la gouvernance, définit les orientations stratégiques, pilote les investissements et coordonne les activités des filiales afin de garantir une croissance durable, une performance opérationnelle et la création de valeur pour l'ensemble du Groupe.",
+              foundingDate: '2020',
               url: 'https://elbomigroup.com',
               telephone: '+225 27 22 20 11 15',
               address: {

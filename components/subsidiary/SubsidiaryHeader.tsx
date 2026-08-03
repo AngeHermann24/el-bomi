@@ -46,7 +46,7 @@ export default function SubsidiaryHeader({ subsidiary }: SubsidiaryHeaderProps) 
           >
             <ArrowUpLeft className="h-3.5 w-3.5 transition-transform group-hover:-translate-x-0.5 group-hover:-translate-y-0.5" />
             Une filiale d&apos;
-            <span className="font-bold text-ink">EL-BOMI GROUP</span>
+            <span className="font-bold text-ink">EL-BOMI HOLDING</span>
           </Link>
           <a
             href={`tel:${subsidiary.phone.replace(/[^0-9+]/g, '')}`}
@@ -139,7 +139,7 @@ export default function SubsidiaryHeader({ subsidiary }: SubsidiaryHeaderProps) 
                 className="mt-2 flex items-center gap-2 rounded-lg border-t border-surface-line/10 px-4 py-3 pt-4 text-sm text-ink-faint"
               >
                 <ArrowUpLeft className="h-4 w-4" />
-                Retour à EL-BOMI GROUP
+                Retour à EL-BOMI HOLDING
               </Link>
             </nav>
           </div>

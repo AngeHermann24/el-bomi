@@ -1,8 +1,11 @@
 import { Subsidiary, Pillar, TimelineEntry, StatItem, NewsItem, JobOffer } from '@/types';
 
 export const groupInfo = {
-  name: 'EL-BOMI GROUP',
+  name: 'EL-BOMI HOLDING',
   baseline: 'Huit métiers, une seule ambition.',
+  foundedYear: '2020',
+  description:
+    "EL-BOMI HOLDING est la société mère d'EL-BOMI GROUP, un groupe intégré composé de six filiales sectorielles. Elle assure la gouvernance, définit les orientations stratégiques, pilote les investissements et coordonne les activités des filiales afin de garantir une croissance durable, une performance opérationnelle et la création de valeur pour l'ensemble du Groupe.",
   address: '27 Bp 399 Abj 27',
   addressDetail: 'Abidjan, Cocody - Angré 8ème Tranche',
   phone: '(225) 27 22 20 11 15',

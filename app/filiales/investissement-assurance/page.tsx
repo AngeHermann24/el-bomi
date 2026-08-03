@@ -1,7 +1,7 @@
 import InvestissementHomeClient from '@/components/investissement/InvestissementHomeClient';
 
 export const metadata = {
-  title: 'Investissement & Assurance | EL-BOMI GROUP',
+  title: 'Investissement & Assurance | EL-BOMI HOLDING',
   description: 'Conseil en investissement, gestion d\'actifs, assurance et ingénierie patrimoniale en Côte d\'Ivoire.',
 };
 

@@ -97,7 +97,7 @@ export default function HomePage() {
       <section className="relative overflow-hidden py-24 lg:py-32">
         <Image
           src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&q=80"
-          alt="Projet EL-BOMI GROUP"
+          alt="Projet EL-BOMI HOLDING"
           fill
           className="object-cover"
           sizes="100vw"

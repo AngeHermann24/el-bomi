@@ -28,7 +28,7 @@ export default function InvestissementHeader() {
             </div>
             <div>
               <span className="block font-heading text-sm font-bold uppercase tracking-[0.15em] text-white">
-                EL-BOMI GROUP
+                EL-BOMI HOLDING
               </span>
               <span className="block text-[10px] uppercase tracking-[0.25em] text-[#C9A227]/70">
                 Investissement &amp; Assurance

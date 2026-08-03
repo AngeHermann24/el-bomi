@@ -3,7 +3,7 @@ import SubPageHero from '@/components/subsidiary/SubPageHero';
 import RealisationGrid from '@/components/subsidiary/RealisationGrid';
 
 export const metadata = {
-  title: 'Réalisations | Informatique & Télécoms | EL-BOMI GROUP',
+  title: 'Réalisations | Informatique & Télécoms | EL-BOMI HOLDING',
   description: 'Projets de réseaux, fibre optique, data centers, cybersécurité et développement.',
 };
 

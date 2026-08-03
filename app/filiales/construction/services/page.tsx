@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, Building2, HardHat, Wrench, Home, Hammer, Layers } from 'lucide-react';
 
 export const metadata = {
-  title: 'Services | Construction | EL-BOMI GROUP',
+  title: 'Services | Construction | EL-BOMI HOLDING',
   description: 'Bâtiment, travaux publics, génie civil, rénovation et aménagement.',
 };
 

@@ -5,13 +5,13 @@ import PageHeader from '@/components/PageHeader';
 import StatCounter from '@/components/StatCounter';
 import Timeline from '@/components/Timeline';
 import IconRenderer from '@/components/IconRenderer';
-import { groupStats, pillars, timeline, subsidiaries } from '@/lib/group';
+import { groupStats, pillars, timeline, subsidiaries, groupInfo } from '@/lib/group';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'À Propos',
   description:
-    'Découvrez EL-BOMI GROUP : histoire, mission, vision, gouvernance et organisation en huit filiales sectorielles.',
+    'Découvrez EL-BOMI HOLDING : histoire, mission, vision, gouvernance et organisation en huit filiales sectorielles.',
 };
 
 export default function AProposPage() {
@@ -22,6 +22,20 @@ export default function AProposPage() {
         title="À Propos du Groupe"
         image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=90"
       />
+
+      {/* Société mère */}
+      <section className="section-padding bg-navy-950">
+        <div className="container-max px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-3xl text-center">
+            <span className="mb-4 inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-gold-400">
+              <span className="h-px w-8 bg-gold-400" />
+              Fondée en {groupInfo.foundedYear}
+              <span className="h-px w-8 bg-gold-400" />
+            </span>
+            <p className="text-lg leading-relaxed text-white/60">{groupInfo.description}</p>
+          </div>
+        </div>
+      </section>
 
       {/* Présentation */}
       <section className="section-light py-20 lg:py-28">
@@ -36,7 +50,7 @@ export default function AProposPage() {
               </h2>
               <div className="space-y-5 leading-relaxed text-navy-900/70">
                 <p>
-                  EL-BOMI GROUP réunit huit sociétés spécialisées dans la construction, l&apos;énergie,
+                  EL-BOMI HOLDING réunit huit sociétés spécialisées dans la construction, l&apos;énergie,
                   l&apos;informatique et les télécoms, le transit et la logistique, la distribution
                   médicale, l&apos;agriculture, l&apos;immobilier et l&apos;investissement &amp; assurance. Le
                   siège est établi à Abidjan, Cocody - Angré 8ème Tranche.
@@ -55,7 +69,7 @@ export default function AProposPage() {
             <div className="relative h-[440px] overflow-hidden rounded-2xl">
               <Image
                 src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80"
-                alt="EL-BOMI GROUP"
+                alt="EL-BOMI HOLDING"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 50vw"

@@ -1,7 +1,7 @@
 import InforHomeClient from '@/components/informatique/InforHomeClient';
 
 export const metadata = {
-  title: 'Informatique & Télécoms | EL-BOMI GROUP',
+  title: 'Informatique & Télécoms | EL-BOMI HOLDING',
   description: 'Réseaux, cybersécurité, cloud, télécoms et développement logiciel pour les entreprises ivoiriennes.',
 };
 

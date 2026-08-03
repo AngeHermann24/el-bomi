@@ -3,7 +3,7 @@ import SubPageHero from '@/components/subsidiary/SubPageHero';
 import RealisationGrid from '@/components/subsidiary/RealisationGrid';
 
 export const metadata = {
-  title: 'Réalisations | Énergie & Électricité | EL-BOMI GROUP',
+  title: 'Réalisations | Énergie & Électricité | EL-BOMI HOLDING',
   description: 'Projets de réseaux BT/HTA, électrification rurale, solaire photovoltaïque et automatismes.',
 };
 

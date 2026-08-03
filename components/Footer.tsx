@@ -21,7 +21,7 @@ export default function Footer() {
           <div className="lg:col-span-1">
             <Link href="/" className="mb-6 inline-flex items-center gap-3">
               <div className="relative h-10 w-10 overflow-hidden rounded-lg">
-                <Image src="/EL.png" alt="EL-BOMI GROUP" fill className="object-contain" sizes="40px" />
+                <Image src="/EL.png" alt="EL-BOMI HOLDING" fill className="object-contain" sizes="40px" />
               </div>
               <div>
                 <span className="block font-heading text-[13px] font-black uppercase tracking-[0.2em] text-white">EL-BOMI</span>
@@ -139,7 +139,7 @@ export default function Footer() {
         {/* Bottom */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
-            © {new Date().getFullYear()} EL-BOMI GROUP. Tous droits réservés.
+            © {new Date().getFullYear()} EL-BOMI HOLDING. Tous droits réservés.
           </p>
           <div className="flex gap-6">
             <Link href="#" className="text-white/30 hover:text-white/60 text-sm transition-colors">

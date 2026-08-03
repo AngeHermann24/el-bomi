@@ -4,7 +4,7 @@ export const heroSlides: HeroSlide[] = [
   {
     image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=90',
     title: 'Vision • Expertise • Réalisation',
-    subtitle: 'EL-BOMI GROUP accompagne vos projets immobiliers et de construction avec professionnalisme, qualité et fiabilité.',
+    subtitle: 'EL-BOMI HOLDING accompagne vos projets immobiliers et de construction avec professionnalisme, qualité et fiabilité.',
   },
   {
     image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=90',

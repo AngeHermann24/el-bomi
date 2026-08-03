@@ -86,7 +86,7 @@ export default function MedicalFooter() {
 
           {/* Groupe */}
           <div>
-            <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-[#0B1E3D]/35">EL-BOMI GROUP</h4>
+            <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-[#0B1E3D]/35">EL-BOMI HOLDING</h4>
             <p className="mb-4 text-xs leading-relaxed text-[#0B1E3D]/38">
               Groupe multisectoriel ivoirien engagé dans la santé, l&apos;énergie, la logistique, l&apos;IT et la construction.
             </p>
@@ -103,7 +103,7 @@ export default function MedicalFooter() {
 
         <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-[#0B1E3D]/6 pt-6 sm:flex-row">
           <p className="text-[11px] text-[#0B1E3D]/28">© {new Date().getFullYear()} EL-BOMI Medical Distribution — Tous droits réservés</p>
-          <span className="font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-[#0B1E3D]/22">EL-BOMI GROUP</span>
+          <span className="font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-[#0B1E3D]/22">EL-BOMI HOLDING</span>
         </div>
       </div>
     </footer>

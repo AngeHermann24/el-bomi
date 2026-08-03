@@ -21,7 +21,7 @@ export function generateMetadata({ params }: PageProps): Metadata {
     title: subsidiary.shortName,
     description: subsidiary.summary,
     openGraph: {
-      title: `${subsidiary.name} | EL-BOMI GROUP`,
+      title: `${subsidiary.name} | EL-BOMI HOLDING`,
       description: subsidiary.summary,
       images: [subsidiary.image],
     },

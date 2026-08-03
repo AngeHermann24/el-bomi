@@ -88,7 +88,7 @@ export default function AgricultureFooter() {
 
           {/* Groupe */}
           <div>
-            <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-white/35">EL-BOMI GROUP</h4>
+            <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-white/35">EL-BOMI HOLDING</h4>
             <p className="mb-4 text-xs leading-relaxed text-white/25">
               Groupe multisectoriel ivoirien — construction, énergie, IT, logistique, médical et agriculture.
             </p>
@@ -100,7 +100,7 @@ export default function AgricultureFooter() {
 
         <div className="mt-14 flex flex-col items-center justify-between gap-3 border-t border-white/[0.04] pt-6 sm:flex-row">
           <p className="text-[11px] text-white/15">© {new Date().getFullYear()} EL-BOMI Agriculture & Ressources Naturelles — Tous droits réservés</p>
-          <span className="font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-[#C9A227]/25">EL-BOMI GROUP</span>
+          <span className="font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-[#C9A227]/25">EL-BOMI HOLDING</span>
         </div>
       </div>
     </footer>

@@ -28,7 +28,7 @@ export default function ConstructionHeader() {
             </div>
             <div>
               <span className="block font-heading text-sm font-bold uppercase tracking-widest text-white">
-                EL-BOMI GROUP
+                EL-BOMI HOLDING
               </span>
               <span className="block text-[10px] uppercase tracking-[0.2em] text-gold-400/80">
                 Construction & Infrastructures

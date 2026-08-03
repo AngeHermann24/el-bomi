@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, MapPin, Calendar } from 'lucide-react';
 
 export const metadata = {
-  title: 'Projets | Construction | EL-BOMI GROUP',
+  title: 'Projets | Construction | EL-BOMI HOLDING',
   description: 'Portfolio de réalisations en bâtiment, travaux publics et génie civil.',
 };
 

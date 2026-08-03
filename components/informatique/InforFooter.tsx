@@ -90,7 +90,7 @@ export default function InforFooter() {
 
           {/* Groupe */}
           <div>
-            <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-white/40">EL-BOMI GROUP</h4>
+            <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-white/40">EL-BOMI HOLDING</h4>
             <p className="mb-4 text-xs leading-relaxed text-white/25">
               Groupe multisectoriel ivoirien — énergie, construction, IT & télécoms, transit et agriculture.
             </p>
@@ -104,7 +104,7 @@ export default function InforFooter() {
           <p className="text-[11px] text-white/15">© {new Date().getFullYear()} EL-BOMI Informatique & Télécoms — Tous droits réservés</p>
           <div className="flex items-center gap-1">
             <span className="text-[11px] text-white/12">Membre de</span>
-            <span className="ml-1 font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-gold-500/30">EL-BOMI GROUP</span>
+            <span className="ml-1 font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-gold-500/30">EL-BOMI HOLDING</span>
           </div>
         </div>
       </div>

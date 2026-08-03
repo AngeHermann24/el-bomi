@@ -34,7 +34,7 @@ export default function SubsidiaryFooter({ subsidiary }: SubsidiaryFooterProps) 
               href="/"
               className="inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-brand-500 transition-opacity hover:opacity-70"
             >
-              Voir EL-BOMI GROUP
+              Voir EL-BOMI HOLDING
               <ArrowUpRight className="h-3.5 w-3.5" />
             </Link>
           </div>
@@ -120,7 +120,7 @@ export default function SubsidiaryFooter({ subsidiary }: SubsidiaryFooterProps) 
 
         <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-surface-line/10 pt-8 md:flex-row">
           <p className="text-sm text-ink-faint">
-            © {new Date().getFullYear()} {subsidiary.name} — EL-BOMI GROUP.
+            © {new Date().getFullYear()} {subsidiary.name} — EL-BOMI HOLDING.
           </p>
           <p className="text-sm text-ink-faint">{groupInfo.hours}</p>
         </div>

@@ -160,7 +160,7 @@ export default function InforContactClient() {
                 <div className="mt-6 rounded-xl border border-gold-500/8 bg-gold-500/[0.02] p-5">
                   <div className="mb-2 flex items-center gap-2">
                     <Cpu className="h-4 w-4 text-gold-400/50" />
-                    <span className="text-xs font-semibold uppercase tracking-wider text-gold-400/50">Membre de EL-BOMI GROUP</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gold-400/50">Membre de EL-BOMI HOLDING</span>
                   </div>
                   <p className="text-xs leading-relaxed text-white/25">
                     Combinez IT, énergie et construction pour vos projets d&apos;infrastructure complexes grâce à la synergie du groupe EL-BOMI.

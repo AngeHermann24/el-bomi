@@ -20,7 +20,7 @@ export default function ConstructionFooter() {
           <div className="md:col-span-2">
             <div className="mb-3">
               <span className="block font-heading text-base font-bold uppercase tracking-widest text-white">
-                EL-BOMI GROUP
+                EL-BOMI HOLDING
               </span>
               <span className="block text-xs uppercase tracking-[0.2em] text-gold-400/80 mt-0.5">
                 Construction & Infrastructures
@@ -92,7 +92,7 @@ export default function ConstructionFooter() {
 
         <div className="mt-10 border-t border-white/[0.06] pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/30">
-            © {new Date().getFullYear()} EL-BOMI GROUP. Tous droits réservés.
+            © {new Date().getFullYear()} EL-BOMI HOLDING. Tous droits réservés.
           </p>
           <Link href="/" className="text-xs text-white/30 hover:text-white/60 transition-colors">
             ← Retour au Groupe

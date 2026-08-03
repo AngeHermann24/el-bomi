@@ -3,7 +3,7 @@ import SubPageHero from '@/components/subsidiary/SubPageHero';
 import ServiceGrid from '@/components/subsidiary/ServiceGrid';
 
 export const metadata = {
-  title: 'Activités | Énergie & Électricité | EL-BOMI GROUP',
+  title: 'Activités | Énergie & Électricité | EL-BOMI HOLDING',
   description: 'Réseaux BT/HTA, électrification rurale, solaire photovoltaïque, maintenance et automatismes industriels.',
 };
 

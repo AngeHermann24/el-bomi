@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { ArrowRight, User, HardHat, Wrench } from 'lucide-react';
 
 export const metadata = {
-  title: 'Équipe | Construction | EL-BOMI GROUP',
+  title: 'Équipe | Construction | EL-BOMI HOLDING',
   description: 'Ingénieurs, conducteurs de travaux et chefs de chantier.',
 };
 

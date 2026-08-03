@@ -8,7 +8,7 @@ import { jobs, groupInfo } from '@/lib/group';
 export const metadata: Metadata = {
   title: 'Carrières',
   description:
-    'Rejoignez EL-BOMI GROUP : offres d\'emploi dans la construction, l\'énergie, les télécoms, la logistique, le médical, l\'agriculture, l\'immobilier et l\'investissement & assurance.',
+    'Rejoignez EL-BOMI HOLDING : offres d\'emploi dans la construction, l\'énergie, les télécoms, la logistique, le médical, l\'agriculture, l\'immobilier et l\'investissement & assurance.',
 };
 
 const advantages = [

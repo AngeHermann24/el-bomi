@@ -194,7 +194,7 @@ export default function EnergieContactClient() {
                 <div className="mt-6 rounded-xl border border-gold-500/10 bg-gold-500/[0.03] p-5">
                   <div className="mb-2 flex items-center gap-2">
                     <Zap className="h-4 w-4 text-gold-400/60" />
-                    <span className="text-xs font-semibold uppercase tracking-wider text-gold-400/60">Membre de EL-BOMI GROUP</span>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-gold-400/60">Membre de EL-BOMI HOLDING</span>
                   </div>
                   <p className="text-xs leading-relaxed text-white/30">
                     Bénéficiez de la force d&apos;un groupe multisectoriel pour vos projets d&apos;envergure combinant énergie, construction et logistique.

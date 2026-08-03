@@ -3,7 +3,7 @@ import SubPageHero from '@/components/subsidiary/SubPageHero';
 import RealisationGrid from '@/components/subsidiary/RealisationGrid';
 
 export const metadata = {
-  title: 'Réalisations | Agriculture | EL-BOMI GROUP',
+  title: 'Réalisations | Agriculture | EL-BOMI HOLDING',
   description: 'Projets de production agricole, élevage et transformation agroalimentaire.',
 };
 
