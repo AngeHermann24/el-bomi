@@ -13,6 +13,15 @@ export default function SeasonScene() {
   const plantHeight = useTransform(scrollYProgress, [0, 0.33, 0.66, 1], [0, 30, 60, 80]);
   const opacity = useTransform(scrollYProgress, [0, 0.1, 0.9, 1], [0, 1, 1, 0]);
 
+  /* Transforms partagés par toutes les plantes — définis une seule fois au niveau
+     supérieur du composant pour respecter les règles des Hooks React (pas de hook
+     dans une boucle/callback). */
+  const plantLineY = useTransform(plantHeight, (v) => -v);
+  const plantCircleR = useTransform(scrollYProgress, [0, 0.33, 0.66, 1], [2, 6, 8, 5]);
+  const plantCircleOpacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0.6]);
+  const plantCircleCy = useTransform(plantHeight, (v) => 280 - v);
+  const leafOpacity = useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.1, 0.3, 0.4, 0.2]);
+
   return (
     <div ref={ref} className="relative h-[400px] w-full overflow-hidden rounded-2xl">
       <motion.svg viewBox="0 0 800 400" className="absolute inset-0 h-full w-full" preserveAspectRatio="xMidYMid slice">
@@ -38,15 +47,15 @@ export default function SeasonScene() {
               stroke="#7BA05B"
               strokeWidth="3"
               strokeLinecap="round"
-              style={{ y: useTransform(scrollYProgress, [0, 0.33, 0.66, 1], [0, -plantHeight.get(), -40, -10]) }}
+              style={{ y: plantLineY }}
             />
             <motion.circle
               cx={x}
               cy={280}
-              r={useTransform(scrollYProgress, [0, 0.33, 0.66, 1], [2, 6, 8, 5])}
+              r={plantCircleR}
               fill="#7BA05B"
-              opacity={useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0, 1, 1, 0.6])}
-              style={{ cy: useTransform(scrollYProgress, [0, 0.33, 0.66, 1], [280, 280 - 30, 280 - 60, 280 - 80]) }}
+              opacity={plantCircleOpacity}
+              style={{ cy: plantCircleCy }}
             />
           </motion.g>
         ))}
@@ -55,7 +64,7 @@ export default function SeasonScene() {
         <motion.path
           d="M400 150 Q 420 130 440 150 Q 420 170 400 150"
           fill="#C9A227"
-          opacity={useTransform(scrollYProgress, [0, 0.3, 0.7, 1], [0.1, 0.3, 0.4, 0.2])}
+          opacity={leafOpacity}
         />
       </motion.svg>
 
