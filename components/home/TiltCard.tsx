@@ -58,10 +58,14 @@ export default function TiltCard({ subsidiary, index, animate = true }: TiltCard
 
   return (
     <motion.div
-      initial={animate ? { opacity: 0, y: 30 } : false}
-      whileInView={animate ? { opacity: 1, y: 0 } : undefined}
+      initial={animate ? { opacity: 0, y: 40, rotateX: -15, scale: 0.85 } : false}
+      whileInView={animate ? { opacity: 1, y: 0, rotateX: 0, scale: 1 } : undefined}
       viewport={{ once: true, margin: '-50px' }}
-      transition={{ duration: 0.6, delay: index * 0.07 }}
+      transition={{
+        duration: 0.7,
+        delay: index * 0.09,
+        ease: [0.22, 1, 0.36, 1],
+      }}
       style={{ perspective: 1000 }}
     >
       <Link href={`/filiales/${subsidiary.slug}`} className="block">
@@ -77,6 +81,17 @@ export default function TiltCard({ subsidiary, index, animate = true }: TiltCard
           }}
           className="group relative h-full overflow-hidden rounded-2xl border border-gold-500/15 bg-gradient-to-br from-navy-900 to-navy-950 p-7 transition-colors duration-300 hover:border-gold-500/50"
         >
+          {/* Reflet diagonal qui traverse au reveal */}
+          {animate && (
+            <motion.div
+              initial={{ x: '-150%', rotate: 25 }}
+              whileInView={{ x: '250%' }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.9, delay: index * 0.09 + 0.3, ease: 'easeInOut' }}
+              className="pointer-events-none absolute inset-y-0 -left-1/2 w-1/2 bg-gradient-to-r from-transparent via-gold-400/10 to-transparent"
+            />
+          )}
+
           {/* Lueur dorée au survol */}
           <div
             className="pointer-events-none absolute -inset-px rounded-2xl opacity-0 transition-opacity duration-500 group-hover:opacity-100"
@@ -85,6 +100,9 @@ export default function TiltCard({ subsidiary, index, animate = true }: TiltCard
                 'radial-gradient(400px circle at var(--mx, 50%) var(--my, 50%), rgba(201,162,39,0.08), transparent 70%)',
             }}
           />
+
+          {/* Bordure lumineuse supérieure */}
+          <div className="pointer-events-none absolute left-6 right-6 top-0 h-px bg-gradient-to-r from-transparent via-gold-400/30 to-transparent" />
 
           {/* Icône en relief */}
           <motion.div

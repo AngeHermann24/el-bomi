@@ -85,7 +85,7 @@ function FilialeLegends({ progress }: { progress: MotionValue<number> }) {
             label={teaser.label}
             slug={teaser.slug}
             progress={progress}
-            range={[center - halfWidth, center + halfWidth]}
+            range={[center - halfWidth, center, center + halfWidth]}
             align={index % 2 === 0 ? 'right' : 'left'}
           />
         );
@@ -104,7 +104,7 @@ function FilialeLegend({
   label: string;
   slug: string;
   progress: MotionValue<number>;
-  range: [number, number];
+  range: [number, number, number];
   align: 'left' | 'right';
 }) {
   const opacity = useTransform(progress, range, [0, 1, 0]);
@@ -163,27 +163,57 @@ function StatsOverlay({ progress }: { progress: MotionValue<number> }) {
 
 function GridOverlay({ progress }: { progress: MotionValue<number> }) {
   const opacity = useTransform(progress, [SCENES.grid[0], SCENES.grid[0] + 0.04, SCENES.grid[1] - 0.04, SCENES.grid[1]], [0, 1, 1, 0]);
+  const lineWidth = useTransform(progress, [SCENES.grid[0], SCENES.grid[0] + 0.08], ['0%', '100%']);
+  const titleOpacity = useTransform(progress, [SCENES.grid[0] + 0.03, SCENES.grid[0] + 0.08], [0, 1]);
+  const titleY = useTransform(progress, [SCENES.grid[0] + 0.03, SCENES.grid[0] + 0.08], [20, 0]);
+  const subtitleOpacity = useTransform(progress, [SCENES.grid[0] + 0.05, SCENES.grid[0] + 0.1], [0, 1]);
 
   return (
     <motion.div
       style={{ opacity }}
       className="pointer-events-none absolute inset-0 z-10 flex flex-col justify-center"
     >
+      {/* Ligne dorée qui traverse l'écran */}
+      <motion.div
+        style={{ width: lineWidth }}
+        className="absolute top-[22%] left-0 h-px bg-gradient-to-r from-transparent via-gold-400 to-transparent"
+      />
+
       <div className="container-max px-4">
-        <div className="mx-auto mb-10 max-w-2xl text-center">
-          <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-400">
+        <motion.div
+          style={{ opacity: titleOpacity, y: titleY }}
+          className="mx-auto mb-3 max-w-2xl text-center"
+        >
+          <motion.span
+            style={{ opacity: subtitleOpacity }}
+            className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-400"
+          >
             Nos filiales
-          </span>
+          </motion.span>
           <h2 className="font-heading text-3xl font-black uppercase leading-tight text-white md:text-4xl">
             Huit pôles <span className="text-gradient">d&apos;expertise</span>
           </h2>
-        </div>
+        </motion.div>
+
+        <motion.p
+          style={{ opacity: subtitleOpacity }}
+          className="mx-auto mb-10 max-w-xl text-center text-sm leading-relaxed text-white/40"
+        >
+          Chaque filiale est autonome sur son métier et mobilisable avec les autres.
+        </motion.p>
+
         <div className="pointer-events-auto grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {subsidiaries.map((sub, index) => (
             <TiltCard key={sub.slug} subsidiary={sub} index={index} />
           ))}
         </div>
       </div>
+
+      {/* Ligne dorée en bas */}
+      <motion.div
+        style={{ width: lineWidth }}
+        className="absolute bottom-[18%] right-0 h-px bg-gradient-to-l from-transparent via-gold-400/50 to-transparent"
+      />
     </motion.div>
   );
 }
@@ -514,8 +544,10 @@ export default function HomeExperience() {
   // Mode pending (SSR / premier paint) : on rend un socle neutre
   if (mode === 'pending') {
     return (
-      <div ref={containerRef} style={{ height: `${JOURNEY_VH}vh` }} className="relative bg-navy-950">
-        <LoadingScreen />
+      <div ref={containerRef} style={{ height: `${JOURNEY_VH}vh` }} className="relative">
+        <div className="sticky top-0 h-screen w-full overflow-hidden bg-navy-950">
+          <LoadingScreen />
+        </div>
       </div>
     );
   }
@@ -526,8 +558,10 @@ export default function HomeExperience() {
 
   return (
     <div ref={containerRef} style={{ height: `${JOURNEY_VH}vh` }} className="relative">
-      {mode === 'full3d' && <Full3DExperience progress={progress.current} />}
-      {mode === 'lite' && <LiteExperience progress={progress.current} />}
+      <div className="sticky top-0 h-screen w-full overflow-hidden">
+        {mode === 'full3d' && <Full3DExperience progress={progress.current} />}
+        {mode === 'lite' && <LiteExperience progress={progress.current} />}
+      </div>
     </div>
   );
 }
