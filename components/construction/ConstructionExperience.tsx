@@ -97,8 +97,8 @@ function Scene1Overlay({ opacity }: { opacity: number }) {
           transition={{ duration: 0.6 }}
           className="mb-6 flex items-center gap-3"
         >
-          <span className="h-px w-10 bg-gold-400" />
-          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-gold-400">
+          <span className="h-px w-10 bg-rust-400" />
+          <span className="text-xs font-semibold uppercase tracking-[0.35em] text-rust-400">
             BTP · Travaux Publics · Génie Civil
           </span>
         </motion.div>
@@ -110,7 +110,7 @@ function Scene1Overlay({ opacity }: { opacity: number }) {
         >
           EL-BOMI
           <br />
-          <span className="text-gold-400">Construction</span>
+          <span className="text-rust-400">Construction</span>
           <br />
           & Infrastructures
         </motion.h1>
@@ -136,10 +136,10 @@ function Scene2Overlay({ opacity }: { opacity: number }) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 rounded-full border border-gold-500/30 bg-navy-950/60 px-5 py-2 backdrop-blur-md"
+          className="inline-flex items-center gap-2 rounded-full border border-rust-500/30 bg-anthracite-950/60 px-5 py-2 backdrop-blur-md"
         >
-          <span className="h-2 w-2 animate-pulse rounded-full bg-gold-400" />
-          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-300">
+          <span className="h-2 w-2 animate-pulse rounded-full bg-rust-400" />
+          <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-rust-300">
             Édification en cours
           </span>
         </motion.div>
@@ -170,9 +170,9 @@ function Scene3Overlay({ opacity, zoneIndex }: { opacity: number; zoneIndex: num
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="rounded-2xl border border-gold-500/20 bg-navy-950/70 p-6 backdrop-blur-md"
+            className="rounded-2xl border border-rust-500/20 bg-anthracite-950/70 p-6 backdrop-blur-md"
           >
-            <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-gold-400">
+            <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-rust-400">
               Zone {zoneIndex + 1}
             </span>
             <h3 className="mt-2 font-heading text-xl font-bold uppercase text-white">
@@ -197,7 +197,7 @@ function Scene4Overlay({ opacity }: { opacity: number }) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">
+          <span className="text-xs font-semibold uppercase tracking-[0.3em] text-rust-400">
             Chiffres clés
           </span>
           <div className="mt-8 flex flex-wrap justify-center gap-12">
@@ -209,7 +209,7 @@ function Scene4Overlay({ opacity }: { opacity: number }) {
                 transition={{ delay: i * 0.15 }}
                 className="text-center"
               >
-                <div className="font-heading text-5xl font-bold text-gold-400 md:text-6xl">{s.value}</div>
+                <div className="font-heading text-5xl font-bold text-rust-400 md:text-6xl">{s.value}</div>
                 <div className="mt-1 text-xs uppercase tracking-wider text-white/40">{s.label}</div>
               </motion.div>
             ))}
@@ -224,13 +224,13 @@ function Scene4Overlay({ opacity }: { opacity: number }) {
 
 function RealisationsSection() {
   return (
-    <section className="relative bg-navy-950 py-28">
+    <section className="relative bg-anthracite-950 py-28">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="mb-16 flex flex-wrap items-end justify-between gap-6">
           <div>
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-px w-8 bg-gold-400" />
-              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">Réalisations</span>
+              <span className="h-px w-8 bg-rust-400" />
+              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-rust-400">Réalisations</span>
             </div>
             <h2 className="font-heading text-4xl font-bold uppercase text-white md:text-5xl">
               Projets phares
@@ -238,7 +238,7 @@ function RealisationsSection() {
           </div>
           <Link
             href="/filiales/construction/realisations"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-gold-400 hover:text-gold-300 transition-colors"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-rust-400 hover:text-rust-300 transition-colors"
           >
             Tous les projets <ArrowRight className="h-4 w-4" />
           </Link>
@@ -252,7 +252,7 @@ function RealisationsSection() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              className={`group relative overflow-hidden rounded-2xl border-2 border-gold-500/10 transition-all duration-500 hover:border-gold-500/40 ${p.span} ${i === 0 ? 'lg:row-span-2' : ''}`}
+              className={`group relative overflow-hidden rounded-2xl border-2 border-rust-500/10 transition-all duration-500 hover:border-rust-500/40 ${p.span} ${i === 0 ? 'lg:row-span-2' : ''}`}
             >
               <div className={`relative w-full ${i === 0 ? 'aspect-[3/4] lg:h-full lg:min-h-[500px]' : 'aspect-[16/10]'}`}>
                 <Image
@@ -263,15 +263,15 @@ function RealisationsSection() {
                   sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-anthracite-950/90 via-anthracite-950/30 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="mb-2 flex flex-wrap items-center gap-2">
-                  <span className="rounded-full border border-gold-500/30 bg-gold-500/10 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-gold-400 backdrop-blur-sm">
+                  <span className="rounded-full border border-rust-500/30 bg-rust-500/10 px-3 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-rust-400 backdrop-blur-sm">
                     {p.type}
                   </span>
                   <span className="text-xs text-white/40">{p.area} · {p.year}</span>
                 </div>
-                <h3 className="font-heading text-lg font-bold uppercase text-white transition-colors group-hover:text-gold-300">
+                <h3 className="font-heading text-lg font-bold uppercase text-white transition-colors group-hover:text-rust-300">
                   {p.title}
                 </h3>
               </div>
@@ -289,7 +289,7 @@ function CtaSection() {
   return (
     <section className="relative overflow-hidden py-32">
       <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={GRID_STYLE} />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/60 to-transparent" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-rust-500/60 to-transparent" />
 
       <div className="container mx-auto relative px-4 sm:px-6 lg:px-8 text-center">
         <motion.div
@@ -298,7 +298,7 @@ function CtaSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
         >
-          <span className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.35em] text-gold-400">
+          <span className="mb-6 inline-block text-xs font-semibold uppercase tracking-[0.35em] text-rust-400">
             Parlons de votre projet
           </span>
           <h2 className="font-heading text-4xl font-bold uppercase text-white md:text-5xl lg:text-6xl">
@@ -310,14 +310,14 @@ function CtaSection() {
           <div className="mt-10 flex flex-wrap justify-center gap-5">
             <Link
               href="/filiales/construction/contact"
-              className="inline-flex items-center gap-2.5 rounded-xl bg-gold-500 px-9 py-5 text-sm font-bold uppercase tracking-wide text-navy-900 transition-all hover:-translate-y-1 hover:bg-gold-400 hover:shadow-2xl hover:shadow-gold-500/30"
+              className="inline-flex items-center gap-2.5 rounded-xl bg-rust-500 px-9 py-5 text-sm font-bold uppercase tracking-wide text-anthracite-900 transition-all hover:-translate-y-1 hover:bg-rust-400 hover:shadow-2xl hover:shadow-rust-500/30"
             >
               Demander un devis gratuit
               <ArrowRight className="h-4 w-4" />
             </Link>
             <a
               href={`tel:${groupInfo.phoneRaw}`}
-              className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 px-9 py-5 text-sm font-semibold text-white/80 backdrop-blur-sm transition-all hover:border-gold-500/50 hover:bg-white/5 hover:text-white"
+              className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 px-9 py-5 text-sm font-semibold text-white/80 backdrop-blur-sm transition-all hover:border-rust-500/50 hover:bg-white/5 hover:text-white"
             >
               <Phone className="h-4 w-4" />
               {groupInfo.phone}
@@ -410,7 +410,7 @@ function FullExperience() {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ repeat: Infinity, duration: 1.5 }}
-            className="h-8 w-px bg-gradient-to-b from-gold-400/50 to-transparent"
+            className="h-8 w-px bg-gradient-to-b from-rust-400/50 to-transparent"
           />
         </motion.div>
       </div>

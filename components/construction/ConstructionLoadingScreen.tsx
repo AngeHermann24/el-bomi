@@ -27,7 +27,7 @@ export default function ConstructionLoadingScreen() {
         <motion.div
           exit={{ opacity: 0 }}
           transition={{ duration: 0.6 }}
-          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-navy-950"
+          className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-anthracite-950"
         >
           {/* Grille de chantier en filigrane */}
           <div
@@ -93,7 +93,7 @@ export default function ConstructionLoadingScreen() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
-            className="font-heading text-sm font-bold uppercase tracking-[0.3em] text-gold-400"
+            className="font-heading text-sm font-bold uppercase tracking-[0.3em] text-rust-400"
           >
             EL-BOMI Construction
           </motion.h2>
@@ -101,7 +101,7 @@ export default function ConstructionLoadingScreen() {
           {/* Barre de progression */}
           <div className="mt-6 h-0.5 w-48 overflow-hidden rounded-full bg-white/10">
             <motion.div
-              className="h-full rounded-full bg-gradient-to-r from-gold-600 to-gold-300"
+              className="h-full rounded-full bg-gradient-to-r from-rust-600 to-safety-400"
               style={{ width: `${Math.min(progress, 100)}%` }}
             />
           </div>

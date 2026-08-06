@@ -40,9 +40,9 @@ export default function ConstructionLiteExperience() {
   return (
     <>
       {/* ═══ HÉRO ═══ */}
-      <section ref={heroRef} className="relative min-h-screen overflow-hidden flex items-center bg-navy-950">
+      <section ref={heroRef} className="relative min-h-screen overflow-hidden flex items-center bg-anthracite-950">
         <div className="pointer-events-none absolute inset-0 opacity-[0.06]" style={GRID_STYLE} />
-        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-rust-500/50 to-transparent" />
 
         {/* Grue SVG animée en fond */}
         <div className="absolute right-0 top-0 h-full w-1/2 opacity-10">
@@ -89,8 +89,8 @@ export default function ConstructionLiteExperience() {
             transition={{ duration: 0.6 }}
             className="mb-6 flex items-center gap-3"
           >
-            <span className="h-px w-10 bg-gold-400" />
-            <span className="text-xs font-semibold uppercase tracking-[0.35em] text-gold-400">
+            <span className="h-px w-10 bg-rust-400" />
+            <span className="text-xs font-semibold uppercase tracking-[0.35em] text-rust-400">
               BTP · Travaux Publics · Génie Civil
             </span>
           </motion.div>
@@ -103,7 +103,7 @@ export default function ConstructionLiteExperience() {
           >
             EL-BOMI
             <br />
-            <span className="text-gold-400">Construction</span>
+            <span className="text-rust-400">Construction</span>
             <br />
             & Infrastructures
           </motion.h1>
@@ -126,14 +126,14 @@ export default function ConstructionLiteExperience() {
           >
             <Link
               href="/filiales/construction/expertises"
-              className="inline-flex items-center gap-2.5 rounded-xl bg-gold-500 px-8 py-4 text-sm font-bold uppercase tracking-wide text-navy-900 transition-all hover:-translate-y-1 hover:bg-gold-400 hover:shadow-2xl hover:shadow-gold-500/30"
+              className="inline-flex items-center gap-2.5 rounded-xl bg-rust-500 px-8 py-4 text-sm font-bold uppercase tracking-wide text-anthracite-900 transition-all hover:-translate-y-1 hover:bg-rust-400 hover:shadow-2xl hover:shadow-rust-500/30"
             >
               Découvrir nos expertises
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               href="/filiales/construction/realisations"
-              className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 px-8 py-4 text-sm font-semibold text-white/80 transition-all hover:border-gold-500/50 hover:bg-white/5 hover:text-white"
+              className="inline-flex items-center gap-2.5 rounded-xl border border-white/20 px-8 py-4 text-sm font-semibold text-white/80 transition-all hover:border-rust-500/50 hover:bg-white/5 hover:text-white"
             >
               Voir nos réalisations
             </Link>
@@ -142,19 +142,19 @@ export default function ConstructionLiteExperience() {
       </section>
 
       {/* ═══ ÉDIFICATION SVG ═══ */}
-      <section ref={buildRef} className="relative overflow-hidden bg-navy-900 py-28">
+      <section ref={buildRef} className="relative overflow-hidden bg-anthracite-900 py-28">
         <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={GRID_STYLE} />
         <div className="container mx-auto relative px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2 lg:items-center">
             <div>
               <div className="mb-4 flex items-center gap-3">
-                <span className="h-px w-8 bg-gold-400" />
-                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">L&apos;édification</span>
+                <span className="h-px w-8 bg-rust-400" />
+                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-rust-400">L&apos;édification</span>
               </div>
               <h2 className="font-heading text-4xl font-bold uppercase text-white md:text-5xl">
                 Bâtir avec
                 <br />
-                <span className="text-gold-400">précision</span>
+                <span className="text-rust-400">précision</span>
               </h2>
               <p className="mt-6 max-w-lg text-white/55 leading-relaxed">
                 Chaque étage s&apos;élève avec méthode. De la fondation à la livraison,
@@ -233,7 +233,7 @@ export default function ConstructionLiteExperience() {
       </section>
 
       {/* ═══ STATS ═══ */}
-      <section className="relative border-y border-white/[0.06] bg-navy-950 py-14">
+      <section className="relative border-y border-white/[0.06] bg-anthracite-950 py-14">
         <div className="pointer-events-none absolute inset-0 opacity-[0.025]" style={GRID_STYLE} />
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-0 divide-x divide-white/[0.06] md:grid-cols-4">
@@ -246,8 +246,8 @@ export default function ConstructionLiteExperience() {
                 transition={{ delay: i * 0.1 }}
                 className="group flex flex-col items-center gap-1 border-r border-white/[0.06] px-6 last:border-0"
               >
-                <s.icon className="mb-2 h-5 w-5 text-gold-400/50" />
-                <div className="font-heading text-4xl font-bold text-gold-400 md:text-5xl">{s.value}</div>
+                <s.icon className="mb-2 h-5 w-5 text-rust-400/50" />
+                <div className="font-heading text-4xl font-bold text-rust-400 md:text-5xl">{s.value}</div>
                 <div className="text-xs uppercase tracking-wider text-white/40">{s.label}</div>
               </motion.div>
             ))}
@@ -256,13 +256,13 @@ export default function ConstructionLiteExperience() {
       </section>
 
       {/* ═══ EXPERTISES ═══ */}
-      <section ref={expertisesRef} className="relative bg-navy-900 py-28">
+      <section ref={expertisesRef} className="relative bg-anthracite-900 py-28">
         <div className="pointer-events-none absolute inset-0 opacity-[0.03]" style={GRID_STYLE} />
         <div className="container mx-auto relative px-4 sm:px-6 lg:px-8">
           <div className="mb-16">
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-px w-8 bg-gold-400" />
-              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">Corps de métier</span>
+              <span className="h-px w-8 bg-rust-400" />
+              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-rust-400">Corps de métier</span>
             </div>
             <h2 className="font-heading text-4xl font-bold uppercase text-white md:text-5xl">
               Nos expertises
@@ -276,10 +276,10 @@ export default function ConstructionLiteExperience() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={expertisesInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.55, delay: i * 0.08 }}
-                className="group rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 transition-all hover:border-gold-500/30 hover:bg-gold-500/[0.03]"
+                className="group rounded-2xl border border-white/[0.06] bg-white/[0.02] p-6 transition-all hover:border-rust-500/30 hover:bg-rust-500/[0.03]"
               >
-                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-gold-500/30 bg-gold-500/15">
-                  <e.icon className="h-5 w-5 text-gold-400" />
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-xl border border-rust-500/30 bg-rust-500/15">
+                  <e.icon className="h-5 w-5 text-rust-400" />
                 </div>
                 <h3 className="font-heading text-base font-bold uppercase text-white">{e.label}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-white/50">{e.desc}</p>

@@ -181,7 +181,7 @@ export default function BuildingAnimation() {
         initial={{ opacity: 0 }}
         animate={inView ? { opacity: 1 } : {}}
         transition={{ delay: FLOORS * 0.12 + 1 }}
-        className="mt-3 text-xs uppercase tracking-[0.25em] text-gold-400/50"
+        className="mt-3 text-xs uppercase tracking-[0.25em] text-rust-400/50"
       >
         En construction
       </motion.p>

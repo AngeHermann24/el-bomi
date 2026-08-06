@@ -16,7 +16,7 @@ const expertises = [
 ];
 
 const inputClass =
-  'w-full rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-white/25 transition-all focus:border-gold-500/50 focus:bg-white/[0.05] focus:outline-none';
+  'w-full rounded-xl border border-white/[0.08] bg-white/[0.03] px-4 py-3 text-sm text-white placeholder-white/25 transition-all focus:border-rust-500/50 focus:bg-white/[0.05] focus:outline-none';
 
 const labelClass = 'mb-2 block text-xs font-semibold uppercase tracking-wider text-white/50';
 
@@ -38,7 +38,7 @@ export default function ConstructionContactClient() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-navy-950 py-24">
+      <section className="relative overflow-hidden bg-anthracite-950 py-24">
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.03]"
           style={{
@@ -50,7 +50,7 @@ export default function ConstructionContactClient() {
           <motion.span
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-gold-400"
+            className="inline-block mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-rust-400"
           >
             Devis gratuit
           </motion.span>
@@ -62,7 +62,7 @@ export default function ConstructionContactClient() {
           >
             Parlons de votre projet
           </motion.h1>
-          <div className="mt-3 h-0.5 w-16 bg-gold-500/50" />
+          <div className="mt-3 h-0.5 w-16 bg-rust-500/50" />
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -75,7 +75,7 @@ export default function ConstructionContactClient() {
       </section>
 
       {/* Formulaire + coordonnées */}
-      <section className="bg-navy-900 py-12 sm:py-20">
+      <section className="bg-anthracite-900 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_360px]">
 
@@ -86,8 +86,8 @@ export default function ConstructionContactClient() {
               transition={{ duration: 0.5 }}
             >
               {sent ? (
-                <div className="flex flex-col items-center justify-center rounded-2xl border border-gold-500/20 bg-gold-500/5 py-12 sm:py-20 text-center">
-                  <CheckCircle className="mb-5 h-14 w-14 text-gold-400" />
+                <div className="flex flex-col items-center justify-center rounded-2xl border border-rust-500/20 bg-rust-500/5 py-12 sm:py-20 text-center">
+                  <CheckCircle className="mb-5 h-14 w-14 text-rust-400" />
                   <h2 className="font-heading text-2xl font-bold uppercase text-white">
                     Demande reçue !
                   </h2>
@@ -143,7 +143,7 @@ export default function ConstructionContactClient() {
                     >
                       <option value="" disabled>Sélectionnez un corps de métier</option>
                       {expertises.map((e) => (
-                        <option key={e} value={e} className="bg-navy-900">{e}</option>
+                        <option key={e} value={e} className="bg-anthracite-900">{e}</option>
                       ))}
                     </select>
                   </div>
@@ -160,7 +160,7 @@ export default function ConstructionContactClient() {
 
                   <button
                     type="submit"
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-gold-500 py-4 font-semibold text-navy-900 transition-all hover:-translate-y-0.5 hover:bg-gold-400 hover:shadow-xl hover:shadow-gold-500/25"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-rust-500 py-4 font-semibold text-anthracite-900 transition-all hover:-translate-y-0.5 hover:bg-rust-400 hover:shadow-xl hover:shadow-rust-500/25"
                   >
                     <Send className="h-4 w-4" />
                     Envoyer ma demande de devis
@@ -214,8 +214,8 @@ export default function ConstructionContactClient() {
                     },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-4">
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-gold-500/20 bg-gold-500/10">
-                        <item.icon className="h-4 w-4 text-gold-400" />
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-rust-500/20 bg-rust-500/10">
+                        <item.icon className="h-4 w-4 text-rust-400" />
                       </span>
                       <div>
                         <p className="mb-0.5 text-[11px] font-semibold uppercase tracking-wider text-white/35">
@@ -235,7 +235,7 @@ export default function ConstructionContactClient() {
               </div>
 
               <div className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-7">
-                <Clock className="mb-3 h-5 w-5 text-gold-400/60" />
+                <Clock className="mb-3 h-5 w-5 text-rust-400/60" />
                 <h3 className="mb-3 font-heading text-base font-bold uppercase text-white">Horaires</h3>
                 <div className="space-y-1.5 text-sm text-white/50">
                   <div className="flex justify-between">

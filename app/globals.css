@@ -42,38 +42,43 @@
     --ink-faint: 100 116 139;
   }
 
-  /* --- Construction & Infrastructures : bleu marine/or groupe + accent gris béton --- */
+  /* --- Construction & Infrastructures : anthracite/béton + rouille/terre + jaune sécurité --- */
   [data-theme='construction'] {
     --font-heading: var(--font-outfit), system-ui, sans-serif;
     --font-body: var(--font-sora), system-ui, sans-serif;
 
-    /* or du groupe — identique au holding pour fil rouge */
-    --brand-50: 253 249 237;
-    --brand-100: 250 240 207;
-    --brand-200: 244 223 156;
-    --brand-300: 232 199 102;
-    --brand-400: 220 179 73;
-    --brand-500: 201 162 39;
-    --brand-600: 168 131 29;
-    --brand-700: 132 101 26;
-    --brand-800: 109 83 28;
-    --brand-900: 92 69 28;
-    --brand-950: 53 37 12;
-    --brand-contrast: 11 30 61;
+    /* Rouille / terre cuite — rappel briques, terrassement, engins */
+    --brand-50: 253 245 240;
+    --brand-100: 250 232 219;
+    --brand-200: 244 208 184;
+    --brand-300: 236 176 138;
+    --brand-400: 226 137 92;
+    --brand-500: 212 101 26;
+    --brand-600: 184 83 21;
+    --brand-700: 147 64 20;
+    --brand-800: 120 54 24;
+    --brand-900: 100 47 22;
+    --brand-950: 56 23 10;
+    --brand-contrast: 255 255 255;
 
-    /* bleu marine profond — même base que le groupe */
-    --surface: 11 30 61;
-    --surface-alt: 6 18 41;
-    --surface-card: 255 255 255;
+    /* Anthracite / béton — fond sombre industriel */
+    --surface: 42 42 39;
+    --surface-alt: 27 27 25;
+    --surface-card: 61 61 57;
     --surface-line: 255 255 255;
 
-    /* accent béton (#8A8D91) */
-    --concrete: 138 141 145;
-    --concrete-light: 200 202 205;
+    /* Accent jaune sécurité — chantier, visibilité */
+    --accent-safety: 245 166 35;
+    --accent-safety-light: 250 210 77;
+    --accent-safety-dark: 212 134 14;
+
+    /* Béton gris */
+    --concrete: 130 124 115;
+    --concrete-light: 190 186 179;
 
     --ink: 255 255 255;
-    --ink-muted: 148 163 184;
-    --ink-faint: 100 116 139;
+    --ink-muted: 167 160 151;
+    --ink-faint: 110 104 96;
   }
 
   /* --- Énergie & Électricité : clair, ambre & or --- */

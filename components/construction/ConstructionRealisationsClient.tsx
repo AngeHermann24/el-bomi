@@ -90,7 +90,7 @@ export default function ConstructionRealisationsClient() {
           className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/95 via-navy-950/50 to-navy-950/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-anthracite-950/95 via-anthracite-950/50 to-anthracite-950/20" />
         <div
           className="pointer-events-none absolute inset-0 opacity-[0.04]"
           style={{
@@ -104,8 +104,8 @@ export default function ConstructionRealisationsClient() {
             animate={{ opacity: 1, x: 0 }}
             className="mb-5 flex items-center gap-3"
           >
-            <span className="h-px w-8 bg-gold-400" />
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">Portfolio</span>
+            <span className="h-px w-8 bg-rust-400" />
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-rust-400">Portfolio</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -127,7 +127,7 @@ export default function ConstructionRealisationsClient() {
       </section>
 
       {/* Filtres */}
-      <section className="sticky top-[73px] z-30 border-b border-white/[0.06] bg-navy-900/95 backdrop-blur py-4">
+      <section className="sticky top-[73px] z-30 border-b border-white/[0.06] bg-anthracite-900/95 backdrop-blur py-4">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap gap-2">
             {categories.map((cat) => (
@@ -136,8 +136,8 @@ export default function ConstructionRealisationsClient() {
                 onClick={() => setActiveCategory(cat)}
                 className={`rounded-full px-4 py-1.5 text-sm font-semibold transition-all ${
                   activeCategory === cat
-                    ? 'bg-gold-500 text-navy-900'
-                    : 'border border-white/10 text-white/50 hover:border-gold-500/30 hover:text-white'
+                    ? 'bg-rust-500 text-anthracite-900'
+                    : 'border border-white/10 text-white/50 hover:border-rust-500/30 hover:text-white'
                 }`}
               >
                 {cat}
@@ -148,7 +148,7 @@ export default function ConstructionRealisationsClient() {
       </section>
 
       {/* Grille projets */}
-      <section className="bg-navy-900 py-10 sm:py-16">
+      <section className="bg-anthracite-900 py-10 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
             {filtered.map((p, i) => (
@@ -158,7 +158,7 @@ export default function ConstructionRealisationsClient() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.4, delay: i * 0.06 }}
-                className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.02] transition-all duration-300 hover:border-gold-500/30"
+                className="group relative overflow-hidden rounded-2xl border border-white/[0.07] bg-white/[0.02] transition-all duration-300 hover:border-rust-500/30"
               >
                 {/* Image avec effet zoom au survol */}
                 <div className="relative aspect-[16/10] overflow-hidden">
@@ -170,15 +170,15 @@ export default function ConstructionRealisationsClient() {
                     sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 33vw"
                   />
                   {/* Overlay hover or */}
-                  <div className="absolute inset-0 bg-navy-950/0 transition-colors duration-500 group-hover:bg-navy-950/20" />
+                  <div className="absolute inset-0 bg-anthracite-950/0 transition-colors duration-500 group-hover:bg-anthracite-950/20" />
                   {/* Badge catégorie */}
                   <div className="absolute left-3 top-3">
-                    <span className="rounded-full border border-gold-500/40 bg-navy-950/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-gold-400 backdrop-blur-sm">
+                    <span className="rounded-full border border-rust-500/40 bg-anthracite-950/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-rust-400 backdrop-blur-sm">
                       {p.category}
                     </span>
                   </div>
                   {/* Overlay gradient bottom */}
-                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-navy-950 to-transparent" />
+                  <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-anthracite-950 to-transparent" />
                 </div>
 
                 {/* Contenu */}
@@ -187,7 +187,7 @@ export default function ConstructionRealisationsClient() {
                     {p.tags.map((t) => (
                       <span
                         key={t}
-                        className="rounded-full border border-gold-500/20 bg-gold-500/8 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-gold-400/70"
+                        className="rounded-full border border-rust-500/20 bg-rust-500/8 px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-wider text-rust-400/70"
                       >
                         {t}
                       </span>
@@ -197,14 +197,14 @@ export default function ConstructionRealisationsClient() {
                   <p className="mb-4 text-sm leading-relaxed text-white/45">{p.description}</p>
                   <div className="flex flex-wrap gap-4 text-xs text-white/35">
                     <span className="flex items-center gap-1.5">
-                      <MapPin className="h-3.5 w-3.5 text-gold-400/50" />
+                      <MapPin className="h-3.5 w-3.5 text-rust-400/50" />
                       {p.location}
                     </span>
                     <span className="flex items-center gap-1.5">
-                      <Calendar className="h-3.5 w-3.5 text-gold-400/50" />
+                      <Calendar className="h-3.5 w-3.5 text-rust-400/50" />
                       {p.year}
                     </span>
-                    <span className="ml-auto font-semibold text-gold-400/60">{p.area}</span>
+                    <span className="ml-auto font-semibold text-rust-400/60">{p.area}</span>
                   </div>
                 </div>
               </motion.div>
@@ -214,7 +214,7 @@ export default function ConstructionRealisationsClient() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-white/[0.06] bg-navy-950 py-12 sm:py-20">
+      <section className="border-t border-white/[0.06] bg-anthracite-950 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-2xl font-bold uppercase text-white md:text-3xl">
             Votre projet sera notre prochaine réalisation
@@ -224,7 +224,7 @@ export default function ConstructionRealisationsClient() {
           </p>
           <Link
             href="/filiales/construction/contact"
-            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-gold-500 px-8 py-4 font-semibold text-navy-900 transition-all hover:-translate-y-0.5 hover:bg-gold-400 hover:shadow-xl hover:shadow-gold-500/25"
+            className="mt-8 inline-flex items-center gap-2 rounded-xl bg-rust-500 px-8 py-4 font-semibold text-anthracite-900 transition-all hover:-translate-y-0.5 hover:bg-rust-400 hover:shadow-xl hover:shadow-rust-500/25"
           >
             Demander un devis
             <ArrowRight className="h-4 w-4" />

@@ -18,20 +18,20 @@ export default function ConstructionHeader() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/[0.08] bg-navy-900/95 backdrop-blur">
+    <header className="sticky top-0 z-50 border-b border-white/[0.08] bg-anthracite-900/95 backdrop-blur">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between py-4">
 
           {/* Logo */}
           <Link href="/filiales/construction" className="flex items-center gap-2 sm:gap-3 group">
-            <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg overflow-hidden border border-gold-500/30 transition-colors group-hover:border-gold-500/50">
+            <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg overflow-hidden border border-rust-500/30 transition-colors group-hover:border-rust-500/50">
               <Image src="/construction.jpeg" alt="EL-BOMI Construction" width={36} height={36} className="h-full w-full object-cover" />
             </div>
             <div className="min-w-0">
               <span className="block font-heading text-[12px] sm:text-sm font-bold uppercase tracking-widest text-white">
                 EL-BOMI HOLDING
               </span>
-              <span className="block text-[8px] sm:text-[10px] uppercase tracking-[0.2em] text-gold-400/80">
+              <span className="block text-[8px] sm:text-[10px] uppercase tracking-[0.2em] text-rust-400/80">
                 Construction & Infrastructures
               </span>
             </div>
@@ -45,7 +45,7 @@ export default function ConstructionHeader() {
                 href={l.href}
                 className={`text-sm font-medium transition-colors ${
                   pathname === l.href
-                    ? 'text-gold-400'
+                    ? 'text-rust-400'
                     : 'text-white/70 hover:text-white'
                 }`}
               >
@@ -54,7 +54,7 @@ export default function ConstructionHeader() {
             ))}
             <Link
               href="/filiales/construction/contact"
-              className="inline-flex items-center gap-2 rounded-lg border border-gold-500/40 bg-gold-500/10 px-5 py-2.5 text-sm font-semibold text-gold-300 transition-all hover:bg-gold-500/20 hover:border-gold-500/70"
+              className="inline-flex items-center gap-2 rounded-lg border border-rust-500/40 bg-rust-500/10 px-5 py-2.5 text-sm font-semibold text-rust-300 transition-all hover:bg-rust-500/20 hover:border-rust-500/70"
             >
               Demander un devis
             </Link>
@@ -79,7 +79,7 @@ export default function ConstructionHeader() {
                 href={l.href}
                 className={`block rounded-lg px-4 py-3.5 text-[15px] font-medium transition-colors ${
                   pathname === l.href
-                    ? 'bg-gold-500/10 text-gold-400'
+                    ? 'bg-rust-500/10 text-rust-400'
                     : 'text-white/70 hover:bg-white/[0.04] hover:text-white'
                 }`}
                 onClick={() => setIsOpen(false)}
@@ -89,7 +89,7 @@ export default function ConstructionHeader() {
             ))}
             <Link
               href="/filiales/construction/contact"
-              className="block mt-2 rounded-lg border border-gold-500/40 bg-gold-500/10 px-4 py-3.5 text-center text-[15px] font-semibold text-gold-300"
+              className="block mt-2 rounded-lg border border-rust-500/40 bg-rust-500/10 px-4 py-3.5 text-center text-[15px] font-semibold text-rust-300"
               onClick={() => setIsOpen(false)}
             >
               Demander un devis
