@@ -57,7 +57,13 @@ export function useRenderMode(): RenderMode {
         setMode('static');
         return;
       }
-      if (!supportsWebGL() || isSmallOrTouchScreen() || isLowEndDevice()) {
+      // Mobile / touch screens → static page flow (scroll-pinned lite is janky on touch)
+      if (isSmallOrTouchScreen()) {
+        setMode('static');
+        return;
+      }
+      // Desktop without WebGL or low-end → lite 2D experience
+      if (!supportsWebGL() || isLowEndDevice()) {
         setMode('lite');
         return;
       }
