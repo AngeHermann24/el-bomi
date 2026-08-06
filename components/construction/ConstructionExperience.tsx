@@ -120,7 +120,7 @@ function Scene1Overlay({ opacity }: { opacity: number }) {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mt-8 max-w-xl text-lg leading-relaxed text-white/65"
         >
-          Le chantier qui se construit sous vos yeux. De l'étude à la réception,
+          Le chantier qui se construit sous vos yeux. De l&apos;étude à la réception,
           chaque projet est une promesse tenue.
         </motion.p>
       </div>
@@ -149,7 +149,7 @@ function Scene2Overlay({ opacity }: { opacity: number }) {
           transition={{ delay: 0.3 }}
           className="mt-4 max-w-md text-sm text-white/50"
         >
-          Chaque étage s'élève au rythme de votre scroll — la grue positionne les éléments,
+          Chaque étage s&apos;élève au rythme de votre scroll — la grue positionne les éléments,
           les structures porteuses se révèlent en doré.
         </motion.p>
       </div>

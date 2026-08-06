@@ -114,8 +114,8 @@ export default function ConstructionLiteExperience() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="mt-8 max-w-xl text-lg leading-relaxed text-white/65"
           >
-            Expert en construction, infrastructures et travaux publics en Côte d'Ivoire.
-            De l'étude à la réception, chaque projet est une promesse tenue.
+            Expert en construction, infrastructures et travaux publics en Côte d&apos;Ivoire.
+            De l&apos;étude à la réception, chaque projet est une promesse tenue.
           </motion.p>
 
           <motion.div
@@ -149,7 +149,7 @@ export default function ConstructionLiteExperience() {
             <div>
               <div className="mb-4 flex items-center gap-3">
                 <span className="h-px w-8 bg-gold-400" />
-                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">L'édification</span>
+                <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">L&apos;édification</span>
               </div>
               <h2 className="font-heading text-4xl font-bold uppercase text-white md:text-5xl">
                 Bâtir avec
@@ -157,7 +157,7 @@ export default function ConstructionLiteExperience() {
                 <span className="text-gold-400">précision</span>
               </h2>
               <p className="mt-6 max-w-lg text-white/55 leading-relaxed">
-                Chaque étage s'élève avec méthode. De la fondation à la livraison,
+                Chaque étage s&apos;élève avec méthode. De la fondation à la livraison,
                 nos ingénieurs contrôlent chaque phase — matériaux testés, délais garantis,
                 normes internationales respectées.
               </p>
