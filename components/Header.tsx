@@ -206,7 +206,7 @@ export default function Header() {
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden relative w-11 h-11 flex items-center justify-center text-white -mr-2"
+            className="lg:hidden relative flex h-11 w-11 items-center justify-center rounded-xl border border-white/10 text-white transition-colors hover:bg-white/[0.04] -mr-2"
             aria-label="Menu"
           >
             <AnimatePresence mode="wait">
@@ -244,110 +244,146 @@ export default function Header() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="overflow-hidden border-t border-white/10 bg-navy-900/98 backdrop-blur-xl lg:hidden"
+            className="overflow-hidden border-t border-white/[0.06] bg-navy-900/98 backdrop-blur-xl lg:hidden"
           >
-            <div className="container-max max-h-[80vh] space-y-1 overflow-y-auto px-4 py-5">
-              {navLinks.slice(0, 2).map((link, i) => (
-                <motion.div
-                  key={link.href}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                >
-                  <Link
-                    href={link.href}
-                    className={`block rounded-xl px-4 py-3.5 text-[15px] font-medium tracking-wide transition-colors ${
-                      pathname === link.href
-                        ? 'bg-gold-500/10 text-gold-300'
-                        : 'text-white/65 hover:bg-white/5 hover:text-white'
-                    }`}
+            <div className="container-max max-h-[82vh] overflow-y-auto px-4 py-4">
+              {/* Main nav links */}
+              <div className="space-y-0.5">
+                {navLinks.slice(0, 2).map((link, i) => (
+                  <motion.div
+                    key={link.href}
+                    initial={{ opacity: 0, x: -16 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: i * 0.04 }}
                   >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
+                    <Link
+                      href={link.href}
+                      className={`flex items-center rounded-xl px-4 py-3.5 text-[15px] font-medium transition-colors ${
+                        pathname === link.href
+                          ? 'bg-gold-500/10 text-gold-300'
+                          : 'text-white/70 hover:bg-white/[0.04] hover:text-white'
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
 
+              {/* Filiales section */}
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
+                initial={{ opacity: 0, x: -16 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.1 }}
-                className="pt-2"
+                className="mt-4"
               >
-                <span className="px-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-gold-400">
-                  Nos filiales
-                </span>
-                <div className="mt-2 space-y-1">
+                <div className="flex items-center gap-2 px-4 mb-2">
+                  <span className="h-px flex-1 bg-white/[0.06]" />
+                  <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold-400/80">
+                    Nos filiales
+                  </span>
+                  <span className="h-px flex-1 bg-white/[0.06]" />
+                </div>
+                <div className="grid grid-cols-1 gap-0.5">
                   {subsidiaries.map((sub) => (
                     <Link
                       key={sub.slug}
                       href={`/filiales/${sub.slug}`}
-                      className={`flex items-center gap-3 rounded-xl px-4 py-3 text-[14px] font-medium tracking-wide transition-colors ${
+                      className={`flex items-center gap-3 rounded-xl px-4 py-3 transition-colors ${
                         pathname === `/filiales/${sub.slug}`
-                          ? 'bg-gold-500/10 text-gold-300'
-                          : 'text-white/65 hover:bg-white/5 hover:text-white'
+                          ? 'bg-gold-500/10'
+                          : 'hover:bg-white/[0.04]'
                       }`}
                     >
-                      <IconRenderer name={sub.icon} className="h-4 w-4 shrink-0 text-gold-400" />
-                      {sub.shortName}
+                      <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-lg ${
+                        pathname === `/filiales/${sub.slug}`
+                          ? 'bg-gold-500/20'
+                          : 'bg-white/[0.04]'
+                      }`}>
+                        <IconRenderer name={sub.icon} className={`h-4 w-4 ${
+                          pathname === `/filiales/${sub.slug}`
+                            ? 'text-gold-300'
+                            : 'text-gold-400/70'
+                        }`} />
+                      </span>
+                      <span className={`text-[13px] font-medium leading-tight ${
+                        pathname === `/filiales/${sub.slug}`
+                          ? 'text-gold-300'
+                          : 'text-white/65'
+                      }`}>
+                        {sub.shortName}
+                      </span>
                     </Link>
                   ))}
                 </div>
               </motion.div>
 
-              {navLinks.slice(2).map((link, i) => (
-                <motion.div
-                  key={link.href}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.15 + i * 0.05 }}
-                >
-                  <Link
-                    href={link.href}
-                    className={`block rounded-xl px-4 py-3.5 text-[15px] font-medium tracking-wide transition-colors ${
-                      pathname === link.href
-                        ? 'bg-gold-500/10 text-gold-300'
-                        : 'text-white/65 hover:bg-white/5 hover:text-white'
-                    }`}
+              {/* Remaining nav links */}
+              <div className="mt-4 space-y-0.5">
+                {navLinks.slice(2).map((link, i) => (
+                  <motion.div
+                    key={link.href}
+                    initial={{ opacity: 0, x: -16 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.15 + i * 0.04 }}
                   >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
+                    <Link
+                      href={link.href}
+                      className={`flex items-center rounded-xl px-4 py-3.5 text-[15px] font-medium transition-colors ${
+                        pathname === link.href
+                          ? 'bg-gold-500/10 text-gold-300'
+                          : 'text-white/70 hover:bg-white/[0.04] hover:text-white'
+                      }`}
+                    >
+                      {link.label}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
 
+              {/* Contact section */}
               <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.3 }}
-                className="pt-4"
+                initial={{ opacity: 0, y: 8 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.25 }}
+                className="mt-5 border-t border-white/[0.06] pt-5"
               >
-                <span className="px-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-gold-400">
-                  Appelez-nous
-                </span>
-                <div className="mt-3 space-y-2">
-                  <a
-                    href={`tel:${groupInfo.phoneRaw}`}
-                    className="flex w-full items-center justify-center gap-2 rounded-xl bg-gold-gradient px-6 py-3 text-[15px] font-semibold tracking-wide text-navy-900"
-                  >
-                    <Phone className="h-5 w-5" />
-                    {groupInfo.phone}
-                  </a>
-                  <div className="grid grid-cols-2 gap-2">
-                    <a
-                      href={`tel:${groupInfo.phone2Raw}`}
-                      className="flex w-full items-center justify-center gap-2 rounded-xl border border-gold-500/30 px-4 py-2.5 text-[12px] font-medium tracking-wide text-gold-300 transition-colors hover:bg-gold-500/10"
-                    >
-                      <Phone className="h-3.5 w-3.5" />
-                      {groupInfo.phone2}
-                    </a>
-                    <a
-                      href={`tel:${groupInfo.phone3Raw}`}
-                      className="flex w-full items-center justify-center gap-2 rounded-xl border border-gold-500/30 px-4 py-2.5 text-[12px] font-medium tracking-wide text-gold-300 transition-colors hover:bg-gold-500/10"
-                    >
-                      <Phone className="h-3.5 w-3.5" />
-                      {groupInfo.phone3}
-                    </a>
-                  </div>
+                <div className="flex items-center gap-2 mb-3">
+                  <span className="h-px flex-1 bg-white/[0.06]" />
+                  <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold-400/80">
+                    Contact
+                  </span>
+                  <span className="h-px flex-1 bg-white/[0.06]" />
                 </div>
+                <a
+                  href={`tel:${groupInfo.phoneRaw}`}
+                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-gold-400 to-gold-500 px-6 py-3.5 text-[15px] font-bold text-navy-900 shadow-lg shadow-gold-500/20"
+                >
+                  <Phone className="h-4 w-4" />
+                  {groupInfo.phone}
+                </a>
+                <div className="mt-2.5 grid grid-cols-2 gap-2">
+                  <a
+                    href={`tel:${groupInfo.phone2Raw}`}
+                    className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-gold-500/20 px-3 py-2.5 text-[12px] font-medium text-gold-300/90 transition-colors hover:bg-gold-500/[0.06]"
+                  >
+                    <Phone className="h-3 w-3" />
+                    {groupInfo.phone2}
+                  </a>
+                  <a
+                    href={`tel:${groupInfo.phone3Raw}`}
+                    className="flex w-full items-center justify-center gap-1.5 rounded-xl border border-gold-500/20 px-3 py-2.5 text-[12px] font-medium text-gold-300/90 transition-colors hover:bg-gold-500/[0.06]"
+                  >
+                    <Phone className="h-3 w-3" />
+                    {groupInfo.phone3}
+                  </a>
+                </div>
+                <Link
+                  href="/contact"
+                  className="mt-2.5 flex w-full items-center justify-center gap-2 rounded-xl border border-white/10 px-6 py-3 text-[14px] font-semibold text-white/80 transition-colors hover:bg-white/[0.04]"
+                >
+                  Nous écrire
+                </Link>
               </motion.div>
             </div>
           </motion.div>
