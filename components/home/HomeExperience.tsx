@@ -3,10 +3,11 @@
 import { Suspense, lazy, useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { motion, useMotionValue, useScroll, useTransform, type MotionValue } from 'framer-motion';
-import { ArrowRight, ArrowDown } from 'lucide-react';
+import { ArrowRight, ArrowDown, Sparkles } from 'lucide-react';
 import { useRenderMode } from '@/hooks/useRenderMode';
 import { JOURNEY_VH, SCENES, sceneProgress, FILIALE_TEASERS } from '@/lib/homeJourney';
 import { groupInfo, groupStats, subsidiaries } from '@/lib/group';
+import IconRenderer from '@/components/IconRenderer';
 import LoadingScreen from './LoadingScreen';
 import ExtrudedStat from './ExtrudedStat';
 import TiltCard from './TiltCard';
@@ -430,22 +431,28 @@ function LiteExperience({ progress }: { progress: MotionValue<number> }) {
   );
 }
 
-/* ──────────────── Version statique (reduced-motion) ──────────────── */
+/* ──────────────── Version statique (mobile / reduced-motion) ──────────────── */
 
 function StaticExperience() {
   return (
     <div className="absolute inset-0 overflow-y-auto">
       <div className="bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950">
         {/* Hero */}
-        <section className="flex min-h-screen flex-col items-center justify-center px-4 text-center">
+        <section className="relative flex min-h-screen flex-col items-center justify-center px-4 text-center overflow-hidden">
+          {/* Halo doré décoratif */}
+          <div
+            className="pointer-events-none absolute top-1/2 left-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full opacity-20 blur-3xl"
+            style={{ background: 'radial-gradient(circle, rgba(201,162,39,0.3), transparent 70%)' }}
+          />
+
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-6 inline-flex items-center gap-3 rounded-full border border-gold-500/30 bg-gold-500/5 px-5 py-2"
+            className="relative mb-5 inline-flex items-center gap-2.5 rounded-full border border-gold-500/30 bg-gold-500/5 px-4 py-1.5"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
-            <span className="text-xs font-semibold uppercase tracking-[0.25em] text-gold-300">
+            <Sparkles className="h-3 w-3 text-gold-400" />
+            <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-gold-300 sm:text-xs">
               Holding ivoirien · Fondée en {groupInfo.foundedYear}
             </span>
           </motion.div>
@@ -454,7 +461,7 @@ function StaticExperience() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="mb-6 font-heading text-4xl font-black uppercase leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
+            className="relative mb-5 font-heading text-[2.5rem] font-black uppercase leading-[1.05] tracking-tight text-white sm:text-6xl lg:text-7xl"
             style={{
               backgroundImage: 'linear-gradient(135deg, #C9A227 0%, #E8C766 40%, #FFF4D6 50%, #E8C766 60%, #C9A227 100%)',
               WebkitBackgroundClip: 'text',
@@ -463,23 +470,25 @@ function StaticExperience() {
               filter: 'drop-shadow(0 4px 20px rgba(201,162,39,0.25))',
             }}
           >
-            EL-BOMI HOLDING
+            EL-BOMI
+            <br />
+            HOLDING
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
-            className="mb-10 max-w-2xl text-sm leading-relaxed text-white/60 sm:text-lg"
+            className="relative mb-8 max-w-md text-sm leading-relaxed text-white/55 sm:max-w-2xl sm:text-lg"
           >
-            {groupInfo.description}
+            {groupInfo.baseline} — Huit filiales sectorielles au service d&apos;une seule ambition.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 0.8 }}
-            className="flex flex-wrap justify-center gap-3"
+            transition={{ delay: 0.6 }}
+            className="relative flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-3"
           >
             <Link href="/contact" className="btn-gold group">
               Nous contacter
@@ -494,7 +503,7 @@ function StaticExperience() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5 }}
-            className="absolute bottom-8 left-1/2 -translate-x-1/2"
+            className="absolute bottom-6 left-1/2 -translate-x-1/2"
           >
             <motion.div
               animate={{ y: [0, 8, 0] }}
@@ -505,32 +514,32 @@ function StaticExperience() {
           </motion.div>
         </section>
 
-        {/* Stats */}
-        <section className="flex min-h-[60vh] flex-col items-center justify-center px-4 py-12 sm:py-20">
+        {/* Stats — grille 2x2 compacte */}
+        <section className="px-4 py-12 sm:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mx-auto mb-8 max-w-2xl text-center"
+            className="mx-auto mb-6 text-center"
           >
-            <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-400">
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold-400/80 sm:text-xs">
               Le groupe en chiffres
             </span>
           </motion.div>
-          <div className="mx-auto grid max-w-4xl grid-cols-2 gap-6 sm:gap-8 md:grid-cols-4">
+          <div className="mx-auto grid max-w-4xl grid-cols-2 gap-3 sm:gap-6">
             {groupStats.map((stat, i) => (
               <motion.div
                 key={stat.label}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                className="text-center"
+                transition={{ delay: i * 0.08 }}
+                className="rounded-2xl border border-white/[0.06] bg-white/[0.02] p-4 text-center sm:p-6"
               >
-                <div className="font-heading text-4xl font-black text-gold-300 sm:text-5xl md:text-6xl">
+                <div className="font-heading text-3xl font-black text-gold-300 sm:text-5xl md:text-6xl">
                   {stat.value}{stat.suffix}
                 </div>
-                <div className="mt-2 text-[10px] font-semibold uppercase tracking-[0.25em] text-white/40 sm:mt-3 sm:text-[11px]">
+                <div className="mt-1.5 text-[9px] font-semibold uppercase tracking-[0.2em] text-white/40 sm:mt-2 sm:text-[11px]">
                   {stat.label}
                 </div>
               </motion.div>
@@ -538,46 +547,72 @@ function StaticExperience() {
           </div>
         </section>
 
-        {/* Grid */}
-        <section className="flex min-h-screen flex-col justify-center px-4 py-12 sm:py-20">
-          <div className="container-max">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="mx-auto mb-8 max-w-2xl text-center"
-            >
-              <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-400">
-                Nos filiales
-              </span>
-              <h2 className="font-heading text-3xl font-black uppercase leading-tight text-white md:text-4xl">
-                Huit pôles <span className="text-gradient">d&apos;expertise</span>
-              </h2>
-            </motion.div>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-4">
-              {subsidiaries.map((sub, index) => (
-                <TiltCard key={sub.slug} subsidiary={sub} index={index} animate={false} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* CTA */}
-        <section className="flex min-h-[70vh] flex-col items-center justify-center px-4 text-center py-12 sm:py-20">
+        {/* Filiales — cartes tactiles */}
+        <section className="px-4 py-12 sm:py-20">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="mx-auto max-w-2xl"
+            className="mx-auto mb-6 max-w-2xl text-center"
           >
-            <h2 className="mb-6 font-heading text-3xl font-black uppercase leading-tight text-white sm:text-4xl md:text-5xl">
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-gold-400/80 sm:text-xs">
+              Nos filiales
+            </span>
+            <h2 className="mt-2 font-heading text-2xl font-black uppercase leading-tight text-white sm:text-3xl md:text-4xl">
+              Huit pôles <span className="text-gradient">d&apos;expertise</span>
+            </h2>
+          </motion.div>
+          <div className="mx-auto max-w-5xl space-y-2.5">
+            {subsidiaries.map((sub, i) => (
+              <motion.div
+                key={sub.slug}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true, margin: '-40px' }}
+                transition={{ delay: i * 0.05 }}
+              >
+                <Link
+                  href={`/filiales/${sub.slug}`}
+                  className="group flex items-center gap-4 rounded-xl border border-white/[0.06] bg-white/[0.02] p-3.5 transition-all hover:border-gold-500/30 hover:bg-white/[0.04]"
+                >
+                  <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl border border-gold-500/20 bg-gold-500/5 transition-colors group-hover:border-gold-500/50 group-hover:bg-gold-500/10">
+                    <IconRenderer name={sub.icon} className="h-6 w-6 text-gold-400" />
+                  </span>
+                  <div className="min-w-0 flex-1">
+                    <h3 className="truncate text-sm font-bold text-white">
+                      {sub.shortName}
+                    </h3>
+                    <p className="truncate text-xs text-white/40">
+                      {sub.tagline}
+                    </p>
+                  </div>
+                  <ArrowRight className="h-4 w-4 shrink-0 text-gold-400/40 transition-all group-hover:translate-x-1 group-hover:text-gold-300" />
+                </Link>
+              </motion.div>
+            ))}
+          </div>
+        </section>
+
+        {/* CTA */}
+        <section className="px-4 py-16 sm:py-24">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="relative mx-auto max-w-2xl overflow-hidden rounded-3xl border border-gold-500/15 bg-gradient-to-br from-gold-500/[0.06] to-transparent p-8 text-center sm:p-12"
+          >
+            <div
+              className="pointer-events-none absolute -top-24 left-1/2 h-48 w-72 -translate-x-1/2 rounded-full opacity-20 blur-3xl"
+              style={{ background: 'radial-gradient(circle, rgba(201,162,39,0.4), transparent 70%)' }}
+            />
+            <h2 className="relative mb-4 font-heading text-2xl font-black uppercase leading-tight text-white sm:text-3xl md:text-4xl">
               Un projet à <span className="text-gradient">porter ensemble</span> ?
             </h2>
-            <p className="mb-8 text-base leading-relaxed text-white/65 sm:text-lg">
+            <p className="relative mb-6 text-sm leading-relaxed text-white/55 sm:text-base">
               Décrivez-nous votre besoin. Nous identifions la ou les filiales concernées et
               revenons vers vous avec une proposition adaptée.
             </p>
-            <div className="flex flex-wrap justify-center gap-3 sm:gap-4">
+            <div className="relative flex flex-col gap-2.5 sm:flex-row sm:flex-wrap sm:justify-center sm:gap-4">
               <Link href="/contact" className="btn-gold group">
                 Nous contacter
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
