@@ -32,9 +32,9 @@ export default function CircuitAnimation({ className = '' }: { className?: strin
     >
       <defs>
         <linearGradient id="circuitGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stopColor="#C9A227" stopOpacity="0.1" />
-          <stop offset="50%" stopColor="#E8C766" stopOpacity="0.5" />
-          <stop offset="100%" stopColor="#C9A227" stopOpacity="0.1" />
+          <stop offset="0%" stopColor="#C9A227" stopOpacity="0.15" />
+          <stop offset="50%" stopColor="#F2A93B" stopOpacity="0.6" />
+          <stop offset="100%" stopColor="#C9A227" stopOpacity="0.15" />
         </linearGradient>
         <filter id="glowFilter">
           <feGaussianBlur stdDeviation="2" result="coloredBlur" />
@@ -54,7 +54,7 @@ export default function CircuitAnimation({ className = '' }: { className?: strin
 
       {/* Lignes de fond statiques */}
       {paths.map((d, i) => (
-        <path key={`bg-${i}`} d={d} stroke="#C9A227" strokeWidth="0.5" strokeOpacity="0.08" />
+        <path key={`bg-${i}`} d={d} stroke="#C9A227" strokeWidth="0.5" strokeOpacity="0.12" />
       ))}
 
       {/* Lignes animées au scroll */}
@@ -77,13 +77,13 @@ export default function CircuitAnimation({ className = '' }: { className?: strin
         <motion.path
           key={`pulse-${i}`}
           d={d}
-          stroke="#E8C766"
+          stroke="#F2A93B"
           strokeWidth="1.5"
           strokeOpacity="0"
           filter="url(#glowFilter)"
           pathLength={1}
           initial={{ pathLength: 0, strokeOpacity: 0 }}
-          animate={inView ? { pathLength: [0, 0.3, 0.6, 1], strokeOpacity: [0, 0.7, 0.4, 0] } : {}}
+          animate={inView ? { pathLength: [0, 0.3, 0.6, 1], strokeOpacity: [0, 0.8, 0.4, 0] } : {}}
           transition={{ duration: 3, delay: 1.5 + i * 0.4, ease: 'easeInOut', repeat: Infinity, repeatDelay: 4 }}
         />
       ))}
@@ -95,10 +95,10 @@ export default function CircuitAnimation({ className = '' }: { className?: strin
           cx={n.cx}
           cy={n.cy}
           r="3"
-          fill="#C9A227"
+          fill="#F2A93B"
           filter="url(#nodeGlow)"
           initial={{ scale: 0, opacity: 0 }}
-          animate={inView ? { scale: 1, opacity: [0, 1, 0.6] } : {}}
+          animate={inView ? { scale: 1, opacity: [0, 1, 0.7] } : {}}
           transition={{ duration: 0.4, delay: 1 + i * 0.15, ease: 'backOut' }}
         />
       ))}
@@ -108,7 +108,7 @@ export default function CircuitAnimation({ className = '' }: { className?: strin
         <motion.circle
           key={`particle-${i}`}
           r="2.5"
-          fill="#E8C766"
+          fill="#F2A93B"
           filter="url(#nodeGlow)"
           opacity="0"
           animate={inView ? {

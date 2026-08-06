@@ -25,11 +25,11 @@ const assuranceCategories = [
 
 export default function InvestissementHomeClient() {
   return (
-    <div className="bg-[#0A1628] text-white">
+    <div className="bg-[#0A1F17] text-white">
 
       {/* Hero — courbe de croissance animée */}
-      <section className="relative min-h-[92vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#070F1C] via-[#0A1628] to-[#0A1628]" />
+      <section className="relative min-h-[92vh] flex items-center overflow-hidden pt-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#071610] via-[#0A1F17] to-[#0A1F17]" />
         <div className="absolute inset-0 noise-bg opacity-30" />
 
         {/* Courbe de croissance dorée qui se dessine au scroll */}
@@ -38,17 +38,17 @@ export default function InvestissementHomeClient() {
         </div>
 
         {/* Glow subtil */}
-        <div className="absolute -right-32 top-1/4 h-96 w-96 rounded-full bg-[#C9A227]/[0.04] blur-[140px]" />
+        <div className="absolute -right-32 top-1/4 h-96 w-96 rounded-full bg-[#B87333]/[0.04] blur-[140px]" />
 
         <div className="container relative z-10 mx-auto px-4 py-32 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="mb-8 inline-flex items-center gap-3 rounded-full border border-[#C9A227]/20 bg-[#C9A227]/[0.03] px-5 py-2"
+            className="mb-8 inline-flex items-center gap-3 rounded-full border border-[#B87333]/20 bg-[#B87333]/[0.03] px-5 py-2"
           >
-            <span className="h-1 w-1 rounded-full bg-[#E8C766]" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#C9A227]/80">
+            <span className="h-1 w-1 rounded-full bg-[#D4B896]" />
+            <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-[#B87333]/80">
               Filiale EL-BOMI HOLDING · Finance & Assurance
             </span>
           </motion.div>
@@ -61,7 +61,7 @@ export default function InvestissementHomeClient() {
           >
             La croissance
             <br />
-            <span className="text-[#E8C766]">protégée</span>
+            <span className="text-[#D4B896]">protégée</span>
           </motion.h1>
 
           <motion.p
@@ -84,14 +84,14 @@ export default function InvestissementHomeClient() {
           >
             <Link
               href="/filiales/investissement-assurance/investissement"
-              className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#C9A227] to-[#E8C766] px-7 py-3.5 text-[13px] font-semibold text-[#0A1628] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#C9A227]/20"
+              className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#B87333] to-[#D4B896] px-7 py-3.5 text-[13px] font-semibold text-[#0A1F17] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#B87333]/20"
             >
               Nos solutions d&apos;investissement
               <ArrowRight className="h-4 w-4" />
             </Link>
             <Link
               href="/filiales/investissement-assurance/simulateur"
-              className="inline-flex items-center gap-2 rounded-lg border border-[#C9A227]/25 px-7 py-3.5 text-[13px] font-semibold text-[#E8C766] transition-all hover:bg-[#C9A227]/[0.06]"
+              className="inline-flex items-center gap-2 rounded-lg border border-[#B87333]/25 px-7 py-3.5 text-[13px] font-semibold text-[#D4B896] transition-all hover:bg-[#B87333]/[0.06]"
             >
               Simuler mon épargne
             </Link>
@@ -100,7 +100,7 @@ export default function InvestissementHomeClient() {
       </section>
 
       {/* Chiffres clés — compteurs élégants */}
-      <section className="border-y border-[#C9A227]/[0.06] bg-[#070F1C] py-16">
+      <section className="border-y border-[#B87333]/[0.06] bg-[#071610] py-10 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-4">
             <PremiumCounter value={10} suffix=" Mds" label="FCFA d'actifs sous conseil" />
@@ -112,7 +112,7 @@ export default function InvestissementHomeClient() {
       </section>
 
       {/* Activités en aperçu */}
-      <section className="py-20 lg:py-28">
+      <section className="py-12 sm:py-20 lg:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -120,12 +120,12 @@ export default function InvestissementHomeClient() {
             viewport={{ once: true }}
             className="mb-14 max-w-2xl"
           >
-            <span className="mb-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#C9A227]/70">
-              <span className="h-px w-8 bg-[#C9A227]/40" />
+            <span className="mb-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#B87333]/70">
+              <span className="h-px w-8 bg-[#B87333]/40" />
               Nos expertises
             </span>
             <h2 className="font-heading text-3xl font-bold uppercase leading-tight text-white md:text-4xl">
-              Un accompagnement <span className="text-[#E8C766]">global</span>
+              Un accompagnement <span className="text-[#D4B896]">global</span>
             </h2>
             <p className="mt-4 text-sm leading-relaxed text-white/40">
               Six métiers complémentaires pour couvrir l&apos;ensemble de vos besoins en investissement,
@@ -141,14 +141,14 @@ export default function InvestissementHomeClient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.06 }}
-                className="group relative bg-[#0A1628] p-8 transition-all duration-500 hover:bg-[#0D1B30]"
+                className="group relative bg-[#0A1F17] p-8 transition-all duration-500 hover:bg-[#0D2820]"
               >
-                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-[#C9A227]/15 bg-[#C9A227]/[0.03] transition-all group-hover:border-[#C9A227]/40 group-hover:bg-[#C9A227]/[0.08]">
-                  <a.icon className="h-6 w-6 text-[#E8C766]" strokeWidth={1.5} />
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-[#B87333]/15 bg-[#B87333]/[0.03] transition-all group-hover:border-[#B87333]/40 group-hover:bg-[#B87333]/[0.08]">
+                  <a.icon className="h-6 w-6 text-[#D4B896]" strokeWidth={1.5} />
                 </div>
                 <h3 className="mb-3 font-heading text-lg font-bold text-white">{a.title}</h3>
                 <p className="text-[13px] leading-relaxed text-white/40">{a.desc}</p>
-                <div className="mt-5 h-px w-0 bg-gradient-to-r from-[#C9A227] to-transparent transition-all duration-500 group-hover:w-full" />
+                <div className="mt-5 h-px w-0 bg-gradient-to-r from-[#B87333] to-transparent transition-all duration-500 group-hover:w-full" />
               </motion.div>
             ))}
           </div>
@@ -157,7 +157,7 @@ export default function InvestissementHomeClient() {
 
       {/* Transition visuelle : croissance → protection */}
       <section className="relative overflow-hidden py-24">
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0A1628] via-[#080E1A] to-[#0A1628]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0A1F17] via-[#060F0A] to-[#0A1F17]" />
 
         {/* Courbe qui se transforme en bouclier */}
         <div className="absolute inset-x-0 top-0 h-32">
@@ -165,21 +165,21 @@ export default function InvestissementHomeClient() {
         </div>
 
         <div className="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 items-center gap-16 lg:grid-cols-2">
+          <div className="grid grid-cols-1 items-center gap-8 sm:gap-16 lg:grid-cols-2">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               className="order-2 lg:order-1"
             >
-              <span className="mb-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#C9A227]/70">
-                <span className="h-px w-8 bg-[#C9A227]/40" />
+              <span className="mb-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#B87333]/70">
+                <span className="h-px w-8 bg-[#B87333]/40" />
                 Protection
               </span>
               <h2 className="mb-6 font-heading text-3xl font-bold uppercase leading-tight text-white md:text-4xl">
                 Ce qui grandit
                 <br />
-                <span className="text-[#E8C766]">doit être protégé</span>
+                <span className="text-[#D4B896]">doit être protégé</span>
               </h2>
               <p className="mb-8 text-sm leading-relaxed text-white/40">
                 L&apos;investissement et l&apos;assurance sont les deux faces d&apos;une même pièce.
@@ -195,9 +195,9 @@ export default function InvestissementHomeClient() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.08 }}
-                    className="rounded-xl border border-white/[0.05] bg-white/[0.01] p-5 transition-all hover:border-[#C9A227]/20"
+                    className="rounded-xl border border-white/[0.05] bg-white/[0.01] p-5 transition-all hover:border-[#B87333]/20"
                   >
-                    <a.icon className="mb-3 h-5 w-5 text-[#E8C766]" strokeWidth={1.5} />
+                    <a.icon className="mb-3 h-5 w-5 text-[#D4B896]" strokeWidth={1.5} />
                     <h3 className="mb-1 text-sm font-semibold text-white/90">{a.title}</h3>
                     <p className="text-[12px] text-white/35">{a.desc}</p>
                   </motion.div>
@@ -206,7 +206,7 @@ export default function InvestissementHomeClient() {
 
               <Link
                 href="/filiales/investissement-assurance/assurance"
-                className="mt-8 inline-flex items-center gap-2 text-[13px] font-semibold text-[#E8C766] transition-colors hover:text-[#C9A227]"
+                className="mt-8 inline-flex items-center gap-2 text-[13px] font-semibold text-[#D4B896] transition-colors hover:text-[#B87333]"
               >
                 Découvrir nos assurances
                 <ArrowRight className="h-4 w-4" />
@@ -228,8 +228,8 @@ export default function InvestissementHomeClient() {
 
       {/* CTA */}
       <section className="relative overflow-hidden py-24">
-        <div className="absolute inset-0 bg-[#070F1C]" />
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#C9A227]/20 to-transparent" />
+        <div className="absolute inset-0 bg-[#071610]" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#B87333]/20 to-transparent" />
 
         <div className="container relative mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
@@ -239,7 +239,7 @@ export default function InvestissementHomeClient() {
               viewport={{ once: true }}
               className="mb-6 font-heading text-3xl font-bold uppercase text-white md:text-4xl"
             >
-              Un projet <span className="text-[#E8C766]">patrimonial</span> ?
+              Un projet <span className="text-[#D4B896]">patrimonial</span> ?
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
@@ -259,7 +259,7 @@ export default function InvestissementHomeClient() {
             >
               <Link
                 href="/filiales/investissement-assurance/contact"
-                className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#C9A227] to-[#E8C766] px-8 py-4 text-sm font-semibold text-[#0A1628] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#C9A227]/20"
+                className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#B87333] to-[#D4B896] px-8 py-4 text-sm font-semibold text-[#0A1F17] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#B87333]/20"
               >
                 Prendre rendez-vous avec un conseiller
                 <ArrowRight className="h-5 w-5" />

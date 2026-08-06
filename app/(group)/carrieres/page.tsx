@@ -38,7 +38,7 @@ export default function CarrieresPage() {
       <PageHeader
         label="Nous rejoindre"
         title="Carrières"
-        image="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1920&q=90"
+        image="/images/carrieres.jpg"
       />
 
       {/* Intro */}

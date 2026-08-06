@@ -75,7 +75,7 @@ export default function ConstructionContactClient() {
       </section>
 
       {/* Formulaire + coordonnées */}
-      <section className="bg-navy-900 py-20">
+      <section className="bg-navy-900 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1fr_360px]">
 
@@ -86,7 +86,7 @@ export default function ConstructionContactClient() {
               transition={{ duration: 0.5 }}
             >
               {sent ? (
-                <div className="flex flex-col items-center justify-center rounded-2xl border border-gold-500/20 bg-gold-500/5 py-20 text-center">
+                <div className="flex flex-col items-center justify-center rounded-2xl border border-gold-500/20 bg-gold-500/5 py-12 sm:py-20 text-center">
                   <CheckCircle className="mb-5 h-14 w-14 text-gold-400" />
                   <h2 className="font-heading text-2xl font-bold uppercase text-white">
                     Demande reçue !
@@ -192,13 +192,25 @@ export default function ConstructionContactClient() {
                       icon: Phone,
                       label: 'Téléphone',
                       value: '+225 27 22 20 11 15',
-                      href: 'tel:+22527222011',
+                      href: 'tel:+2252722201115',
+                    },
+                    {
+                      icon: Phone,
+                      label: 'Téléphone 2',
+                      value: '+225 01 72 95 53 23',
+                      href: 'tel:+2250172955323',
+                    },
+                    {
+                      icon: Phone,
+                      label: 'Téléphone 3',
+                      value: '+225 07 78 19 17 52',
+                      href: 'tel:+2250778191752',
                     },
                     {
                       icon: Mail,
                       label: 'Email',
-                      value: 'construction@elbomigroup.com',
-                      href: 'mailto:construction@elbomigroup.com',
+                      value: 'contact@elbomigroup.com',
+                      href: 'mailto:contact@elbomigroup.com',
                     },
                   ].map((item) => (
                     <div key={item.label} className="flex items-start gap-4">

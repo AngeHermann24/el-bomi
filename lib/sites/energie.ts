@@ -7,8 +7,8 @@ export const energieSite: SubsidiarySite = {
   heroHighlight: 'de la ligne au compteur',
   heroText:
     'Études, construction et maintenance de réseaux BT/HTA, électrification rurale, solaire photovoltaïque et automatismes industriels. Nous intervenons sur toute la chaîne électrique, du poste source au dernier raccordement.',
-  heroImage: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80',
-  heroSecondaryImage: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&q=80',
+  heroImage: '/images/energie-impact.jpg',
+  heroSecondaryImage: '/images/energie-impact.jpg',
 
   stats: [
     { value: 1200, suffix: ' km', label: 'Réseaux déployés' },
@@ -100,7 +100,7 @@ export const energieSite: SubsidiarySite = {
       location: 'Région du Gôh',
       description:
         'Construction d’une dorsale HTA de 62 km avec 14 postes de transformation pour raccorder onze localités.',
-      image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=1200&q=80',
+      image: '/images/energie-solutions.jpg',
       tags: ['HTA', 'Électrification rurale', 'Postes H61'],
     },
     {
@@ -110,7 +110,7 @@ export const energieSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Centrale au sol en autoconsommation avec supervision temps réel et couplage au réseau existant.',
-      image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80',
+      image: '/images/energie-impact.jpg',
       tags: ['Photovoltaïque', 'Autoconsommation', 'SCADA'],
     },
     {
@@ -120,7 +120,7 @@ export const energieSite: SubsidiarySite = {
       location: 'Yamoussoukro',
       description:
         'Fourniture et pose de 340 lampadaires solaires autonomes avec télégestion et contrat de maintenance.',
-      image: 'https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80',
+      image: '/images/energie-projets.jpg',
       tags: ['Éclairage public', 'Solaire', 'Télégestion'],
     },
     {
@@ -130,7 +130,7 @@ export const energieSite: SubsidiarySite = {
       location: 'Bouaké',
       description:
         'Refonte des armoires, automates et supervision SCADA sur trois stations de pompage interconnectées.',
-      image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=1200&q=80',
+      image: '/images/energie-solutions.jpg',
       tags: ['Automatisme', 'SCADA', 'Pompage'],
     },
     {
@@ -140,7 +140,7 @@ export const energieSite: SubsidiarySite = {
       location: 'Sud-Comoé',
       description:
         'Entretien préventif, thermographie et élagage sur 180 km de lignes haute tension.',
-      image: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&q=80',
+      image: '/images/energie-contact.jpg',
       tags: ['HTB', 'Maintenance', 'Thermographie'],
     },
     {
@@ -150,7 +150,7 @@ export const energieSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Installation TGBT redondant, groupes électrogènes et bascule automatique sans coupure.',
-      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80',
+      image: '/images/energie-impact.jpg',
       tags: ['TGBT', 'Secours', 'Redondance'],
     },
   ],

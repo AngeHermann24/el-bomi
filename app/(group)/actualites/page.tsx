@@ -25,7 +25,7 @@ export default function ActualitesPage() {
       <PageHeader
         label="Vie du groupe"
         title="Actualités"
-        image="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1920&q=90"
+        image="/images/actualites.jpg"
       />
 
       <section className="section-padding">

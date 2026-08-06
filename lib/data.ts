@@ -2,17 +2,17 @@ import { Project, Service, Intervention, Testimonial, StatItem, TeamMember, Hero
 
 export const heroSlides: HeroSlide[] = [
   {
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=90',
+    image: '/images/construction-hero.jpg',
     title: 'Vision • Expertise • Réalisation',
     subtitle: 'EL-BOMI HOLDING accompagne vos projets immobiliers et de construction avec professionnalisme, qualité et fiabilité.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1920&q=90',
+    image: '/images/construction-tp.jpg',
     title: 'Construction & Travaux Publics',
     subtitle: 'De l\'immobilier aux infrastructures, nous réalisons des projets durables qui transforment le paysage urbain.',
   },
   {
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1920&q=90',
+    image: '/images/excellence.jpg',
     title: 'L\'Excellence Au Service De Vos Projets',
     subtitle: 'Une équipe engagée, des solutions sur mesure et un savoir-faire reconnu en Côte d\'Ivoire.',
   },
@@ -33,7 +33,7 @@ export const services: Service[] = [
       'Construction de structures porteuses en béton armé, fondations profondes et superficielles, élévations et dalles. Notre expertise garantit la solidité et la pérennité de vos ouvrages.',
     icon: 'Building2',
     features: ['Fondations spéciales', 'Béton armé', 'Structures métalliques', 'Maçonnerie traditionnelle'],
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: '/images/construction-hero.jpg',
   },
   {
     id: 'genie-civil',
@@ -42,7 +42,7 @@ export const services: Service[] = [
       'Conception et réalisation d\'ouvrages d\'art, ponts, tunnels et infrastructures routières. Nous maîtrisons les projets les plus complexes avec rigueur et innovation.',
     icon: 'Landmark',
     features: ['Ouvrages d\'art', 'Voiries & réseaux', 'Terrassement', 'Assainissement'],
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    image: '/images/construction-tp.jpg',
   },
   {
     id: 'renovation',
@@ -51,7 +51,7 @@ export const services: Service[] = [
       'Transformation et modernisation de bâtiments existants dans le respect de leur caractère architectural. Du diagnostic à la livraison, nous redonnons vie à vos espaces.',
     icon: 'Hammer',
     features: ['Restructuration', 'Mise aux normes', 'Extension', 'Ravalement'],
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+    image: '/images/construction-hero.jpg',
   },
   {
     id: 'amenagement',
@@ -60,7 +60,7 @@ export const services: Service[] = [
       'Conception et réalisation d\'espaces intérieurs fonctionnels et esthétiques pour bureaux, commerces et résidences de standing.',
     icon: 'PaintBucket',
     features: ['Cloisons & faux plafonds', 'Revêtements', 'Menuiseries', 'Agencement sur mesure'],
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: '/images/construction-real.jpg',
   },
   {
     id: 'demolition',
@@ -69,7 +69,7 @@ export const services: Service[] = [
       'Démolition contrôlée et déconstruction sélective dans le respect de l\'environnement et de la sécurité. Gestion complète des déchets et valorisation des matériaux.',
     icon: 'Wrench',
     features: ['Démolition mécanique', 'Désamiantage', 'Curage', 'Tri & recyclage'],
-    image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=80',
+    image: '/images/construction-expertises.jpg',
   },
   {
     id: 'construction-durable',
@@ -78,7 +78,7 @@ export const services: Service[] = [
       'Bâtiments à haute performance énergétique, certifications environnementales et matériaux biosourcés. Construire aujourd\'hui pour demain.',
     icon: 'Leaf',
     features: ['HQE & BREEAM', 'RT 2020 / RE2020', 'Énergie positive', 'Matériaux éco-responsables'],
-    image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=800&q=80',
+    image: '/images/construction-tp.jpg',
   },
 ];
 
@@ -90,11 +90,11 @@ export const projects: Project[] = [
     description:
       'Construction d\'une tour de bureaux de 35 étages au cœur du quartier d\'affaires de La Défense. Ce projet emblématique combine performance structurelle et innovation architecturale avec une façade en verre sérigraphié et un noyau béton haute performance. Le bâtiment intègre les dernières normes environnementales RE2020.',
     shortDescription: 'Tour de bureaux 35 étages - Structure béton haute performance',
-    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    image: '/images/excellence.jpg',
     images: [
-      'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
-      'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80',
+      '/images/excellence.jpg',
+      '/images/construction-hero.jpg',
+      '/images/construction-tp.jpg',
     ],
     year: '2023',
     location: 'La Défense, Paris',
@@ -109,11 +109,11 @@ export const projects: Project[] = [
     description:
       'Réalisation d\'un ensemble résidentiel de 120 logements dans le cadre d\'un éco-quartier innovant en bord de Seine. Construction bois-béton mixte, toitures végétalisées, récupération des eaux de pluie et production d\'énergie solaire intégrée.',
     shortDescription: '120 logements éco-responsables - Construction mixte bois-béton',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: '/images/construction-real.jpg',
     images: [
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
-      'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=1200&q=80',
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
+      '/images/construction-real.jpg',
+      '/images/construction-tp.jpg',
+      '/images/construction-expertises.jpg',
     ],
     year: '2023',
     location: 'Mantes-la-Jolie, Yvelines',
@@ -128,11 +128,11 @@ export const projects: Project[] = [
     description:
       'Construction d\'un pont haubanné de 180 mètres de portée enjambant la Saône. Ouvrage d\'art exceptionnel combinant une structure en acier Corten et des piles en béton architectonique. Le pont intègre une voie piétonne et cyclable suspendue.',
     shortDescription: 'Pont haubanné 180m - Acier Corten & béton architectonique',
-    image: 'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=800&q=80',
+    image: '/images/construction-real.jpg',
     images: [
-      'https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1200&q=80',
-      'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80',
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+      '/images/construction-real.jpg',
+      '/images/construction-tp.jpg',
+      '/images/construction-hero.jpg',
     ],
     year: '2022',
     location: 'Lyon, Rhône',
@@ -147,11 +147,11 @@ export const projects: Project[] = [
     description:
       'Réhabilitation complète d\'un palace historique classé monument historique sur la Côte d\'Azur. Restauration des façades Belle Époque, renforcement structurel parasismique et création d\'un spa souterrain de 2000 m².',
     shortDescription: 'Palace historique classé MH - Réhabilitation complète',
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
+    image: '/images/construction-hero.jpg',
     images: [
-      'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=80',
-      'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200&q=80',
-      'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80',
+      '/images/construction-hero.jpg',
+      '/images/construction-expertises.jpg',
+      '/images/construction-real.jpg',
     ],
     year: '2022',
     location: 'Nice, Alpes-Maritimes',
@@ -166,11 +166,11 @@ export const projects: Project[] = [
     description:
       'Construction d\'un campus technologique de 6 bâtiments interconnectés pour un géant du numérique. Architecture contemporaine avec atrium central, laboratoires, espaces collaboratifs et parking souterrain de 800 places.',
     shortDescription: 'Campus 6 bâtiments - 28 000 m² de haute technologie',
-    image: 'https://images.unsplash.com/photo-1486718448742-163732cd1544?w=800&q=80',
+    image: '/images/abidjan.jpg',
     images: [
-      'https://images.unsplash.com/photo-1486718448742-163732cd1544?w=1200&q=80',
-      'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
+      '/images/abidjan.jpg',
+      '/images/excellence.jpg',
+      '/images/construction-hero.jpg',
     ],
     year: '2024',
     location: 'Saclay, Essonne',
@@ -185,11 +185,11 @@ export const projects: Project[] = [
     description:
       'Réalisation du génie civil d\'une station souterraine du Grand Paris Express à 35 mètres de profondeur. Parois moulées, radier, voûtes et quais dans des conditions géotechniques complexes (nappe phréatique affleurante).',
     shortDescription: 'Station souterraine -35m - Grand Paris Express',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    image: '/images/construction-tp.jpg',
     images: [
-      'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80',
-      'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=80',
-      'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1200&q=80',
+      '/images/construction-tp.jpg',
+      '/images/construction-hero.jpg',
+      '/images/excellence.jpg',
     ],
     year: '2024',
     location: 'Bagneux, Hauts-de-Seine',
@@ -243,42 +243,42 @@ export const team: TeamMember[] = [
     name: 'Marc Ebomi',
     role: 'Président-Directeur Général',
     department: 'Direction Générale',
-    image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80',
+    image: '/images/unsplash/photo-1560250097-0b93528c311a.jpg',
     bio: 'Ingénieur ESTP, 25 ans d\'expérience dans les grands projets de construction. Visionnaire passionné par l\'innovation dans le BTP.',
   },
   {
     name: 'Claire Fontaine',
     role: 'Directrice des Opérations',
     department: 'Direction des Opérations',
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80',
+    image: '/images/unsplash/photo-1573496359142-b8d87734a5a2.jpg',
     bio: 'Polytechnicienne, spécialiste en gestion de projets complexes. 18 ans d\'expérience en direction de travaux.',
   },
   {
     name: 'Karim Benali',
     role: 'Directeur Technique',
     department: 'Direction Technique',
-    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80',
+    image: '/images/construction-hero.jpg',
     bio: 'Ingénieur structures, expert en béton précontraint et construction parasismique. Référent technique sur nos projets les plus ambitieux.',
   },
   {
     name: 'Isabelle Roux',
     role: 'Responsable Développement Durable',
     department: 'Bureau d\'Études',
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80',
+    image: '/images/construction-tp.jpg',
     bio: 'Ingénieure environnement, pilote notre stratégie RSE et nos certifications HQE/BREEAM. Engagée pour une construction responsable.',
   },
   {
     name: 'Antoine Duval',
     role: 'Chef de Projets Senior',
     department: 'Direction des Opérations',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
+    image: '/images/excellence.jpg',
     bio: 'Ingénieur Centrale Lyon, 15 ans d\'expérience en conduite de travaux de génie civil et bâtiment.',
   },
   {
     name: 'Nadia Khelifi',
     role: 'Ingénieure Structures',
     department: 'Bureau d\'Études',
-    image: 'https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=400&q=80',
+    image: '/images/abidjan.jpg',
     bio: 'Spécialiste béton armé et charpente métallique. Responsable du dimensionnement sur nos projets d\'envergure.',
   },
 ];
@@ -289,20 +289,20 @@ export const interventions: Intervention[] = [
     title: 'Études & Conception',
     description: 'Études de faisabilité, conception technique, plans d\'exécution et dimensionnement structurel. Notre bureau d\'études accompagne chaque projet dès sa genèse.',
     icon: 'FileSearch',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80',
+    image: '/images/unsplash/photo-1454165804606-c3d57bc86b40.jpg',
   },
   {
     id: 'realisation',
     title: 'Réalisation des Travaux',
     description: 'Exécution complète des travaux avec nos équipes qualifiées, dans le respect des normes, des délais et du budget. Suivi qualité permanent sur chantier.',
     icon: 'HardHat',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
+    image: '/images/construction-hero.jpg',
   },
   {
     id: 'pilotage',
     title: 'Encadrement & Pilotage',
     description: 'Direction de travaux, coordination des corps d\'état, pilotage OPC et management de projet. Un interlocuteur unique pour garantir la réussite.',
     icon: 'Users',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    image: '/images/construction-tp.jpg',
   },
 ];

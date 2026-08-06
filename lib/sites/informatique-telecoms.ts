@@ -7,8 +7,8 @@ export const itSite: SubsidiarySite = {
   heroHighlight: 'conçues pour tenir',
   heroText:
     'Réseaux, fibre optique, data centers, cloud et cybersécurité. Nous concevons, déployons et exploitons les systèmes d’information des entreprises et des collectivités.',
-  heroImage: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80',
-  heroSecondaryImage: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80',
+  heroImage: '/images/infor-projets.jpg',
+  heroSecondaryImage: '/images/infor-projets.jpg',
 
   stats: [
     { value: 320, suffix: ' km', label: 'Fibre déployée' },
@@ -100,7 +100,7 @@ export const itSite: SubsidiarySite = {
       location: 'Abidjan — Grand-Bassam',
       description:
         'Déploiement d’une liaison fibre optique 96 brins avec chambres de tirage et recette réflectométrique complète.',
-      image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=1200&q=80',
+      image: '/images/infor-cyber.jpg',
       tags: ['Fibre optique', 'Backbone', 'Réflectométrie'],
     },
     {
@@ -110,7 +110,7 @@ export const itSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Aménagement complet : baies, climatisation redondante, contrôle d’accès, détection incendie et supervision.',
-      image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80',
+      image: '/images/infor-projets.jpg',
       tags: ['Data center', 'Redondance', 'Supervision'],
     },
     {
@@ -120,7 +120,7 @@ export const itSite: SubsidiarySite = {
       location: '12 agences',
       description:
         'Migration SD-WAN, segmentation par VLAN et Wi-Fi unifié sur douze agences avec supervision centralisée.',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1200&q=80',
+      image: '/images/infor-projets.jpg',
       tags: ['SD-WAN', 'Multi-sites', 'Wi-Fi'],
     },
     {
@@ -130,7 +130,7 @@ export const itSite: SubsidiarySite = {
       location: 'Zone urbaine',
       description:
         'Installation de 120 caméras IP, liaison fibre dédiée et centre de supervision avec analytique vidéo.',
-      image: 'https://images.unsplash.com/photo-1557597774-9d273605dfa9?w=1200&q=80',
+      image: '/images/infor-cyber.jpg',
       tags: ['Vidéosurveillance', 'Analytique', 'Fibre'],
     },
     {
@@ -140,7 +140,7 @@ export const itSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Développement d’un portail de dépôt et de suivi de dossiers avec signature électronique et archivage.',
-      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&q=80',
+      image: '/images/infor-projets.jpg',
       tags: ['Développement', 'Dématérialisation', 'Archivage'],
     },
     {
@@ -150,7 +150,7 @@ export const itSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Audit de sécurité, refonte des règles de pare-feu et mise en place d’un plan de reprise testé.',
-      image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&q=80',
+      image: '/images/infor-cyber.jpg',
       tags: ['Cybersécurité', 'Audit', 'PRA'],
     },
   ],

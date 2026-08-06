@@ -66,15 +66,15 @@ export default function SubsidiaryHeader({ subsidiary }: SubsidiaryHeaderProps) 
         }`}
       >
         <div className="container-max px-4 sm:px-6 lg:px-8">
-          <div className="flex h-20 items-center justify-between gap-6">
+          <div className="flex h-16 sm:h-20 items-center justify-between gap-4 sm:gap-6">
             {/* Logo filiale */}
-            <Link href={base} className="group flex items-center gap-3">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-brand-500 text-brand-contrast transition-transform duration-300 group-hover:scale-105">
+            <Link href={base} className="group flex items-center gap-2 sm:gap-3">
+              <span className="flex h-10 w-10 sm:h-11 sm:w-11 shrink-0 items-center justify-center rounded-xl bg-brand-500 text-brand-contrast transition-transform duration-300 group-hover:scale-105">
                 <IconRenderer name={subsidiary.icon} className="h-5 w-5" />
               </span>
               <span className="leading-none">
-                <span className="block font-heading text-base font-bold text-ink">EL-BOMI</span>
-                <span className="mt-1 block text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-500">
+                <span className="block font-heading text-sm sm:text-base font-bold text-ink">EL-BOMI</span>
+                <span className="mt-1 block text-[9px] sm:text-[10px] font-semibold uppercase tracking-[0.18em] text-brand-500">
                   {subsidiary.shortName}
                 </span>
               </span>
@@ -114,7 +114,7 @@ export default function SubsidiaryHeader({ subsidiary }: SubsidiaryHeaderProps) 
             <button
               onClick={() => setOpen((v) => !v)}
               aria-label={open ? 'Fermer le menu' : 'Ouvrir le menu'}
-              className="flex h-10 w-10 items-center justify-center rounded-lg border border-surface-line/15 text-ink lg:hidden"
+              className="flex h-11 w-11 items-center justify-center rounded-lg border border-surface-line/15 text-ink lg:hidden -mr-2"
             >
               {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </button>
@@ -124,12 +124,12 @@ export default function SubsidiaryHeader({ subsidiary }: SubsidiaryHeaderProps) 
         {/* Nav mobile */}
         {open && (
           <div className="border-t border-surface-line/10 bg-surface lg:hidden">
-            <nav className="container-max flex flex-col gap-1 px-4 py-4 sm:px-6">
+            <nav className="container-max flex flex-col gap-1 px-4 py-4 sm:px-6 max-h-[70vh] overflow-y-auto">
               {nav.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="rounded-lg px-4 py-3 text-sm font-medium text-ink-muted transition-colors hover:bg-brand-500/10 hover:text-brand-500"
+                  className="rounded-lg px-4 py-3.5 text-[15px] font-medium text-ink-muted transition-colors hover:bg-brand-500/10 hover:text-brand-500"
                 >
                   {item.label}
                 </Link>

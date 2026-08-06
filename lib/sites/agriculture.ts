@@ -7,8 +7,8 @@ export const agricultureSite: SubsidiarySite = {
   heroHighlight: 'jusqu’au marché',
   heroText:
     'Production agricole, élevage, transformation, intrants et hydraulique agricole. Nous accompagnons la mise en valeur des terres et la structuration des filières.',
-  heroImage: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1600&q=80',
-  heroSecondaryImage: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80',
+  heroImage: '/images/agri-hero.jpg',
+  heroSecondaryImage: '/images/agri-exploitations.jpg',
 
   stats: [
     { value: 850, suffix: ' ha', label: 'Surfaces exploitées' },
@@ -100,7 +100,7 @@ export const agricultureSite: SubsidiarySite = {
       location: 'Région du Bélier',
       description:
         'Défrichement, aménagement parcellaire, forages et mise en place d’un réseau d’irrigation par aspersion.',
-      image: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=1200&q=80',
+      image: '/images/agri-contact.jpg',
       tags: ['Aménagement', 'Irrigation', 'Forages'],
     },
     {
@@ -110,7 +110,7 @@ export const agricultureSite: SubsidiarySite = {
       location: 'Korhogo',
       description:
         'Construction et équipement d’une unité de séchage et de conditionnement avec zone de stockage ventilée.',
-      image: 'https://images.unsplash.com/photo-1595475207225-428b62bda831?w=1200&q=80',
+      image: '/images/agri-hero.jpg',
       tags: ['Transformation', 'Séchage', 'Stockage'],
     },
     {
@@ -120,7 +120,7 @@ export const agricultureSite: SubsidiarySite = {
       location: 'Agboville',
       description:
         'Réalisation de quatre bâtiments d’élevage avec ventilation, abreuvement automatique et biosécurité.',
-      image: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?w=1200&q=80',
+      image: '/images/agri-exploitations.jpg',
       tags: ['Aviculture', 'Bâtiments', 'Biosécurité'],
     },
     {
@@ -130,7 +130,7 @@ export const agricultureSite: SubsidiarySite = {
       location: 'Périphérie d’Abidjan',
       description:
         'Installation de serres avec goutte-à-goutte piloté et fertirrigation pour production tout au long de l’année.',
-      image: 'https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1200&q=80',
+      image: '/images/agri-contact.jpg',
       tags: ['Serres', 'Goutte-à-goutte', 'Fertirrigation'],
     },
     {
@@ -140,7 +140,7 @@ export const agricultureSite: SubsidiarySite = {
       location: 'Nord Côte d’Ivoire',
       description:
         'Équipement de douze points d’eau en pompage solaire pour l’irrigation et l’abreuvement du bétail.',
-      image: 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1200&q=80',
+      image: '/images/agri-hero.jpg',
       tags: ['Pompage solaire', 'Irrigation', 'Élevage'],
     },
     {
@@ -150,7 +150,7 @@ export const agricultureSite: SubsidiarySite = {
       location: 'Sud Comoé',
       description:
         'Aménagement d’étangs, alevinage et accompagnement technique sur deux cycles de production.',
-      image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=1200&q=80',
+      image: '/images/agri-exploitations.jpg',
       tags: ['Aquaculture', 'Étangs', 'Accompagnement'],
     },
   ],

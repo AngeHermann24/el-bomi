@@ -3,7 +3,7 @@ import InvestissementFooter from '@/components/investissement/InvestissementFoot
 
 export default function InvestissementLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div data-theme="investissement" className="min-h-screen bg-navy-900 text-white">
+    <div data-theme="investissement" className="min-h-screen bg-[#0A1F17] text-white">
       <InvestissementHeader />
       <main>{children}</main>
       <InvestissementFooter />

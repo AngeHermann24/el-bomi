@@ -36,7 +36,7 @@ export default function MedicalQualiteClient() {
 
       {/* Hero */}
       <section className="relative min-h-[54vh] flex items-end overflow-hidden">
-        <Image src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&q=85" alt="Qualité médicale" fill priority className="object-cover" sizes="100vw" />
+        <Image src="/images/medical-qualite.jpg" alt="Qualité médicale" fill priority className="object-cover" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-t from-white/96 via-white/55 to-white/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-transparent" />
         <div className="container mx-auto relative px-4 sm:px-6 lg:px-8 pb-16">
@@ -75,7 +75,7 @@ export default function MedicalQualiteClient() {
       </section>
 
       {/* Certifications */}
-      <section className="bg-[#F7F7F5] py-20">
+      <section className="bg-[#F7F7F5] py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12 text-center">
             <div className="mb-4 flex items-center justify-center gap-3">
@@ -107,7 +107,7 @@ export default function MedicalQualiteClient() {
       </section>
 
       {/* Processus qualité */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-14 text-center">
             <div className="mb-4 flex items-center justify-center gap-3">
@@ -134,7 +134,7 @@ export default function MedicalQualiteClient() {
 
       {/* Section humaine */}
       <section className="relative overflow-hidden py-24">
-        <Image src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=1920&q=80" alt="Équipe médicale" fill className="object-cover object-top" sizes="100vw" />
+        <Image src="/images/medical-equipe.jpg" alt="Équipe médicale" fill className="object-cover object-top" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-r from-white/96 via-white/80 to-white/20" />
         <div className="container mx-auto relative px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} className="max-w-lg">

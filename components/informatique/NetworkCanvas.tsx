@@ -23,8 +23,8 @@ export default function NetworkCanvas({ className = '' }: { className?: string }
     const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
-    const MAX_DIST = 160;
-    const NODE_COUNT = typeof window !== 'undefined' && window.innerWidth < 768 ? 40 : 75;
+    const MAX_DIST = 180;
+    const NODE_COUNT = typeof window !== 'undefined' && window.innerWidth < 768 ? 45 : 90;
 
     function resize() {
       if (!canvas) return;
@@ -39,7 +39,7 @@ export default function NetworkCanvas({ className = '' }: { className?: string }
         y: Math.random() * canvas!.height,
         vx: (Math.random() - 0.5) * 0.35,
         vy: (Math.random() - 0.5) * 0.35,
-        r: Math.random() * 1.8 + 0.8,
+        r: Math.random() * 3.5 + 1.8,
         pulse: Math.random() * Math.PI * 2,
         pulseSpeed: 0.02 + Math.random() * 0.015,
       }));
@@ -67,12 +67,12 @@ export default function NetworkCanvas({ className = '' }: { className?: string }
           const dy = nodes[i].y - nodes[j].y;
           const dist = Math.sqrt(dx * dx + dy * dy);
           if (dist < MAX_DIST) {
-            const alpha = (1 - dist / MAX_DIST) * 0.25;
+            const alpha = (1 - dist / MAX_DIST) * 0.5;
             ctx.beginPath();
             ctx.moveTo(nodes[i].x, nodes[i].y);
             ctx.lineTo(nodes[j].x, nodes[j].y);
-            ctx.strokeStyle = `rgba(201, 162, 39, ${alpha})`;
-            ctx.lineWidth = 0.6;
+            ctx.strokeStyle = `rgba(11, 30, 61, ${alpha * 0.7})`;
+            ctx.lineWidth = 0.8;
             ctx.stroke();
           }
         }
@@ -81,13 +81,13 @@ export default function NetworkCanvas({ className = '' }: { className?: string }
       // Draw nodes
       nodes.forEach((n) => {
         const pulse = Math.sin(n.pulse);
-        const glowAlpha = 0.08 + pulse * 0.06;
-        const coreAlpha = 0.5 + pulse * 0.3;
+        const glowAlpha = 0.15 + pulse * 0.1;
+        const coreAlpha = 0.7 + pulse * 0.3;
 
         // Glow halo
         const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r * 6);
-        grd.addColorStop(0, `rgba(201, 162, 39, ${glowAlpha})`);
-        grd.addColorStop(1, 'rgba(201, 162, 39, 0)');
+        grd.addColorStop(0, `rgba(47, 182, 196, ${glowAlpha})`);
+        grd.addColorStop(1, 'rgba(47, 182, 196, 0)');
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r * 6, 0, Math.PI * 2);
         ctx.fillStyle = grd;
@@ -96,7 +96,7 @@ export default function NetworkCanvas({ className = '' }: { className?: string }
         // Core dot
         ctx.beginPath();
         ctx.arc(n.x, n.y, n.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(232, 199, 102, ${coreAlpha})`;
+        ctx.fillStyle = `rgba(11, 30, 61, ${coreAlpha * 0.7})`;
         ctx.fill();
       });
 

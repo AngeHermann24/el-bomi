@@ -1,30 +1,12 @@
-import type { Metadata } from 'next';
-import { Inter, Playfair_Display, Sora, Space_Grotesk } from 'next/font/google';
+import type { Metadata, Viewport } from 'next';
 import './globals.css';
 
-const inter = Inter({
-  subsets: ['latin'],
-  variable: '--font-inter',
-  display: 'swap',
-});
-
-const playfair = Playfair_Display({
-  subsets: ['latin'],
-  variable: '--font-playfair',
-  display: 'swap',
-});
-
-const sora = Sora({
-  subsets: ['latin'],
-  variable: '--font-sora',
-  display: 'swap',
-});
-
-const spaceGrotesk = Space_Grotesk({
-  subsets: ['latin'],
-  variable: '--font-space',
-  display: 'swap',
-});
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#0B1E3D',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://elbomigroup.com'),
@@ -56,7 +38,7 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
-      className={`${inter.variable} ${playfair.variable} ${sora.variable} ${spaceGrotesk.variable}`}
+      className="font-body"
     >
       <head>
         <script
@@ -88,7 +70,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-body overflow-x-hidden">{children}</body>
+      <body className="font-body overflow-x-hidden" style={{ fontFamily: 'var(--font-sora), system-ui, sans-serif' }}>{children}</body>
     </html>
   );
 }

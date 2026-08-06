@@ -51,9 +51,9 @@ export default function SubsidiaryPage({ subsidiary, children }: SubsidiaryPageP
       </section>
 
       {/* Présentation */}
-      <section className="section-light py-20 lg:py-28">
+      <section className="section-light py-12 sm:py-20 lg:py-28">
         <div className="container-max px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
+          <div className="grid grid-cols-1 gap-8 sm:gap-16 lg:grid-cols-12">
             <div className="lg:col-span-5">
               <span className="mb-4 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-600">
                 Présentation

@@ -17,7 +17,7 @@ const projects = [
     area: '12 000 m²',
     description: 'Bâtiment commercial R+3 avec parking souterrain, façades rideaux et CVC intégré.',
     tags: ['R+3', 'Béton armé', 'Façade rideau'],
-    img: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80',
+    img: '/images/construction-hero.jpg',
   },
   {
     title: 'Route Yamoussoukro–Toumodi',
@@ -27,7 +27,7 @@ const projects = [
     area: '45 km',
     description: 'Réhabilitation et élargissement de voirie avec création de couche de base et revêtement bitumineux.',
     tags: ['Voirie', 'Bitume', 'Assainissement'],
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
+    img: '/images/energie-projets.jpg',
   },
   {
     title: 'Résidence Premium Cocody',
@@ -37,7 +37,7 @@ const projects = [
     area: '8 500 m²',
     description: 'Ensemble résidentiel de 40 villas haut standing avec piscine, clôture et voiries internes.',
     tags: ['Villas', 'Haut standing', 'VRD'],
-    img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+    img: '/images/construction-tp.jpg',
   },
   {
     title: 'Pont sur le Bandama',
@@ -47,7 +47,7 @@ const projects = [
     area: '120 m',
     description: "Ouvrage d'art en béton précontraint, fondations sur pieux, chaussée bituminée.",
     tags: ['Béton précontraint', 'Fondations profondes'],
-    img: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
+    img: '/images/construction-real.jpg',
   },
   {
     title: 'Station de pompage AEP',
@@ -57,7 +57,7 @@ const projects = [
     area: '1 500 m²',
     description: "Construction d'une station de pompage d'eau potable, bâtiment de traitement et réseau de distribution.",
     tags: ['AEP', 'Hydraulique', 'Génie civil'],
-    img: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
+    img: '/images/construction-tp.jpg',
   },
   {
     title: 'Aménagement Zone Industrielle',
@@ -67,7 +67,7 @@ const projects = [
     area: '35 ha',
     description: "Voiries, réseaux divers, éclairage public et assainissement d'une zone industrielle.",
     tags: ['VRD', 'Éclairage public', 'Assainissement'],
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    img: '/images/excellence.jpg',
   },
 ];
 
@@ -83,7 +83,7 @@ export default function ConstructionRealisationsClient() {
       {/* Hero plein écran avec image */}
       <section className="relative overflow-hidden min-h-[55vh] flex items-end">
         <Image
-          src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=85"
+          src="/images/construction-real.jpg"
           alt="Chantier EL-BOMI Construction"
           fill
           priority
@@ -148,7 +148,7 @@ export default function ConstructionRealisationsClient() {
       </section>
 
       {/* Grille projets */}
-      <section className="bg-navy-900 py-16">
+      <section className="bg-navy-900 py-10 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
             {filtered.map((p, i) => (
@@ -214,7 +214,7 @@ export default function ConstructionRealisationsClient() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-white/[0.06] bg-navy-950 py-20">
+      <section className="border-t border-white/[0.06] bg-navy-950 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-2xl font-bold uppercase text-white md:text-3xl">
             Votre projet sera notre prochaine réalisation

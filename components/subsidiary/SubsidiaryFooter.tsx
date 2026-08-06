@@ -14,8 +14,8 @@ export default function SubsidiaryFooter({ subsidiary }: SubsidiaryFooterProps) 
 
   return (
     <footer className="border-t border-surface-line/10 bg-surface-alt">
-      <div className="container-max px-4 py-16 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+      <div className="container-max px-4 py-10 sm:py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 sm:gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Identité filiale */}
           <div>
             <Link href={base} className="mb-5 inline-flex items-center gap-3">
@@ -118,7 +118,7 @@ export default function SubsidiaryFooter({ subsidiary }: SubsidiaryFooterProps) 
           </div>
         </div>
 
-        <div className="mt-14 flex flex-col items-center justify-between gap-4 border-t border-surface-line/10 pt-8 md:flex-row">
+        <div className="mt-10 sm:mt-14 flex flex-col items-center justify-between gap-4 border-t border-surface-line/10 pt-8 md:flex-row">
           <p className="text-sm text-ink-faint">
             © {new Date().getFullYear()} {subsidiary.name} — EL-BOMI HOLDING.
           </p>

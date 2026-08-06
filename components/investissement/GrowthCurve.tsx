@@ -41,13 +41,13 @@ export default function GrowthCurve({ className = '', variant = 'hero' }: Growth
       >
         <defs>
           <linearGradient id="growth-gold" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stopColor="#C9A227" stopOpacity="0.2" />
-            <stop offset="50%" stopColor="#E8C766" stopOpacity="0.8" />
-            <stop offset="100%" stopColor="#C9A227" stopOpacity="1" />
+            <stop offset="0%" stopColor="#B87333" stopOpacity="0.2" />
+            <stop offset="50%" stopColor="#D4B896" stopOpacity="0.8" />
+            <stop offset="100%" stopColor="#B87333" stopOpacity="1" />
           </linearGradient>
           <linearGradient id="growth-fill" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" stopColor="#C9A227" stopOpacity="0.08" />
-            <stop offset="100%" stopColor="#C9A227" stopOpacity="0" />
+            <stop offset="0%" stopColor="#B87333" stopOpacity="0.08" />
+            <stop offset="100%" stopColor="#B87333" stopOpacity="0" />
           </linearGradient>
         </defs>
 
@@ -69,7 +69,7 @@ export default function GrowthCurve({ className = '', variant = 'hero' }: Growth
             y1={height * p}
             x2={width}
             y2={height * p}
-            stroke="#C9A227"
+            stroke="#B87333"
             strokeWidth="0.5"
             strokeOpacity="0.08"
             strokeDasharray="4 8"
@@ -98,8 +98,8 @@ export default function GrowthCurve({ className = '', variant = 'hero' }: Growth
             cx={pt.x}
             cy={pt.y}
             r={isHero ? 4 : 3}
-            fill="#0A1628"
-            stroke="#E8C766"
+            fill="#0A1F17"
+            stroke="#D4B896"
             strokeWidth="1.5"
             initial={{ scale: 0, opacity: 0 }}
             whileInView={{ scale: 1, opacity: 1 }}
@@ -113,7 +113,7 @@ export default function GrowthCurve({ className = '', variant = 'hero' }: Growth
           cx={width}
           cy={height * 0.1}
           r={isHero ? 6 : 4}
-          fill="#E8C766"
+          fill="#D4B896"
           initial={{ scale: 0, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           viewport={{ once: true }}
@@ -124,7 +124,7 @@ export default function GrowthCurve({ className = '', variant = 'hero' }: Growth
           cy={height * 0.1}
           r={isHero ? 12 : 8}
           fill="none"
-          stroke="#E8C766"
+          stroke="#D4B896"
           strokeWidth="1"
           strokeOpacity="0.3"
           initial={{ scale: 0, opacity: 0 }}

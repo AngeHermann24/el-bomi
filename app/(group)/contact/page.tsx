@@ -20,7 +20,7 @@ const contactInfo = [
   {
     icon: 'Phone',
     title: 'Téléphone',
-    lines: ['(225) 27 22 20 11 15'],
+    lines: ['(225) 27 22 20 11 15', '(225) 01 72 95 53 23', '(225) 07 78 19 17 52'],
   },
   {
     icon: 'Mail',
@@ -59,7 +59,7 @@ export default function ContactPage() {
       <PageHeader
         label="Parlons de votre projet"
         title="Contactez-nous"
-        image="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=90"
+        image="/images/construction-hero.jpg"
       />
 
       <section className="section-padding" id="contact-form">

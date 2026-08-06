@@ -98,7 +98,7 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
       preserveAspectRatio="xMidYMid meet"
     >
       <defs>
-        <filter id="glow-gold" x="-30%" y="-30%" width="160%" height="160%">
+        <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
           <feGaussianBlur stdDeviation="2.5" result="blur" />
           <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
         </filter>
@@ -106,7 +106,27 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
           <feGaussianBlur stdDeviation="3" result="blur" />
           <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
         </filter>
+        <linearGradient id="ocean-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#D6E8F0" />
+          <stop offset="100%" stop-color="#C5DCE8" />
+        </linearGradient>
+        <linearGradient id="land-grad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%" stop-color="#E8E4D8" />
+          <stop offset="100%" stop-color="#D8D2C4" />
+        </linearGradient>
       </defs>
+
+      {/* Ocean background */}
+      <rect width="800" height="700" fill="url(#ocean-grad)" />
+      {/* Subtle ocean grid */}
+      <g opacity="0.06">
+        {Array.from({ length: 18 }).map((_, i) => (
+          <line key={`h${i}`} x1="0" y1={i * 40} x2="800" y2={i * 40} stroke="#0D7377" strokeWidth="0.5" />
+        ))}
+        {Array.from({ length: 21 }).map((_, i) => (
+          <line key={`v${i}`} x1={i * 40} y1="0" x2={i * 40} y2="700" stroke="#0D7377" strokeWidth="0.5" />
+        ))}
+      </g>
 
       {/* ── Silhouette Afrique low-poly stylisée ── */}
       <path
@@ -118,9 +138,9 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
            L 225 415 L 210 390 L 195 365 L 185 340 L 175 310 L 165 280
            L 160 250 L 155 215 L 148 185 L 140 155 L 145 125 L 155 100
            L 170 80 Z"
-        fill="rgba(11,30,61,0.45)"
-        stroke="rgba(201,162,39,0.12)"
-        strokeWidth="1"
+        fill="url(#land-grad)"
+        stroke="rgba(11,30,61,0.15)"
+        strokeWidth="1.5"
       />
 
       {/* ── Routes animées ── */}
@@ -131,15 +151,15 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
         return (
           <g key={i}>
             {/* Chemin de fond (dim) */}
-            <path d={d} fill="none" stroke="rgba(201,162,39,0.08)" strokeWidth="1.2" />
+            <path d={d} fill="none" stroke="rgba(11,30,61,0.1)" strokeWidth="1.5" />
             {/* Chemin animé */}
             <motion.path
               d={d}
               fill="none"
-              stroke="rgba(201,162,39,0.45)"
-              strokeWidth="1.2"
+              stroke={r.mode === 'ship' ? '#0D7377' : r.mode === 'plane' ? '#E85D04' : '#F77F00'}
+              strokeWidth="1.8"
               strokeDasharray="6 4"
-              filter="url(#glow-gold)"
+              filter="url(#glow-orange)"
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
               transition={{ duration: 2.5, delay: r.delay * 0.4, ease: 'easeOut' }}
@@ -158,12 +178,13 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
         const ctrl = { x: mx, y: my };
         const pos = quadBezier(from, ctrl, toNode, t);
         return (
-          <g key={routeIdx} transform={`translate(${pos.x - 8},${pos.y - 8})`} opacity="0.85">
-            <rect width="16" height="16" rx="3"
-              fill="rgba(11,30,61,0.9)" stroke="rgba(201,162,39,0.5)" strokeWidth="0.8"
+          <g key={routeIdx} transform={`translate(${pos.x - 9},${pos.y - 9})`} opacity="0.9">
+            <rect width="18" height="18" rx="4"
+              fill="white" stroke={r.mode === 'ship' ? '#0D7377' : '#E85D04'} strokeWidth="1.2"
+              filter="url(#glow-orange)"
             />
-            <svg viewBox="0 0 24 24" width="10" height="10" x="3" y="3"
-              fill="none" stroke="rgba(232,199,102,0.9)" strokeWidth="2" strokeLinecap="round"
+            <svg viewBox="0 0 24 24" width="11" height="11" x="3.5" y="3.5"
+              fill="none" stroke={r.mode === 'ship' ? '#0D7377' : '#E85D04'} strokeWidth="2" strokeLinecap="round"
             >
               <path d={ICON_SVG[r.mode]} />
             </svg>
@@ -175,16 +196,16 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
       {NODES.map((n) => (
         <g key={n.id}>
           {/* Halo */}
-          <circle cx={n.x} cy={n.y} r="8" fill="rgba(201,162,39,0.06)" filter="url(#glow-node)" />
+          <circle cx={n.x} cy={n.y} r="10" fill="rgba(232,93,4,0.08)" filter="url(#glow-node)" />
           {/* Cercle extérieur */}
-          <motion.circle cx={n.x} cy={n.y} r="5"
-            fill="none" stroke="rgba(201,162,39,0.35)" strokeWidth="0.8"
+          <motion.circle cx={n.x} cy={n.y} r="6"
+            fill="white" stroke={n.id === 'abidjan' ? '#E85D04' : 'rgba(11,30,61,0.3)'} strokeWidth="1.2"
             initial={{ scale: 0, opacity: 0 }} animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.5, delay: 1.5 }}
           />
           {/* Point central */}
-          <motion.circle cx={n.x} cy={n.y} r="2.5"
-            fill={n.id === 'abidjan' ? '#E8C766' : 'rgba(201,162,39,0.7)'}
+          <motion.circle cx={n.x} cy={n.y} r="3"
+            fill={n.id === 'abidjan' ? '#E85D04' : '#0D7377'}
             filter="url(#glow-node)"
             initial={{ scale: 0 }} animate={{ scale: 1 }}
             transition={{ duration: 0.4, delay: 1.6 }}
@@ -193,8 +214,8 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
           {n.id === 'abidjan' && (
             <motion.text
               x={n.x + 8} y={n.y - 6}
-              fontSize="8" fill="rgba(232,199,102,0.9)"
-              fontFamily="sans-serif" fontWeight="600"
+              fontSize="9" fill="#E85D04"
+              fontFamily="sans-serif" fontWeight="700"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }}
               transition={{ delay: 2 }}
             >
@@ -204,8 +225,8 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
           {n.id !== 'abidjan' && (
             <motion.text
               x={n.x + 6} y={n.y - 4}
-              fontSize="6.5" fill="rgba(201,162,39,0.5)"
-              fontFamily="sans-serif"
+              fontSize="7" fill="rgba(11,30,61,0.55)"
+              fontFamily="sans-serif" fontWeight="500"
               initial={{ opacity: 0 }} animate={{ opacity: 1 }}
               transition={{ delay: 2.5 }}
             >
@@ -222,15 +243,15 @@ export default function MapRoutes({ className = '' }: { className?: string }) {
         { mode: 'plane', label: 'Aérien', x: 725, y: 630 },
       ].map((l) => (
         <g key={l.mode}>
-          <rect x={l.x - 2} y={l.y - 9} width="12" height="12" rx="2"
-            fill="rgba(11,30,61,0.8)" stroke="rgba(201,162,39,0.35)" strokeWidth="0.6"
+          <rect x={l.x - 2} y={l.y - 9} width="14" height="14" rx="3"
+            fill="white" stroke={l.mode === 'ship' ? '#0D7377' : '#E85D04'} strokeWidth="1"
           />
-          <svg viewBox="0 0 24 24" width="8" height="8" x={l.x} y={l.y - 7}
-            fill="none" stroke="rgba(232,199,102,0.7)" strokeWidth="2.5" strokeLinecap="round"
+          <svg viewBox="0 0 24 24" width="9" height="9" x={l.x} y={l.y - 7}
+            fill="none" stroke={l.mode === 'ship' ? '#0D7377' : '#E85D04'} strokeWidth="2.5" strokeLinecap="round"
           >
             <path d={ICON_SVG[l.mode]} />
           </svg>
-          <text x={l.x + 14} y={l.y + 1} fontSize="6" fill="rgba(201,162,39,0.45)" fontFamily="sans-serif">
+          <text x={l.x + 15} y={l.y + 1} fontSize="7" fill="rgba(11,30,61,0.5)" fontFamily="sans-serif" fontWeight="500">
             {l.label}
           </text>
         </g>

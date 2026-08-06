@@ -10,6 +10,10 @@ export const groupInfo = {
   addressDetail: 'Abidjan, Cocody - Angré 8ème Tranche',
   phone: '(225) 27 22 20 11 15',
   phoneRaw: '+2252722201115',
+  phone2: '(225) 01 72 95 53 23',
+  phone2Raw: '+2250172955323',
+  phone3: '(225) 07 78 19 17 52',
+  phone3Raw: '+2250778191752',
   email: 'contact@elbomigroup.com',
   hours: 'Lundi - Vendredi : 08h00 - 18h30',
   hoursClosed: 'Samedi & Dimanche : Fermé',
@@ -33,7 +37,7 @@ export const subsidiaries: Subsidiary[] = [
     intro:
       'Notre filiale historique conçoit et réalise des ouvrages de bâtiment, de génie civil et d’infrastructures routières. Elle réunit les compétences d’études, de terrassement, de production de matériaux et d’exécution nécessaires pour porter un projet de bout en bout.',
     icon: 'Building2',
-    image: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80',
+    image: '/images/construction-hero.jpg',
     activities: [
       'Construction, immobilier & génie civil',
       'Travaux publics, voiries & infrastructures routières',
@@ -44,7 +48,7 @@ export const subsidiaries: Subsidiary[] = [
       'Aménagement urbain & VRD',
       'Électricité, énergies & éclairage public (BT/HTA, solaire)',
     ],
-    email: 'construction@elbomigroup.com',
+    email: 'contact@elbomigroup.com',
     phone: '(225) 27 22 20 11 15',
     hasSubSite: true,
   },
@@ -58,7 +62,7 @@ export const subsidiaries: Subsidiary[] = [
     intro:
       'Cette filiale intervient sur toute la chaîne électrique : études de réseaux, construction et maintenance des lignes, exploitation de postes sources, électrification rurale et production solaire. Elle déploie également des solutions d’automatisme et de supervision industrielle.',
     icon: 'Zap',
-    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80',
+    image: '/images/energie-impact.jpg',
     activities: [
       'Électricité générale & installations BT',
       'Études de réseaux BT/HTA',
@@ -82,7 +86,7 @@ export const subsidiaries: Subsidiary[] = [
     intro:
       'Nous concevons et intégrons les infrastructures numériques des entreprises et des collectivités : réseaux, fibre optique, data centers, cloud, sécurité électronique et solutions logicielles sur mesure.',
     icon: 'Network',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1600&q=80',
+    image: '/images/infor-projets.jpg',
     activities: [
       'Solutions informatiques & systèmes d’information',
       'Réseaux & infrastructures numériques',
@@ -106,7 +110,7 @@ export const subsidiaries: Subsidiary[] = [
     intro:
       'De l’enlèvement au dernier kilomètre, cette filiale prend en charge l’acheminement et la gestion de vos flux : formalités douanières, affrètement multimodal, entreposage piloté par WMS, suivi de flotte et manutention portuaire.',
     icon: 'Truck',
-    image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1600&q=80',
+    image: '/images/abidjan.jpg',
     activities: [
       'Transit international & dédouanement',
       'Transport multimodal & affrètement',
@@ -129,7 +133,7 @@ export const subsidiaries: Subsidiary[] = [
     intro:
       'Cette filiale importe, distribue et maintient des équipements médicaux — dont les unités d’hémodialyse — et accompagne les établissements de santé de la conception à l’exploitation, y compris la construction de cliniques et d’unités industrielles.',
     icon: 'HeartPulse',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80',
+    image: '/images/excellence.jpg',
     activities: [
       'Importation, distribution & maintenance d’équipements médicaux',
       'Centres d’hémodialyse & établissements de santé',
@@ -152,7 +156,7 @@ export const subsidiaries: Subsidiary[] = [
     intro:
       'De la mise en valeur des terres à la commercialisation, cette filiale couvre la production en plein champ et sous serre, l’élevage, l’aquaculture, la transformation agroalimentaire et l’hydraulique agricole.',
     icon: 'Leaf',
-    image: 'https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=1600&q=80',
+    image: '/images/construction-tp.jpg',
     activities: [
       'Production agricole (plein champ, serres)',
       'Élevage & aquaculture',
@@ -177,7 +181,7 @@ export const subsidiaries: Subsidiary[] = [
     intro:
       'Cette filiale développe et gère un portefeuille immobilier résidentiel, commercial et tertiaire. De l’acquisition foncière à la commercialisation, elle accompagne les projets de promotion, de gestion locative et de structuration patrimoniale.',
     icon: 'Home',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&q=80',
+    image: '/images/abidjan.jpg',
     activities: [
       'Promotion immobilière (résidentiel & tertiaire)',
       'Gestion locative & syndic de copropriété',
@@ -189,6 +193,7 @@ export const subsidiaries: Subsidiary[] = [
     ],
     email: 'immobilier@elbomigroup.com',
     phone: '(225) 27 22 20 11 15',
+    hasSubSite: true,
   },
   {
     slug: 'investissement-assurance',
@@ -200,7 +205,7 @@ export const subsidiaries: Subsidiary[] = [
     intro:
       'Cette filiale conçoit des solutions sur mesure pour la protection et la croissance du capital : assurance vie, prévoyance, épargne, placement et conseil en investissement. Elle accompagne les particuliers comme les entreprises dans leur stratégie patrimoniale et financière.',
     icon: 'Landmark',
-    image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1600&q=80',
+    image: '/images/unsplash/photo-1454165804606-c3d57bc86b40.jpg',
     activities: [
       'Conseil en investissement & gestion d’actifs',
       'Assurance vie & prévoyance',
@@ -284,7 +289,7 @@ export const news: NewsItem[] = [
       'La filiale Construction & Infrastructures renforce sa capacité de production avec une nouvelle unité dédiée aux éléments préfabriqués.',
     date: '2026-05-12',
     category: 'Construction',
-    image: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=80',
+    image: '/images/construction-tp.jpg',
   },
   {
     slug: 'electrification-rurale-phase-2',
@@ -293,7 +298,7 @@ export const news: NewsItem[] = [
       'Extension du réseau BT/HTA sur plusieurs localités, avec raccordement progressif des foyers et de l’éclairage public.',
     date: '2026-03-28',
     category: 'Énergie',
-    image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1200&q=80',
+    image: '/images/energie-impact.jpg',
   },
   {
     slug: 'deploiement-fibre-entreprises',
@@ -302,7 +307,7 @@ export const news: NewsItem[] = [
       'La filiale Informatique & Télécoms livre une infrastructure de transmission haut débit avec supervision centralisée.',
     date: '2026-02-09',
     category: 'Télécoms',
-    image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200&q=80',
+    image: '/images/infor-projets.jpg',
   },
   {
     slug: 'centre-hemodialyse',
@@ -311,7 +316,7 @@ export const news: NewsItem[] = [
       'Installation, mise en service et contrat de maintenance pour un nouveau centre de traitement rénal.',
     date: '2025-12-15',
     category: 'Médical',
-    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80',
+    image: '/images/excellence.jpg',
   },
 ];
 

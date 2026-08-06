@@ -143,7 +143,7 @@ export default function ConstructionMethodologieClient() {
       </section>
 
       {/* Timeline */}
-      <section className="bg-navy-900 py-20">
+      <section className="bg-navy-900 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl">
             {steps.map((step, i) => (
@@ -154,7 +154,7 @@ export default function ConstructionMethodologieClient() {
       </section>
 
       {/* Engagements */}
-      <section className="border-t border-white/[0.06] bg-navy-950 py-20">
+      <section className="border-t border-white/[0.06] bg-navy-950 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="mb-12 text-center">
             <span className="inline-block mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">
@@ -176,7 +176,7 @@ export default function ConstructionMethodologieClient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-8"
+                className="rounded-2xl border border-white/[0.07] bg-white/[0.02] p-5 sm:p-8"
               >
                 <CheckCircle className="mb-4 h-7 w-7 text-gold-400" />
                 <h3 className="mb-2 font-heading text-lg font-bold uppercase text-white">{item.title}</h3>
@@ -188,7 +188,7 @@ export default function ConstructionMethodologieClient() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-white/[0.06] bg-navy-900 py-20">
+      <section className="border-t border-white/[0.06] bg-navy-900 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-heading text-2xl font-bold uppercase text-white md:text-3xl">
             Prêt à démarrer votre projet ?

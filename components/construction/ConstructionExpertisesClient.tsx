@@ -12,7 +12,7 @@ const expertises = [
     slug: 'batiment',
     description: 'Construction neuve, gros œuvre, structures béton armé et charpentes métalliques. Résidentiel, commercial, industriel.',
     services: ['Construction neuve', 'Rénovation lourde', 'Structures béton armé', 'Charpente métallique', 'Second œuvre'],
-    img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&q=80',
+    img: '/images/construction-hero.jpg',
   },
   {
     icon: HardHat,
@@ -20,7 +20,7 @@ const expertises = [
     slug: 'voiries',
     description: "Routes, autoroutes, aménagements urbains, réseaux divers et ouvrages d'art.",
     services: ["Voiries & routes", "Ouvrages d'art", 'Aménagement urbain', 'Signalisation', 'Pistes rurales'],
-    img: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=80',
+    img: '/images/construction-tp.jpg',
   },
   {
     icon: Map,
@@ -28,7 +28,7 @@ const expertises = [
     slug: 'terrassement',
     description: 'Études topographiques, terrassement général, gestion des terres et cartographie technique.',
     services: ['Topographie & relevés', 'Déblais & remblais', 'Compactage & stabilisation', 'Cartographie SIG', 'Géotechnique'],
-    img: 'https://images.unsplash.com/photo-1590736704728-f4730bb30770?w=700&q=80',
+    img: '/images/construction-hero.jpg',
   },
   {
     icon: Layers,
@@ -36,7 +36,7 @@ const expertises = [
     slug: 'materiaux',
     description: "Production de béton, fabrication d'éléments préfabriqués et fourniture de matériaux certifiés.",
     services: ['Centrale à béton', 'Préfabrication', 'Fournitures certifiées', 'Contrôle qualité', 'Béton spéciaux'],
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80',
+    img: '/images/construction-real.jpg',
   },
   {
     icon: Droplets,
@@ -44,7 +44,7 @@ const expertises = [
     slug: 'hydraulique',
     description: "Réseaux d'eau potable et d'eaux usées, stations de traitement, drainage pluvial.",
     services: ['Réseaux AEP', 'Assainissement', 'Drainage pluvial', 'Stations de pompage', 'STEP'],
-    img: 'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=80',
+    img: '/images/construction-expertises.jpg',
   },
   {
     icon: Zap,
@@ -52,7 +52,7 @@ const expertises = [
     slug: 'electricite',
     description: 'Installations haute et basse tension, éclairage public, courants faibles et domotique.',
     services: ['Installations HT/BT', 'Éclairage public', 'Courants faibles', 'Domotique', 'Groupes électrogènes'],
-    img: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&q=80',
+    img: '/images/construction-hero.jpg',
   },
   {
     icon: Wrench,
@@ -60,7 +60,7 @@ const expertises = [
     slug: 'amenagement',
     description: 'Voiries et réseaux divers, espaces publics, mobilier urbain et paysagisme.',
     services: ['VRD', 'Espaces verts', 'Mobilier urbain', 'Parkings', 'Clôtures & portails'],
-    img: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=700&q=80',
+    img: '/images/energie-contact.jpg',
   },
 ];
 
@@ -70,7 +70,7 @@ export default function ConstructionExpertisesClient() {
       {/* Hero — image plein écran */}
       <section className="relative overflow-hidden min-h-[50vh] flex items-end">
         <Image
-          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1920&q=85"
+          src="/images/construction-expertises.jpg"
           alt="Expertises Construction EL-BOMI"
           fill
           priority
@@ -92,21 +92,21 @@ export default function ConstructionExpertisesClient() {
             className="mb-5 flex items-center gap-3"
           >
             <span className="h-px w-8 bg-gold-400" />
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">Corps de métier</span>
+            <span className="font-heading text-sm font-semibold uppercase tracking-[0.3em] text-gold-400">Corps de métier</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="font-heading text-5xl font-bold uppercase text-white md:text-6xl lg:text-7xl"
+            className="font-heading text-5xl font-bold text-white md:text-6xl lg:text-7xl"
           >
-            Nos 7 expertises
+            Nos <span className="text-gold-400">7 expertises</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
-            className="mt-5 max-w-xl text-lg text-white/55"
+            className="mt-5 max-w-xl font-heading text-lg text-white/55"
           >
             Du gros œuvre aux VRD — nous couvrons l&apos;ensemble du cycle de construction.
           </motion.p>
@@ -114,7 +114,7 @@ export default function ConstructionExpertisesClient() {
       </section>
 
       {/* Grille des expertises */}
-      <section className="bg-navy-900 py-20">
+      <section className="bg-navy-900 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
             {expertises.map((e, i) => (
@@ -144,15 +144,15 @@ export default function ConstructionExpertisesClient() {
                   <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-xl border border-gold-500/30 bg-gold-500/15 backdrop-blur-sm transition-colors group-hover:bg-gold-500/25">
                     <e.icon className="h-5 w-5 text-gold-400" />
                   </div>
-                  <h2 className="mb-2 font-heading text-base font-bold uppercase text-white leading-snug">
+                  <h2 className="mb-2 font-heading text-lg font-bold text-white leading-snug">
                     {e.title}
                   </h2>
                   {/* Description + services au hover */}
                   <div className="max-h-0 overflow-hidden transition-all duration-500 group-hover:max-h-52">
-                    <p className="mb-3 text-xs leading-relaxed text-white/55">{e.description}</p>
+                    <p className="mb-3 text-sm leading-relaxed text-white/55">{e.description}</p>
                     <ul className="space-y-1.5">
                       {e.services.map((s) => (
-                        <li key={s} className="flex items-center gap-2 text-[11px] text-white/40">
+                        <li key={s} className="flex items-center gap-2 text-xs text-white/45">
                           <span className="h-1 w-1 shrink-0 rounded-full bg-gold-400/50" />
                           {s}
                         </li>
@@ -169,14 +169,14 @@ export default function ConstructionExpertisesClient() {
       </section>
 
       {/* CTA */}
-      <section className="border-t border-white/[0.06] bg-navy-950 py-20">
+      <section className="border-t border-white/[0.06] bg-navy-950 py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="relative overflow-hidden rounded-3xl border border-gold-500/15 bg-gold-500/[0.04] p-10 text-center md:p-14">
             <div className="pointer-events-none absolute -top-32 left-1/2 h-64 w-96 -translate-x-1/2 rounded-full bg-gold-500/10 blur-3xl" />
-            <h2 className="relative font-heading text-2xl font-bold uppercase text-white md:text-3xl">
+            <h2 className="relative font-heading text-2xl font-bold text-white md:text-3xl">
               Votre projet entre de bonnes mains
             </h2>
-            <p className="relative mt-4 text-white/55">
+            <p className="relative mt-4 font-heading text-base text-white/55">
               Contactez-nous pour discuter de votre projet et obtenir un devis détaillé.
             </p>
             <div className="relative mt-8 flex flex-wrap justify-center gap-4">

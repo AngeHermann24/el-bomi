@@ -20,7 +20,7 @@ export default function AProposPage() {
       <PageHeader
         label="Notre histoire"
         title="À Propos du Groupe"
-        image="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1920&q=90"
+        image="https://images.pexels.com/photos/16940721/pexels-photo-16940721.jpeg?auto=compress&cs=tinysrgb&w=1920&q=90"
       />
 
       {/* Société mère */}
@@ -68,7 +68,7 @@ export default function AProposPage() {
             </div>
             <div className="relative h-[440px] overflow-hidden rounded-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=900&q=80"
+                src="/images/abidjan.jpg"
                 alt="EL-BOMI HOLDING"
                 fill
                 className="object-cover"
@@ -144,7 +144,7 @@ export default function AProposPage() {
           <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:items-center">
             <div className="relative h-[450px] overflow-hidden rounded-2xl">
               <Image
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&q=80"
+                src="/images/construction-hero.jpg"
                 alt="Direction du groupe"
                 fill
                 className="object-cover"

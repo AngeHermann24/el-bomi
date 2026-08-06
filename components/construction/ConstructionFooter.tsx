@@ -13,7 +13,7 @@ const navLinks = [
 export default function ConstructionFooter() {
   return (
     <footer className="border-t border-white/[0.08] bg-navy-950">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
 
           {/* Brand */}
@@ -34,7 +34,7 @@ export default function ConstructionFooter() {
                 <a
                   key={i}
                   href="#"
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-white/40 transition-all hover:border-gold-500/40 hover:text-gold-400"
+                  className="flex h-10 w-10 sm:h-9 sm:w-9 items-center justify-center rounded-lg border border-white/10 text-white/40 transition-all hover:border-gold-500/40 hover:text-gold-400"
                 >
                   <Icon className="h-4 w-4" />
                 </a>
@@ -47,7 +47,7 @@ export default function ConstructionFooter() {
             <h3 className="mb-4 text-xs font-semibold uppercase tracking-[0.2em] text-gold-400/70">
               Navigation
             </h3>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3.5 sm:space-y-2.5">
               {navLinks.map((l) => (
                 <li key={l.href}>
                   <Link
@@ -76,21 +76,33 @@ export default function ConstructionFooter() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-gold-400/60 shrink-0" />
-                <a href="tel:+22527222011" className="text-sm text-white/50 hover:text-white transition-colors">
+                <a href="tel:+2252722201115" className="text-sm text-white/50 hover:text-white transition-colors">
                   +225 27 22 20 11 15
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
+                <Phone className="h-4 w-4 text-gold-400/60 shrink-0" />
+                <a href="tel:+2250172955323" className="text-sm text-white/50 hover:text-white transition-colors">
+                  +225 01 72 95 53 23
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
+                <Phone className="h-4 w-4 text-gold-400/60 shrink-0" />
+                <a href="tel:+2250778191752" className="text-sm text-white/50 hover:text-white transition-colors">
+                  +225 07 78 19 17 52
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5">
                 <Mail className="h-4 w-4 text-gold-400/60 shrink-0" />
-                <a href="mailto:construction@elbomigroup.com" className="text-sm text-white/50 hover:text-white transition-colors">
-                  construction@elbomigroup.com
+                <a href="mailto:contact@elbomigroup.com" className="text-sm text-white/50 hover:text-white transition-colors">
+                  contact@elbomigroup.com
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/[0.06] pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div className="mt-8 sm:mt-10 border-t border-white/[0.06] pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/30">
             © {new Date().getFullYear()} EL-BOMI HOLDING. Tous droits réservés.
           </p>

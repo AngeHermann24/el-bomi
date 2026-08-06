@@ -13,9 +13,9 @@ export default function ShieldCircle({ className = '', size = 200 }: ShieldCircl
       <svg viewBox="0 0 200 200" className="h-full w-full">
         <defs>
           <linearGradient id="shield-gold" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#C9A227" stopOpacity="0.6" />
-            <stop offset="50%" stopColor="#E8C766" stopOpacity="1" />
-            <stop offset="100%" stopColor="#C9A227" stopOpacity="0.6" />
+            <stop offset="0%" stopColor="#B87333" stopOpacity="0.6" />
+            <stop offset="50%" stopColor="#D4B896" stopOpacity="1" />
+            <stop offset="100%" stopColor="#B87333" stopOpacity="0.6" />
           </linearGradient>
         </defs>
 
@@ -66,7 +66,7 @@ export default function ShieldCircle({ className = '', size = 200 }: ShieldCircl
         <motion.path
           d="M88 100 L96 108 L114 90"
           fill="none"
-          stroke="#E8C766"
+          stroke="#D4B896"
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
@@ -82,7 +82,7 @@ export default function ShieldCircle({ className = '', size = 200 }: ShieldCircl
           cy="100"
           r="90"
           fill="none"
-          stroke="#E8C766"
+          stroke="#D4B896"
           strokeWidth="0.5"
           strokeOpacity="0.4"
           strokeDasharray="2 30"

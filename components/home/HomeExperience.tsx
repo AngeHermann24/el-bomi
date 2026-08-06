@@ -259,7 +259,7 @@ function Full3DExperience({ progress }: { progress: MotionValue<number> }) {
   return (
     <>
       {!loaded && <LoadingScreen />}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 pointer-events-none">
         <Suspense fallback={null}>
           <Experience3D progress={progress} onLoad={() => setLoaded(true)} />
         </Suspense>
@@ -482,7 +482,7 @@ function StaticExperience() {
         </section>
 
         {/* Grid */}
-        <section className="flex min-h-screen flex-col justify-center px-4 py-20">
+        <section className="flex min-h-screen flex-col justify-center px-4 py-12 sm:py-20">
           <div className="container-max">
             <div className="mx-auto mb-10 max-w-2xl text-center">
               <span className="mb-3 inline-block text-xs font-semibold uppercase tracking-[0.25em] text-gold-400">
@@ -544,7 +544,7 @@ export default function HomeExperience() {
   // Mode pending (SSR / premier paint) : on rend un socle neutre
   if (mode === 'pending') {
     return (
-      <div ref={containerRef} style={{ height: `${JOURNEY_VH}vh` }} className="relative">
+      <div ref={containerRef} style={{ height: `${JOURNEY_VH}vh` }} className="relative z-0">
         <div className="sticky top-0 h-screen w-full overflow-hidden bg-navy-950">
           <LoadingScreen />
         </div>
@@ -557,8 +557,8 @@ export default function HomeExperience() {
   }
 
   return (
-    <div ref={containerRef} style={{ height: `${JOURNEY_VH}vh` }} className="relative">
-      <div className="sticky top-0 h-screen w-full overflow-hidden">
+    <div ref={containerRef} style={{ height: `${JOURNEY_VH}vh` }} className="relative z-0">
+      <div className="sticky top-0 h-screen w-full overflow-hidden pointer-events-none">
         {mode === 'full3d' && <Full3DExperience progress={progress.current} />}
         {mode === 'lite' && <LiteExperience progress={progress.current} />}
       </div>

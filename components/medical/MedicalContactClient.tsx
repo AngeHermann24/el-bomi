@@ -30,7 +30,7 @@ export default function MedicalContactClient() {
 
       {/* Hero */}
       <section className="relative min-h-[50vh] flex items-end overflow-hidden">
-        <Image src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&q=85" alt="Contact médical" fill priority className="object-cover object-top" sizes="100vw" />
+        <Image src="/images/medical-qualite.jpg" alt="Contact médical" fill priority className="object-cover object-top" sizes="100vw" />
         <div className="absolute inset-0 bg-gradient-to-t from-white/97 via-white/55 to-white/10" />
         <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-transparent" />
         <div className="container mx-auto relative px-4 sm:px-6 lg:px-8 pb-16">
@@ -48,7 +48,7 @@ export default function MedicalContactClient() {
       </section>
 
       {/* Formulaire + infos */}
-      <section className="bg-[#F7F7F5] py-20">
+      <section className="bg-[#F7F7F5] py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-5">
 

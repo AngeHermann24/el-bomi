@@ -7,8 +7,8 @@ export const logisticsSite: SubsidiarySite = {
   heroHighlight: 'maîtrisés de bout en bout',
   heroText:
     'Transit international, dédouanement, transport multimodal, entreposage et distribution. Un interlocuteur unique de l’enlèvement au dernier kilomètre.',
-  heroImage: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1600&q=80',
-  heroSecondaryImage: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=80',
+  heroImage: '/images/transit-port.jpg',
+  heroSecondaryImage: '/images/transit-services.jpg',
 
   stats: [
     { value: 4500, suffix: '+', label: 'Dossiers traités / an' },
@@ -100,7 +100,7 @@ export const logisticsSite: SubsidiarySite = {
       location: 'Port d’Abidjan',
       description:
         'Dédouanement et acheminement de 42 conteneurs d’équipements, dont trois colis hors gabarit sous escorte.',
-      image: 'https://images.unsplash.com/photo-1494412574643-ff11b0a5c1c3?w=1200&q=80',
+      image: '/images/transit-port.jpg',
       tags: ['Import', 'Hors gabarit', 'Escorte'],
     },
     {
@@ -110,7 +110,7 @@ export const logisticsSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Mise en place d’un entrepôt de 4 000 m² sous WMS avec préparation de commandes pour 180 points de vente.',
-      image: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1200&q=80',
+      image: '/images/transit-services.jpg',
       tags: ['Entreposage', 'WMS', 'Distribution'],
     },
     {
@@ -120,7 +120,7 @@ export const logisticsSite: SubsidiarySite = {
       location: 'Abidjan — Ouagadougou',
       description:
         'Organisation de rotations routières régulières avec suivi GPS et gestion des formalités de transit.',
-      image: 'https://images.unsplash.com/photo-1519003722824-194d4455a60c?w=1200&q=80',
+      image: '/images/transit-port.jpg',
       tags: ['Transit', 'Corridor', 'GPS'],
     },
     {
@@ -130,7 +130,7 @@ export const logisticsSite: SubsidiarySite = {
       location: 'Aéroport d’Abidjan',
       description:
         'Acheminement en 36 heures de consommables sous température dirigée, avec dédouanement prioritaire.',
-      image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=80',
+      image: '/images/transit-services.jpg',
       tags: ['Aérien', 'Urgence', 'Température dirigée'],
     },
     {
@@ -140,7 +140,7 @@ export const logisticsSite: SubsidiarySite = {
       location: 'Nord Côte d’Ivoire',
       description:
         'Coordination logistique complète : import, stockage tampon, transport et livraison sur site isolé.',
-      image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?w=1200&q=80',
+      image: '/images/transit-port.jpg',
       tags: ['4PL', 'Site isolé', 'Coordination'],
     },
     {
@@ -150,7 +150,7 @@ export const logisticsSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Reprise et pilotage de la flotte de distribution avec optimisation des tournées et reporting mensuel.',
-      image: 'https://images.unsplash.com/photo-1591768575198-88dac53fbd0a?w=1200&q=80',
+      image: '/images/transit-services.jpg',
       tags: ['Flotte', 'Optimisation', 'Reporting'],
     },
   ],

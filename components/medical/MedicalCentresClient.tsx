@@ -14,7 +14,7 @@ const centres = [
     postes: 12,
     horaires: 'Lun-Sam · 6h-18h',
     seances: '3 séances/sem',
-    img: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=700&q=85',
+    img: '/images/medical-dialyse.jpg',
     services: ['Hémodialyse standard', 'HDF en ligne', 'Suivi néphrologue', 'Bilan trimestriel'],
   },
   {
@@ -25,7 +25,7 @@ const centres = [
     postes: 10,
     horaires: 'Lun-Sam · 6h-18h',
     seances: '3 séances/sem',
-    img: 'https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=700&q=85',
+    img: '/images/medical-hero.jpg',
     services: ['Hémodialyse standard', 'Dialyse longue durée', 'Suivi nutritionnel', 'Transport patients'],
   },
   {
@@ -36,7 +36,7 @@ const centres = [
     postes: 8,
     horaires: 'Lun-Sam · 6h-18h',
     seances: '3 séances/sem',
-    img: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=700&q=85',
+    img: '/images/medical-qualite.jpg',
     services: ['Hémodialyse standard', 'HDF en ligne', 'Consultation néphro', 'Urgences dialyse'],
   },
   {
@@ -47,7 +47,7 @@ const centres = [
     postes: 6,
     horaires: 'Lun-Sam · 6h-16h',
     seances: '3 séances/sem',
-    img: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=700&q=85',
+    img: '/images/medical-dialyse.jpg',
     services: ['Hémodialyse standard', 'Suivi biologique', 'Téléconsultation', 'Accueil urgences'],
   },
   {
@@ -58,7 +58,7 @@ const centres = [
     postes: 8,
     horaires: 'Lun-Sam · 6h-17h',
     seances: '3 séances/sem',
-    img: 'https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=700&q=85',
+    img: '/images/medical-qualite.jpg',
     services: ['Hémodialyse standard', 'Dialyse nocturne', 'Éducation thérapeutique', 'Assistance sociale'],
   },
   {
@@ -69,7 +69,7 @@ const centres = [
     postes: 6,
     horaires: 'Lun-Sam · 6h-16h',
     seances: '3 séances/sem',
-    img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=700&q=85',
+    img: '/images/medical-equipe.jpg',
     services: ['Hémodialyse standard', 'Suivi biologique', 'Consultation prégreffe', 'Soutien psychologique'],
   },
 ];
@@ -87,7 +87,7 @@ export default function MedicalCentresClient() {
 
       {/* Hero */}
       <section className="relative min-h-[54vh] flex items-end overflow-hidden">
-        <Image src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1920&q=85" alt="Centres hémodialyse" fill priority
+        <Image src="/images/medical-dialyse.jpg" alt="Centres hémodialyse" fill priority
           className="object-cover object-center" sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-white/96 via-white/55 to-white/10" />
@@ -129,9 +129,9 @@ export default function MedicalCentresClient() {
       </section>
 
       {/* Ce qu'est l'hémodialyse */}
-      <section className="bg-[#F7F7F5] py-16">
+      <section className="bg-[#F7F7F5] py-10 sm:py-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:items-center">
+          <div className="grid grid-cols-1 gap-8 sm:gap-12 lg:grid-cols-2 lg:items-center">
             <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
               <div className="mb-5 flex items-center gap-3">
                 <span className="h-px w-8 bg-[#C9A227]" />
@@ -159,14 +159,14 @@ export default function MedicalCentresClient() {
               className="relative overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(11,30,61,0.1)]"
               style={{ minHeight: '400px' }}
             >
-              <Image src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=900&q=85" alt="Hémodialyse" fill className="object-cover" sizes="50vw" />
+              <Image src="/images/medical-hero.jpg" alt="Hémodialyse" fill className="object-cover" sizes="50vw" />
             </motion.div>
           </div>
         </div>
       </section>
 
       {/* Grille centres */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12 text-center">
             <div className="mb-4 flex items-center justify-center gap-3">
@@ -218,7 +218,7 @@ export default function MedicalCentresClient() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#F7F7F5] py-16 text-center">
+      <section className="bg-[#F7F7F5] py-10 sm:py-16 text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="font-heading text-3xl font-bold text-[#0B1E3D]">Besoin d&apos;une prise en charge ?</h2>

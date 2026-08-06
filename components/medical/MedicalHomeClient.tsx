@@ -22,7 +22,7 @@ const activites = [
     icon: Microscope,
     title: 'Équipements & dispositifs médicaux',
     desc: 'Distribution d\'équipements hospitaliers, imagerie, chirurgie, soins intensifs — marques leaders certifiées CE/ISO.',
-    img: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=600&q=85',
+    img: '/images/medical-hero.jpg',
     href: '/filiales/medical/activites',
     color: 'text-[#4A7C7C]',
     bg: 'bg-[#4A7C7C]/6',
@@ -32,7 +32,7 @@ const activites = [
     icon: Droplets,
     title: 'Centres d\'hémodialyse',
     desc: 'Gestion de centres d\'hémodialyse modernes, équipements Fresenius & Gambro, suivi patient personnalisé.',
-    img: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=600&q=85',
+    img: '/images/medical-dialyse.jpg',
     href: '/filiales/medical/centres',
     color: 'text-[#0B1E3D]',
     bg: 'bg-[#0B1E3D]/4',
@@ -42,7 +42,7 @@ const activites = [
     icon: Pill,
     title: 'Produits pharmaceutiques',
     desc: 'Médicaments essentiels, parapharmacie, dispositifs OTC — distribution nationale respectant la chaîne du froid.',
-    img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=600&q=85',
+    img: '/images/medical-dialyse.jpg',
     href: '/filiales/medical/activites',
     color: 'text-[#C9A227]',
     bg: 'bg-[#C9A227]/6',
@@ -52,7 +52,7 @@ const activites = [
     icon: HeartPulse,
     title: 'Matériel biomédical & labo',
     desc: 'Équipements de laboratoire, analyseurs, matériel dentaire et de stérilisation pour cliniques et hôpitaux.',
-    img: 'https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=600&q=85',
+    img: '/images/medical-qualite.jpg',
     href: '/filiales/medical/activites',
     color: 'text-[#4A7C7C]',
     bg: 'bg-[#4A7C7C]/6',
@@ -62,7 +62,7 @@ const activites = [
     icon: Building2,
     title: 'Construction de cliniques',
     desc: 'Conception, construction et équipement clé en main de cliniques, centres de santé et unités spécialisées.',
-    img: 'https://images.unsplash.com/photo-1626315869436-d6781ba69d6e?w=600&q=85',
+    img: '/images/medical-equipe.jpg',
     href: '/filiales/medical/activites',
     color: 'text-[#0B1E3D]',
     bg: 'bg-[#0B1E3D]/4',
@@ -75,19 +75,19 @@ const temoignages = [
     quote: 'EL-BOMI Medical a équipé notre bloc opératoire en un temps record. La qualité du matériel et le suivi technique sont irréprochables.',
     name: 'Dr. Kouamé Assi',
     role: 'Chirurgien, Clinique Sainte-Marie',
-    img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=200&q=80',
+    img: '/images/medical-equipe.jpg',
   },
   {
     quote: 'Nos patients hémodialysés bénéficient d\'un accompagnement de qualité internationale grâce aux équipements fournis et maintenus par EL-BOMI.',
     name: 'Dr. Aminata Diallo',
     role: 'Néphrologue, Centre de Dialyse d\'Abidjan',
-    img: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=200&q=80',
+    img: '/images/medical-hero.jpg',
   },
   {
     quote: 'La réactivité de leur équipe technique 24h/24 et la disponibilité des pièces nous permettent de maintenir nos équipements opérationnels en permanence.',
     name: 'Pr. Yao N\'Guessan',
     role: 'Directeur médical, CHU de Cocody',
-    img: 'https://images.unsplash.com/photo-1537368910025-700350fe46c7?w=200&q=80',
+    img: '/images/medical-dialyse.jpg',
   },
 ];
 
@@ -113,7 +113,7 @@ export default function MedicalHomeClient() {
         {/* Grande image de fond */}
         <motion.div style={{ scale: imgScale }} className="absolute inset-0">
           <Image
-            src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?w=1920&q=90"
+            src="/images/medical-hero.jpg"
             alt="Soins médicaux"
             fill priority
             className="object-cover object-center"
@@ -276,7 +276,7 @@ export default function MedicalHomeClient() {
       {/* ── IMMERSIF — HÉMODIALYSE ─────────────────────────────────── */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
-          <Image src="https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=1920&q=85" alt="Hémodialyse" fill className="object-cover" sizes="100vw" />
+          <Image src="/images/medical-dialyse.jpg" alt="Hémodialyse" fill className="object-cover" sizes="100vw" />
           <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E3D]/96 via-[#0B1E3D]/80 to-[#0B1E3D]/30" />
         </div>
         <div className="container mx-auto relative px-4 sm:px-6 lg:px-8 py-28">
@@ -350,7 +350,7 @@ export default function MedicalHomeClient() {
       </section>
 
       {/* ── ENGAGEMENTS ────────────────────────────────────────────── */}
-      <section className="bg-[#F7F7F5] py-20">
+      <section className="bg-[#F7F7F5] py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-12 text-center">
             <div className="mb-4 flex items-center justify-center gap-3">
@@ -392,7 +392,7 @@ export default function MedicalHomeClient() {
               className="relative overflow-hidden rounded-2xl shadow-[0_20px_60px_rgba(11,30,61,0.1)]"
               style={{ minHeight: '420px' }}
             >
-              <Image src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=900&q=85" alt="Soins" fill className="object-cover" sizes="50vw" />
+              <Image src="/images/medical-qualite.jpg" alt="Soins" fill className="object-cover" sizes="50vw" />
               {/* Badge */}
               <div className="absolute bottom-5 left-5 flex items-center gap-3 rounded-2xl border border-white/20 bg-white/95 p-4 shadow-lg backdrop-blur-sm">
                 <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-[#4A7C7C]/10">
@@ -440,7 +440,7 @@ export default function MedicalHomeClient() {
       </section>
 
       {/* ── CTA CONTACT ─────────────────────────────────────────────── */}
-      <section className="bg-[#0B1E3D] py-20 text-center">
+      <section className="bg-[#0B1E3D] py-12 sm:py-20 text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <HeartPulse className="mx-auto mb-5 h-10 w-10 text-[#4A7C7C]" strokeWidth={1.5} />

@@ -25,7 +25,7 @@ export default function MedicalFooter() {
       {/* Accent marine top */}
       <div className="h-0.5 bg-gradient-to-r from-transparent via-[#0B1E3D]/15 to-transparent" />
 
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-14 pb-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-10 sm:pt-14 pb-6 sm:pb-8">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
@@ -41,7 +41,7 @@ export default function MedicalFooter() {
             <p className="text-sm leading-relaxed text-[#0B1E3D]/45">
               Filiale santé du groupe EL-BOMI — équipements médicaux, hémodialyse, pharma et construction de cliniques en Côte d&apos;Ivoire.
             </p>
-            <div className="mt-6 space-y-2.5">
+            <div className="mt-6 space-y-3.5 sm:space-y-2.5">
               <a href="tel:+22527000000" className="flex items-center gap-2 text-xs text-[#0B1E3D]/38 hover:text-[#0B1E3D] transition-colors">
                 <Phone className="h-3.5 w-3.5 text-[#C9A227]/60" /> +225 27 00 00 00
               </a>
@@ -57,7 +57,7 @@ export default function MedicalFooter() {
           {/* Activités */}
           <div>
             <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-[#0B1E3D]/35">Activités</h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3.5 sm:space-y-2.5">
               {activites.map((l) => (
                 <li key={l.label}>
                   <Link href={l.href} className="group flex items-center gap-2 text-xs text-[#0B1E3D]/38 hover:text-[#0B1E3D] transition-colors">
@@ -72,7 +72,7 @@ export default function MedicalFooter() {
           {/* Navigation */}
           <div>
             <h4 className="mb-5 font-heading text-[11px] font-bold uppercase tracking-[0.2em] text-[#0B1E3D]/35">Navigation</h4>
-            <ul className="space-y-2.5">
+            <ul className="space-y-3.5 sm:space-y-2.5">
               {pages.map((l) => (
                 <li key={l.label}>
                   <Link href={l.href} className="group flex items-center gap-2 text-xs text-[#0B1E3D]/38 hover:text-[#0B1E3D] transition-colors">
@@ -101,7 +101,7 @@ export default function MedicalFooter() {
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-3 border-t border-[#0B1E3D]/6 pt-6 sm:flex-row">
+        <div className="mt-8 sm:mt-12 flex flex-col items-center justify-between gap-3 border-t border-[#0B1E3D]/6 pt-6 sm:flex-row">
           <p className="text-[11px] text-[#0B1E3D]/28">© {new Date().getFullYear()} EL-BOMI Medical Distribution — Tous droits réservés</p>
           <span className="font-heading text-[11px] font-bold uppercase tracking-[0.15em] text-[#0B1E3D]/22">EL-BOMI HOLDING</span>
         </div>

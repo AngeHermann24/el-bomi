@@ -7,8 +7,8 @@ export const medicalSite: SubsidiarySite = {
   heroHighlight: 'accompagner les soignants',
   heroText:
     'Importation, distribution et maintenance d’équipements médicaux, centres d’hémodialyse, produits pharmaceutiques et construction d’établissements de santé.',
-  heroImage: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1600&q=80',
-  heroSecondaryImage: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&q=80',
+  heroImage: '/images/medical-hero.jpg',
+  heroSecondaryImage: '/images/medical-dialyse.jpg',
 
   stats: [
     { value: 70, suffix: '+', label: 'Établissements équipés' },
@@ -100,7 +100,7 @@ export const medicalSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Fourniture des générateurs, traitement d’eau, installation complète et formation des équipes soignantes.',
-      image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=1200&q=80',
+      image: '/images/medical-qualite.jpg',
       tags: ['Hémodialyse', 'Installation', 'Formation'],
     },
     {
@@ -110,7 +110,7 @@ export const medicalSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Équipement de trois salles d’opération : éclairages, tables, monitorage et fluides médicaux.',
-      image: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=1200&q=80',
+      image: '/images/medical-equipe.jpg',
       tags: ['Bloc opératoire', 'Fluides médicaux', 'Monitorage'],
     },
     {
@@ -120,7 +120,7 @@ export const medicalSite: SubsidiarySite = {
       location: 'Bouaké',
       description:
         'Installation d’automates de biochimie et d’hématologie, avec contrat de réactifs et maintenance.',
-      image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=1200&q=80',
+      image: '/images/medical-hero.jpg',
       tags: ['Laboratoire', 'Automates', 'Réactifs'],
     },
     {
@@ -130,7 +130,7 @@ export const medicalSite: SubsidiarySite = {
       location: 'Yamoussoukro',
       description:
         'Réalisation d’un établissement de 40 lits : gros œuvre, fluides, électricité médicale et équipement.',
-      image: 'https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=1200&q=80',
+      image: '/images/medical-dialyse.jpg',
       tags: ['Construction', 'Clé en main', 'Équipement'],
     },
     {
@@ -140,7 +140,7 @@ export const medicalSite: SubsidiarySite = {
       location: 'San-Pédro',
       description:
         'Installation d’un échographe haut de gamme et d’un système de radiologie numérique avec PACS.',
-      image: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=1200&q=80',
+      image: '/images/medical-qualite.jpg',
       tags: ['Imagerie', 'Radiologie', 'PACS'],
     },
     {
@@ -150,7 +150,7 @@ export const medicalSite: SubsidiarySite = {
       location: 'Abidjan',
       description:
         'Mise en place de chambres froides qualifiées avec enregistrement continu de température.',
-      image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1200&q=80',
+      image: '/images/medical-equipe.jpg',
       tags: ['Chaîne du froid', 'Qualification', 'Traçabilité'],
     },
   ],

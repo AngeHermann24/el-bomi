@@ -47,11 +47,11 @@ const assurances = [
 
 export default function InvestissementAssuranceClient() {
   return (
-    <div className="bg-[#0A1628] text-white">
+    <div className="bg-[#0A1F17] text-white">
 
       {/* Hero avec bouclier */}
-      <section className="relative min-h-[55vh] flex items-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-[#070F1C] via-[#0A1628] to-[#0A1628]" />
+      <section className="relative min-h-[55vh] flex items-center overflow-hidden pt-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-[#071610] via-[#0A1F17] to-[#0A1F17]" />
         <div className="absolute inset-0 noise-bg opacity-30" />
 
         <div className="container relative z-10 mx-auto px-4 py-24 sm:px-6 lg:px-8">
@@ -61,14 +61,14 @@ export default function InvestissementAssuranceClient() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
             >
-              <span className="mb-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#C9A227]/70">
-                <span className="h-px w-8 bg-[#C9A227]/40" />
+              <span className="mb-4 inline-flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.3em] text-[#B87333]/70">
+                <span className="h-px w-8 bg-[#B87333]/40" />
                 Assurance
               </span>
               <h1 className="font-heading text-4xl font-bold uppercase leading-tight text-white md:text-5xl lg:text-6xl">
                 Protéger ce qui
                 <br />
-                <span className="text-[#E8C766]">compte</span>
+                <span className="text-[#D4B896]">compte</span>
               </h1>
               <p className="mt-6 max-w-lg text-sm leading-relaxed text-white/40">
                 Assurance vie, dommages, santé et entreprises. Des solutions de protection
@@ -89,7 +89,7 @@ export default function InvestissementAssuranceClient() {
       </section>
 
       {/* Compteurs */}
-      <section className="border-y border-[#C9A227]/[0.06] bg-[#070F1C] py-14">
+      <section className="border-y border-[#B87333]/[0.06] bg-[#071610] py-14">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-8 lg:grid-cols-3">
             <PremiumCounter value={1200} suffix="+" label="Sinistres traités / an" />
@@ -100,7 +100,7 @@ export default function InvestissementAssuranceClient() {
       </section>
 
       {/* Catégories d'assurance */}
-      <section className="py-20 lg:py-28">
+      <section className="py-12 sm:py-20 lg:py-28">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 gap-px overflow-hidden rounded-2xl border border-white/[0.05] bg-white/[0.02] md:grid-cols-2 lg:grid-cols-3">
             {assurances.map((a, i) => (
@@ -110,22 +110,22 @@ export default function InvestissementAssuranceClient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: i * 0.06 }}
-                className="group relative bg-[#0A1628] p-8 transition-all duration-500 hover:bg-[#0D1B30]"
+                className="group relative bg-[#0A1F17] p-8 transition-all duration-500 hover:bg-[#0D2820]"
               >
-                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-[#C9A227]/15 bg-[#C9A227]/[0.03] transition-all group-hover:border-[#C9A227]/40 group-hover:bg-[#C9A227]/[0.08]">
-                  <a.icon className="h-6 w-6 text-[#E8C766]" strokeWidth={1.5} />
+                <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl border border-[#B87333]/15 bg-[#B87333]/[0.03] transition-all group-hover:border-[#B87333]/40 group-hover:bg-[#B87333]/[0.08]">
+                  <a.icon className="h-6 w-6 text-[#D4B896]" strokeWidth={1.5} />
                 </div>
                 <h3 className="mb-3 font-heading text-lg font-bold text-white">{a.title}</h3>
                 <p className="mb-5 text-[13px] leading-relaxed text-white/40">{a.desc}</p>
                 <ul className="space-y-2">
                   {a.points.map((pt) => (
                     <li key={pt} className="flex items-center gap-2 text-[12px] text-white/50">
-                      <span className="h-1 w-1 rounded-full bg-[#E8C766]" />
+                      <span className="h-1 w-1 rounded-full bg-[#D4B896]" />
                       {pt}
                     </li>
                   ))}
                 </ul>
-                <div className="mt-5 h-px w-0 bg-gradient-to-r from-[#C9A227] to-transparent transition-all duration-500 group-hover:w-full" />
+                <div className="mt-5 h-px w-0 bg-gradient-to-r from-[#B87333] to-transparent transition-all duration-500 group-hover:w-full" />
               </motion.div>
             ))}
           </div>
@@ -134,18 +134,18 @@ export default function InvestissementAssuranceClient() {
 
       {/* CTA */}
       <section className="relative overflow-hidden py-24">
-        <div className="absolute inset-0 bg-[#070F1C]" />
-        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#C9A227]/20 to-transparent" />
+        <div className="absolute inset-0 bg-[#071610]" />
+        <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#B87333]/20 to-transparent" />
         <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="mb-6 font-heading text-3xl font-bold uppercase text-white md:text-4xl">
-            Demandez un <span className="text-[#E8C766]">devis</span>
+            Demandez un <span className="text-[#D4B896]">devis</span>
           </h2>
           <p className="mx-auto mb-10 max-w-lg text-sm leading-relaxed text-white/40">
             Nos conseillers évaluent vos besoins et vous proposent une couverture adaptée, au meilleur tarif.
           </p>
           <Link
             href="/filiales/investissement-assurance/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#C9A227] to-[#E8C766] px-8 py-4 text-sm font-semibold text-[#0A1628] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#C9A227]/20"
+            className="inline-flex items-center gap-2 rounded-lg bg-gradient-to-r from-[#B87333] to-[#D4B896] px-8 py-4 text-sm font-semibold text-[#0A1F17] transition-all hover:-translate-y-0.5 hover:shadow-lg hover:shadow-[#B87333]/20"
           >
             Demander un devis
             <ArrowRight className="h-5 w-5" />

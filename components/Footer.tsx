@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="pointer-events-none absolute right-0 top-1/3 h-56 w-56 rounded-full bg-gold-400/[0.04] blur-[80px]" />
 
       <div className="container-max section-padding relative">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-8">
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="mb-6 inline-flex items-center gap-3">
@@ -112,12 +112,26 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 shrink-0 text-gold-500" />
-                <a
-                  href={`tel:${groupInfo.phoneRaw}`}
-                  className="text-sm text-white/50 transition-colors hover:text-gold-300"
-                >
-                  {groupInfo.phone}
-                </a>
+                <div className="flex flex-col gap-0.5">
+                  <a
+                    href={`tel:${groupInfo.phoneRaw}`}
+                    className="text-sm text-white/50 transition-colors hover:text-gold-300"
+                  >
+                    {groupInfo.phone}
+                  </a>
+                  <a
+                    href={`tel:${groupInfo.phone2Raw}`}
+                    className="text-sm text-white/50 transition-colors hover:text-gold-300"
+                  >
+                    {groupInfo.phone2}
+                  </a>
+                  <a
+                    href={`tel:${groupInfo.phone3Raw}`}
+                    className="text-sm text-white/50 transition-colors hover:text-gold-300"
+                  >
+                    {groupInfo.phone3}
+                  </a>
+                </div>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 shrink-0 text-gold-500" />
@@ -137,7 +151,7 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="mt-12 sm:mt-16 pt-6 sm:pt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/30">
             © {new Date().getFullYear()} EL-BOMI HOLDING. Tous droits réservés.
           </p>

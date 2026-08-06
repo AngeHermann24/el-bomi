@@ -35,7 +35,7 @@ export default function Experience3D({ progress, onLoad }: Experience3DProps) {
         alpha: false,
       }}
       camera={{ fov: 52, near: 0.1, far: 120, position: [0, 1.4, 19] }}
-      className="!absolute inset-0"
+      className="!absolute inset-0 !pointer-events-none"
       onCreated={() => onLoad?.()}
     >
       <color attach="background" args={[PALETTE.navyDeep]} />

@@ -12,23 +12,23 @@ const navLinks = [
 
 export default function InvestissementFooter() {
   return (
-    <footer className="border-t border-[#C9A227]/[0.08] bg-[#070F1C]">
-      <div className="h-px bg-gradient-to-r from-transparent via-[#C9A227]/15 to-transparent" />
+    <footer className="border-t border-[#B87333]/[0.08] bg-[#071610]">
+      <div className="h-px bg-gradient-to-r from-transparent via-[#B87333]/15 to-transparent" />
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-14">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-4">
 
           <div className="md:col-span-2">
             <div className="mb-4 flex items-center gap-3">
-              <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-[#C9A227]/20 bg-[#C9A227]/[0.04]">
-                <Landmark className="h-4 w-4 text-[#E8C766]" strokeWidth={1.5} />
+              <div className="flex h-10 w-10 sm:h-9 sm:w-9 items-center justify-center rounded-lg border border-[#B87333]/20 bg-[#B87333]/[0.04]">
+                <Landmark className="h-4 w-4 text-[#D4B896]" strokeWidth={1.5} />
               </div>
               <div>
                 <span className="block font-heading text-sm font-bold uppercase tracking-[0.15em] text-white">
                   EL-BOMI HOLDING
                 </span>
-                <span className="block text-[10px] uppercase tracking-[0.25em] text-[#C9A227]/60">
-                  Investissement &amp; Assurance
+                <span className="block text-[10px] uppercase tracking-[0.25em] text-[#B87333]/80">
+                  Immobilier &amp; Patrimoine
                 </span>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function InvestissementFooter() {
                 <a
                   key={i}
                   href="#"
-                  className="flex h-9 w-9 items-center justify-center rounded-lg border border-white/[0.06] text-white/30 transition-all hover:border-[#C9A227]/30 hover:text-[#E8C766]"
+                  className="flex h-10 w-10 sm:h-9 sm:w-9 items-center justify-center rounded-lg border border-white/[0.06] text-white/30 transition-all hover:border-[#B87333]/30 hover:text-[#D4B896]"
                 >
                   <Icon className="h-4 w-4" strokeWidth={1.5} />
                 </a>
@@ -58,7 +58,7 @@ export default function InvestissementFooter() {
           </div>
 
           <div>
-            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#C9A227]/50">
+            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#B87333]/60">
               Navigation
             </h3>
             <ul className="space-y-3">
@@ -66,7 +66,7 @@ export default function InvestissementFooter() {
                 <li key={l.href}>
                   <Link
                     href={l.href}
-                    className="text-[13px] text-white/40 transition-colors hover:text-[#E8C766]"
+                    className="text-[13px] text-white/40 transition-colors hover:text-[#D4B896]"
                   >
                     {l.label}
                   </Link>
@@ -76,26 +76,26 @@ export default function InvestissementFooter() {
           </div>
 
           <div>
-            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#C9A227]/50">
+            <h3 className="mb-5 text-[11px] font-semibold uppercase tracking-[0.25em] text-[#B87333]/60">
               Contact
             </h3>
             <ul className="space-y-3.5">
               <li className="flex items-start gap-2.5">
-                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#C9A227]/40" strokeWidth={1.5} />
+                <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-[#B87333]/50" strokeWidth={1.5} />
                 <span className="text-[13px] leading-relaxed text-white/40">
                   27 Bp 399 Abj 27<br />
                   Abidjan, Cocody - Angré 8ème Tranche
                 </span>
               </li>
               <li className="flex items-center gap-2.5">
-                <Phone className="h-4 w-4 shrink-0 text-[#C9A227]/40" strokeWidth={1.5} />
-                <a href="tel:+2252722201115" className="text-[13px] text-white/40 hover:text-[#E8C766] transition-colors">
+                <Phone className="h-4 w-4 shrink-0 text-[#B87333]/50" strokeWidth={1.5} />
+                <a href="tel:+2252722201115" className="text-[13px] text-white/40 hover:text-[#D4B896] transition-colors">
                   +225 27 22 20 11 15
                 </a>
               </li>
               <li className="flex items-center gap-2.5">
-                <Mail className="h-4 w-4 shrink-0 text-[#C9A227]/40" strokeWidth={1.5} />
-                <a href="mailto:investissement@elbomigroup.com" className="text-[13px] text-white/40 hover:text-[#E8C766] transition-colors">
+                <Mail className="h-4 w-4 shrink-0 text-[#B87333]/50" strokeWidth={1.5} />
+                <a href="mailto:investissement@elbomigroup.com" className="text-[13px] text-white/40 hover:text-[#D4B896] transition-colors">
                   investissement@elbomigroup.com
                 </a>
               </li>
@@ -103,11 +103,11 @@ export default function InvestissementFooter() {
           </div>
         </div>
 
-        <div className="mt-10 border-t border-white/[0.04] pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
+        <div className="mt-8 sm:mt-10 border-t border-white/[0.04] pt-6 flex flex-col md:flex-row items-center justify-between gap-3">
           <p className="text-[11px] text-white/20">
             © {new Date().getFullYear()} EL-BOMI HOLDING. Tous droits réservés.
           </p>
-          <Link href="/" className="text-[11px] text-white/20 hover:text-[#E8C766]/60 transition-colors">
+          <Link href="/" className="text-[11px] text-white/20 hover:text-[#D4B896]/60 transition-colors">
             ← Retour au site du Groupe
           </Link>
         </div>

@@ -7,12 +7,12 @@ import { ArrowRight, Zap, Users, MapPin, TrendingUp, Sun, Lightbulb } from 'luci
 import CircuitAnimation from './CircuitAnimation';
 
 const impacts = [
-  { icon: Users, value: '300 000+', label: 'Habitants électrifiés', color: 'text-gold-400' },
-  { icon: MapPin, value: '80+', label: 'Villages raccordés', color: 'text-gold-300' },
-  { icon: Zap, value: '320 km', label: 'Lignes HTA posées', color: 'text-gold-400' },
-  { icon: Sun, value: '45 MW', label: 'Solaire déployé', color: 'text-amber-400' },
-  { icon: TrendingUp, value: '15', label: 'Régions couvertes', color: 'text-gold-300' },
-  { icon: Lightbulb, value: '10 000+', label: 'Foyers équipés solaire', color: 'text-gold-400' },
+  { icon: Users, value: '300 000+', label: 'Habitants électrifiés', color: 'text-gold-600' },
+  { icon: MapPin, value: '80+', label: 'Villages raccordés', color: 'text-gold-600' },
+  { icon: Zap, value: '320 km', label: 'Lignes HTA posées', color: 'text-gold-600' },
+  { icon: Sun, value: '45 MW', label: 'Solaire déployé', color: 'text-amber-accent' },
+  { icon: TrendingUp, value: '15', label: 'Régions couvertes', color: 'text-gold-600' },
+  { icon: Lightbulb, value: '10 000+', label: 'Foyers équipés solaire', color: 'text-gold-600' },
 ];
 
 const zones = [
@@ -21,8 +21,8 @@ const zones = [
     villages: 28,
     foyers: 12000,
     km: 145,
-    before: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=600&q=80',
-    after: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80',
+    before: '/images/energie-impact.jpg',
+    after: '/images/energie-impact.jpg',
     desc: "Extension du réseau HTA sur 145 km, raccordement de 28 villages dans la région de Korhogo.",
   },
   {
@@ -30,8 +30,8 @@ const zones = [
     villages: 22,
     foyers: 8500,
     km: 98,
-    before: 'https://images.unsplash.com/photo-1488188840666-e2308741a62f?w=600&q=80',
-    after: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80',
+    before: '/images/energie-projets.jpg',
+    after: '/images/energie-solutions.jpg',
     desc: "Déploiement solaire off-grid et extension réseau dans la région de Man.",
   },
   {
@@ -39,8 +39,8 @@ const zones = [
     villages: 18,
     foyers: 7200,
     km: 77,
-    before: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=600&q=80',
-    after: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80',
+    before: '/images/unsplash/photo-1581094794329-c8112a89af12.jpg',
+    after: '/images/energie-solutions.jpg',
     desc: "Réhabilitation et extension du réseau BT autour de Bouaké.",
   },
 ];
@@ -56,31 +56,31 @@ const timeline = [
 
 export default function EnergieImpactClient() {
   return (
-    <div className="bg-[#0A1628] text-white">
+    <div className="bg-gradient-to-b from-[#BFB499] via-[#C9BFA8] to-[#BFB499] text-navy-900">
 
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-end overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1920&q=85"
+          src="/images/energie-impact.jpg"
           alt="Impact électrification rurale EL-BOMI"
           fill priority className="object-cover object-center"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0A1628]/97 via-[#0A1628]/55 to-[#0A1628]/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#BFB499]/97 via-[#BFB499]/50 to-[#BFB499]/20" />
         <div className="container mx-auto relative px-4 sm:px-6 lg:px-8 pb-16">
           <motion.div initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} className="mb-5 flex items-center gap-3">
-            <span className="h-px w-8 bg-gold-400" />
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">Électrification rurale</span>
+            <span className="h-px w-8 bg-gold-600" />
+            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-600">Électrification rurale</span>
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}
-            className="font-heading text-5xl font-bold uppercase text-white md:text-6xl lg:text-7xl"
+            className="font-heading text-5xl font-bold uppercase text-navy-900 md:text-6xl lg:text-7xl"
           >
             L&apos;énergie pour tous,<br />
-            <span className="bg-gradient-to-r from-gold-400 to-gold-300 bg-clip-text text-transparent">partout</span>
+            <span className="bg-gradient-to-r from-gold-600 to-amber-accent bg-clip-text text-transparent">partout</span>
           </motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}
-            className="mt-5 max-w-xl text-lg text-white/50"
+            className="mt-5 max-w-xl text-lg text-navy-900/60"
           >
             Depuis 2015, nous connectons les zones rurales ivoiriennes au réseau électrique national.
           </motion.p>
@@ -88,7 +88,7 @@ export default function EnergieImpactClient() {
       </section>
 
       {/* Chiffres clés */}
-      <section className="bg-[#060e1c] py-20">
+      <section className="bg-gradient-to-b from-[#C9BFA8] to-[#B5AB94] py-12 sm:py-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-6">
             {impacts.map((item, i) => (
@@ -98,11 +98,11 @@ export default function EnergieImpactClient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08 }}
-                className="group rounded-2xl border border-white/[0.06] bg-white/[0.02] p-5 text-center transition-all hover:border-gold-500/20"
+                className="group rounded-2xl border border-navy-900/8 bg-white/40 p-5 text-center transition-all hover:border-amber-accent/25 hover:shadow-[0_0_15px_rgba(242,169,59,0.08)]"
               >
-                <item.icon className={`mx-auto mb-2 h-6 w-6 ${item.color} opacity-70`} />
+                <item.icon className={`mx-auto mb-2 h-6 w-6 ${item.color} opacity-80`} />
                 <p className={`font-heading text-2xl font-bold ${item.color}`}>{item.value}</p>
-                <p className="mt-1 text-xs text-white/35">{item.label}</p>
+                <p className="mt-1 text-xs text-navy-900/45">{item.label}</p>
               </motion.div>
             ))}
           </div>
@@ -110,21 +110,21 @@ export default function EnergieImpactClient() {
       </section>
 
       {/* Circuit séparateur */}
-      <div className="relative overflow-hidden bg-[#0A1628] py-4">
-        <CircuitAnimation className="opacity-40 max-w-6xl mx-auto" />
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#0A1628] via-transparent to-[#0A1628]" />
+      <div className="relative overflow-hidden bg-gradient-to-r from-[#B5AB94] via-[#BFB499] to-[#B5AB94] py-4">
+        <CircuitAnimation className="opacity-70 max-w-6xl mx-auto" />
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-[#BFB499] via-transparent to-[#BFB499]" />
       </div>
 
       {/* Zones — avant/après */}
-      <section className="bg-[#0A1628] py-24">
+      <section className="bg-gradient-to-b from-[#BFB499] to-[#C9BFA8] py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-14">
             <div className="mb-4 flex items-center gap-3">
-              <span className="h-px w-8 bg-gold-400" />
-              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">Zones d&apos;intervention</span>
+              <span className="h-px w-8 bg-gold-600" />
+              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-600">Zones d&apos;intervention</span>
             </div>
-            <h2 className="font-heading text-4xl font-bold uppercase text-white md:text-5xl">Avant / Après</h2>
-            <p className="mt-4 max-w-xl text-white/45">Transformation concrète des zones rurales grâce à l&apos;électrification.</p>
+            <h2 className="font-heading text-4xl font-bold uppercase text-navy-900 md:text-5xl">Avant / Après</h2>
+            <p className="mt-4 max-w-xl text-navy-900/55">Transformation concrète des zones rurales grâce à l&apos;électrification.</p>
           </motion.div>
 
           <div className="space-y-16">
@@ -141,15 +141,15 @@ export default function EnergieImpactClient() {
                 <div className="grid grid-cols-2 gap-3">
                   <div className="group relative overflow-hidden rounded-xl" style={{ minHeight: '200px' }}>
                     <Image src={z.before} alt={`${z.region} avant`} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="25vw" />
-                    <div className="absolute inset-0 bg-[#0A1628]/50" />
-                    <div className="absolute bottom-3 left-3 rounded-full border border-white/15 bg-[#0A1628]/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-white/50 backdrop-blur-sm">
+                    <div className="absolute inset-0 bg-navy-900/30" />
+                    <div className="absolute bottom-3 left-3 rounded-full border border-navy-900/15 bg-white/70 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-navy-900/60 backdrop-blur-sm">
                       Avant
                     </div>
                   </div>
                   <div className="group relative overflow-hidden rounded-xl" style={{ minHeight: '200px' }}>
                     <Image src={z.after} alt={`${z.region} après`} fill className="object-cover transition-transform duration-500 group-hover:scale-105" sizes="25vw" />
-                    <div className="absolute inset-0 bg-[#0A1628]/20" />
-                    <div className="absolute bottom-3 left-3 rounded-full border border-gold-500/30 bg-gold-500/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-gold-400 backdrop-blur-sm">
+                    <div className="absolute inset-0 bg-amber-accent/10" />
+                    <div className="absolute bottom-3 left-3 rounded-full border border-amber-accent/30 bg-amber-accent/15 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-amber-accent backdrop-blur-sm">
                       Après
                     </div>
                   </div>
@@ -157,22 +157,22 @@ export default function EnergieImpactClient() {
 
                 {/* Infos */}
                 <div>
-                  <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.25em] text-gold-400/70">Région</span>
-                  <h3 className="font-heading text-3xl font-bold uppercase text-white">{z.region}</h3>
+                  <span className="mb-3 block text-xs font-semibold uppercase tracking-[0.25em] text-gold-600/70">Région</span>
+                  <h3 className="font-heading text-3xl font-bold uppercase text-navy-900">{z.region}</h3>
                   <div className="mt-4 h-px w-12 bg-gradient-to-r from-gold-500 to-transparent" />
-                  <p className="mt-5 text-white/45 leading-relaxed">{z.desc}</p>
+                  <p className="mt-5 text-navy-900/55 leading-relaxed">{z.desc}</p>
                   <div className="mt-7 grid grid-cols-3 gap-4">
-                    <div className="rounded-xl border border-gold-500/10 bg-white/[0.02] p-4 text-center">
-                      <p className="font-heading text-xl font-bold text-gold-400">{z.villages}</p>
-                      <p className="mt-0.5 text-[10px] text-white/30">Villages</p>
+                    <div className="rounded-xl border border-navy-900/8 bg-white/40 p-4 text-center">
+                      <p className="font-heading text-xl font-bold text-gold-600">{z.villages}</p>
+                      <p className="mt-0.5 text-[10px] text-navy-900/40">Villages</p>
                     </div>
-                    <div className="rounded-xl border border-gold-500/10 bg-white/[0.02] p-4 text-center">
-                      <p className="font-heading text-xl font-bold text-gold-400">{z.foyers.toLocaleString()}</p>
-                      <p className="mt-0.5 text-[10px] text-white/30">Foyers</p>
+                    <div className="rounded-xl border border-navy-900/8 bg-white/40 p-4 text-center">
+                      <p className="font-heading text-xl font-bold text-gold-600">{z.foyers.toLocaleString()}</p>
+                      <p className="mt-0.5 text-[10px] text-navy-900/40">Foyers</p>
                     </div>
-                    <div className="rounded-xl border border-gold-500/10 bg-white/[0.02] p-4 text-center">
-                      <p className="font-heading text-xl font-bold text-gold-400">{z.km} km</p>
-                      <p className="mt-0.5 text-[10px] text-white/30">Réseau</p>
+                    <div className="rounded-xl border border-navy-900/8 bg-white/40 p-4 text-center">
+                      <p className="font-heading text-xl font-bold text-gold-600">{z.km} km</p>
+                      <p className="mt-0.5 text-[10px] text-navy-900/40">Réseau</p>
                     </div>
                   </div>
                 </div>
@@ -183,15 +183,15 @@ export default function EnergieImpactClient() {
       </section>
 
       {/* Timeline chronologie */}
-      <section className="bg-[#060e1c] py-24">
+      <section className="bg-gradient-to-b from-[#B5AB94] to-[#C9BFA8] py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} className="mb-14 text-center">
             <div className="mb-4 flex items-center justify-center gap-3">
-              <span className="h-px w-8 bg-gold-400" />
-              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-400">Historique</span>
-              <span className="h-px w-8 bg-gold-400" />
+              <span className="h-px w-8 bg-gold-600" />
+              <span className="text-xs font-semibold uppercase tracking-[0.3em] text-gold-600">Historique</span>
+              <span className="h-px w-8 bg-gold-600" />
             </div>
-            <h2 className="font-heading text-4xl font-bold uppercase text-white">10 ans d&apos;engagement</h2>
+            <h2 className="font-heading text-4xl font-bold uppercase text-navy-900">10 ans d&apos;engagement</h2>
           </motion.div>
 
           {/* Timeline verticale */}
@@ -210,15 +210,15 @@ export default function EnergieImpactClient() {
                   className={`relative flex items-start gap-6 ${i % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}
                 >
                   <div className={`flex-1 ${i % 2 === 0 ? 'text-right' : 'text-left'}`}>
-                    <div className={`inline-block rounded-xl border border-gold-500/15 bg-white/[0.02] p-5 ${i % 2 === 0 ? 'ml-auto' : ''}`}>
-                      <p className="font-heading text-sm font-bold uppercase text-gold-400/70 mb-1">{t.year}</p>
-                      <h3 className="font-heading text-base font-bold uppercase text-white mb-2">{t.title}</h3>
-                      <p className="text-xs text-white/40 leading-relaxed">{t.desc}</p>
+                    <div className={`inline-block rounded-xl border border-navy-900/8 bg-white/50 p-5 ${i % 2 === 0 ? 'ml-auto' : ''}`}>
+                      <p className="font-heading text-sm font-bold uppercase text-gold-600/70 mb-1">{t.year}</p>
+                      <h3 className="font-heading text-base font-bold uppercase text-navy-900 mb-2">{t.title}</h3>
+                      <p className="text-xs text-navy-900/50 leading-relaxed">{t.desc}</p>
                     </div>
                   </div>
                   {/* Nœud central */}
-                  <div className="relative z-10 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 border-gold-500 bg-[#060e1c] shadow-[0_0_12px_rgba(201,162,39,0.4)] mt-5">
-                    <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
+                  <div className="relative z-10 flex h-4 w-4 shrink-0 items-center justify-center rounded-full border-2 border-gold-500 bg-[#B5AB94] shadow-[0_0_12px_rgba(242,169,59,0.3)] mt-5">
+                    <span className="h-1.5 w-1.5 rounded-full bg-amber-accent" />
                   </div>
                   <div className="flex-1" />
                 </motion.div>
@@ -229,17 +229,17 @@ export default function EnergieImpactClient() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#0A1628] py-20 text-center">
+      <section className="bg-gradient-to-b from-[#B5AB94] to-navy-900 py-12 sm:py-20 text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="font-heading text-3xl font-bold uppercase text-white md:text-4xl">
               Un projet d&apos;électrification ?
             </h2>
-            <p className="mx-auto mt-4 max-w-lg text-white/40">
+            <p className="mx-auto mt-4 max-w-lg text-white/50">
               Nos équipes interviennent partout en Côte d&apos;Ivoire pour connecter vos zones à l&apos;énergie.
             </p>
             <Link href="/filiales/energie/contact"
-              className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold-600 to-gold-400 px-8 py-4 text-sm font-bold uppercase tracking-wider text-[#0A1628] transition-all hover:shadow-[0_0_35px_rgba(201,162,39,0.4)]"
+              className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-gold-600 to-amber-accent px-8 py-4 text-sm font-bold uppercase tracking-wider text-navy-900 transition-all hover:shadow-[0_0_35px_rgba(242,169,59,0.3)]"
             >
               Nous contacter <ArrowRight className="h-4 w-4" />
             </Link>

@@ -16,7 +16,7 @@ const activites = [
       'Moniteurs et équipements soins intensifs', 'Équipements de rééducation & kinésithérapie',
       'Stérilisation et décontamination', 'Mobilier médical & hospitalier',
     ],
-    img: 'https://images.unsplash.com/photo-1516549655169-df83a0774514?w=900&q=85',
+    img: '/images/medical-hero.jpg',
     brands: ['Siemens Healthineers', 'GE Healthcare', 'Mindray', 'Stryker'],
     color: 'text-[#4A7C7C]', bg: 'bg-[#4A7C7C]/5', border: 'border-[#4A7C7C]/12',
   },
@@ -30,7 +30,7 @@ const activites = [
       'Consommables dialyse', 'Suivi et dossier patient informatisé',
       'Formation du personnel soignant', 'Maintenance préventive & corrective',
     ],
-    img: 'https://images.unsplash.com/photo-1631815588090-d4bfec5b1ccb?w=900&q=85',
+    img: '/images/medical-dialyse.jpg',
     brands: ['Fresenius Medical Care', 'Gambro', 'B. Braun'],
     color: 'text-[#0B1E3D]', bg: 'bg-[#0B1E3D]/4', border: 'border-[#0B1E3D]/8',
   },
@@ -44,7 +44,7 @@ const activites = [
       'Produits parapharmaceutiques', 'Chaîne du froid (-2° à +8°C)',
       'Distribution nationale', 'Traçabilité et pharmacovigilance',
     ],
-    img: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=900&q=85',
+    img: '/images/medical-dialyse.jpg',
     brands: ['Sanofi', 'Pfizer', 'Roche', 'Novartis'],
     color: 'text-[#C9A227]', bg: 'bg-[#C9A227]/5', border: 'border-[#C9A227]/12',
   },
@@ -58,7 +58,7 @@ const activites = [
       'Autoclaves et stérilisateurs', 'Microscopes & centrifugeuses',
       'Panneaux de radiologie dentaire', 'Maintenance contrat annuel',
     ],
-    img: 'https://images.unsplash.com/photo-1530026186672-2cd00ffc50fe?w=900&q=85',
+    img: '/images/medical-qualite.jpg',
     brands: ['Roche Diagnostics', 'bioMérieux', 'KaVo', 'Sirona'],
     color: 'text-[#4A7C7C]', bg: 'bg-[#4A7C7C]/5', border: 'border-[#4A7C7C]/12',
   },
@@ -72,7 +72,7 @@ const activites = [
       'Équipement médical complet', 'Systèmes de gaz médicaux',
       'Réseaux informatiques hospitaliers', 'Audit et mise aux normes',
     ],
-    img: 'https://images.unsplash.com/photo-1626315869436-d6781ba69d6e?w=900&q=85',
+    img: '/images/medical-equipe.jpg',
     brands: ['EL-BOMI Construction', 'Partenaires agréés MSDS'],
     color: 'text-[#0B1E3D]', bg: 'bg-[#0B1E3D]/4', border: 'border-[#0B1E3D]/8',
   },
@@ -84,7 +84,7 @@ export default function MedicalActivitesClient() {
 
       {/* Hero */}
       <section className="relative min-h-[52vh] flex items-end overflow-hidden">
-        <Image src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1920&q=85" alt="Activités médicales" fill priority
+        <Image src="/images/medical-qualite.jpg" alt="Activités médicales" fill priority
           className="object-cover object-top" sizes="100vw"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-white/97 via-white/60 to-white/10" />
@@ -104,8 +104,8 @@ export default function MedicalActivitesClient() {
       </section>
 
       {/* Activités en alternance */}
-      <section className="bg-[#F7F7F5] py-16">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+      <section className="bg-[#F7F7F5] py-10 sm:py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 space-y-12 sm:space-y-20">
           {activites.map((a, i) => (
             <motion.div key={a.title} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-80px' }} transition={{ duration: 0.6 }}
               className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center"
@@ -148,7 +148,7 @@ export default function MedicalActivitesClient() {
       </section>
 
       {/* CTA */}
-      <section className="bg-[#0B1E3D] py-20 text-center">
+      <section className="bg-[#0B1E3D] py-12 sm:py-20 text-center">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <h2 className="font-heading text-3xl font-bold text-white">Un besoin médical spécifique ?</h2>

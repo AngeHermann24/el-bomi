@@ -54,13 +54,13 @@ export default function PremiumCounter({
       transition={{ duration: 0.5 }}
       className={`flex flex-col items-center text-center ${className}`}
     >
-      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full border border-[#C9A227]/20 bg-[#C9A227]/[0.03]">
-        <span className="h-1.5 w-1.5 rounded-full bg-[#E8C766]" />
+      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full border border-[#B87333]/20 bg-[#B87333]/[0.03]">
+        <span className="h-1.5 w-1.5 rounded-full bg-[#D4B896]" />
       </div>
-      <div className="font-heading text-3xl font-bold tracking-tight text-[#E8C766] lg:text-4xl">
-        {prefix}{formatted}<span className="text-[#C9A227]">{suffix}</span>
+      <div className="font-heading text-3xl font-bold tracking-tight text-[#D4B896] lg:text-4xl">
+        {prefix}{formatted}<span className="text-[#B87333]">{suffix}</span>
       </div>
-      <div className="mt-2 text-[11px] uppercase tracking-[0.2em] text-white/35">{label}</div>
+      <div className="mt-2 text-[11px] uppercase tracking-[0.2em] text-white/40">{label}</div>
     </motion.div>
   );
 }

@@ -1,4 +1,4 @@
-import ConstructionHomeClient from '@/components/construction/ConstructionHomeClient';
+import ConstructionExperience from '@/components/construction/ConstructionExperience';
 
 export const metadata = {
   title: 'Construction & Infrastructures | EL-BOMI HOLDING',
@@ -6,5 +6,5 @@ export const metadata = {
 };
 
 export default function ConstructionPage() {
-  return <ConstructionHomeClient />;
+  return <ConstructionExperience />;
 }

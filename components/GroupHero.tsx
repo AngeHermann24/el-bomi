@@ -10,7 +10,7 @@ export default function GroupHero() {
   return (
     <section className="relative flex min-h-[92vh] items-center overflow-hidden bg-navy-900">
       <Image
-        src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+        src="/images/abidjan.jpg"
         alt="EL-BOMI HOLDING — Abidjan, Côte d'Ivoire"
         fill
         priority
