@@ -435,7 +435,7 @@ function LiteExperience({ progress }: { progress: MotionValue<number> }) {
 
 function StaticExperience() {
   return (
-    <div className="absolute inset-0 overflow-y-auto">
+    <div className="relative w-full overflow-x-hidden">
       <div className="bg-gradient-to-b from-navy-950 via-navy-900 to-navy-950">
         {/* Hero */}
         <section className="relative flex min-h-screen flex-col items-center justify-center px-4 text-center overflow-hidden">
